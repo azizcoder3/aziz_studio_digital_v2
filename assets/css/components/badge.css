@@ -1,0 +1,56 @@
+/* ==========================================================================
+   BADGES STYLING
+   ========================================================================== */
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-start;
+    width: fit-content;
+    max-width: 100%;
+    padding: var(--spacing-4px) var(--spacing-12px);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-600);
+    line-height: 1;
+    border-radius: var(--radius-pill);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+    border: 1px solid transparent;
+}
+
+/* 1. Primary Badge */
+.badge-primary {
+    background-color: hsla(var(--color-accent-h), var(--color-accent-s), var(--color-accent-l), 0.1);
+    color: var(--color-accent);
+    border-color: hsla(var(--color-accent-h), var(--color-accent-s), var(--color-accent-l), 0.2);
+}
+
+/* 2. Secondary Badge */
+.badge-secondary {
+    background-color: hsla(var(--color-secondary-h), var(--color-secondary-s), var(--color-secondary-l), 0.1);
+    color: var(--color-text-primary);
+    border-color: hsla(var(--color-secondary-h), var(--color-secondary-s), var(--color-secondary-l), 0.2);
+}
+
+/* 3. Success Badge */
+.badge-success {
+    background-color: hsla(var(--color-success-h), var(--color-success-s), var(--color-success-l), 0.1);
+    color: var(--color-success);
+    border-color: hsla(var(--color-success-h), var(--color-success-s), var(--color-success-l), 0.2);
+}
+
+/* 4. Warning Badge */
+.badge-warning {
+    background-color: hsla(var(--color-warning-h), var(--color-warning-s), var(--color-warning-l), 0.1);
+    color: var(--color-warning);
+    border-color: hsla(var(--color-warning-h), var(--color-warning-s), var(--color-warning-l), 0.2);
+}
+
+/* 5. Danger Badge */
+.badge-danger {
+    background-color: hsla(var(--color-danger-h), var(--color-danger-s), var(--color-danger-l), 0.1);
+    color: var(--color-danger);
+    border-color: hsla(var(--color-danger-h), var(--color-danger-s), var(--color-danger-l), 0.2);
+}

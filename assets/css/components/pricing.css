@@ -1,0 +1,101 @@
+/* ==========================================================================
+   PRICING COMPONENT (SPRINT 40)
+   Aziz Studio Digital V2 - Architecture Design System
+   ========================================================================== */
+
+.sector-pricing-card {
+    background-color: var(--color-surface);
+    border: 2px solid var(--color-accent);
+    border-radius: var(--radius-large);
+    padding: var(--spacing-24px);
+    box-shadow: var(--shadow-md);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-16px);
+}
+
+@media (min-width: 1024px) {
+    .sector-pricing-sticky {
+        position: sticky;
+        top: 110px;
+        z-index: 10;
+    }
+}
+
+.sector-pricing-header {
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: var(--spacing-16px);
+}
+
+.sector-pricing-badge {
+    margin-bottom: var(--spacing-8px);
+}
+
+.sector-pricing-title {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin: 0;
+}
+
+.sector-pricing-amount-block {
+    margin-top: var(--spacing-12px);
+}
+
+.sector-pricing-label {
+    font-size: var(--font-size-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--color-text-secondary);
+    font-weight: 600;
+}
+
+.sector-pricing-amount {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-2xl);
+    font-weight: 800;
+    color: var(--color-accent);
+    line-height: 1.2;
+    margin-top: var(--spacing-4px);
+}
+
+.sector-pricing-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-10px);
+}
+
+.sector-pricing-feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-8px);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-primary);
+}
+
+.sector-pricing-feature-icon {
+    color: var(--color-success);
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+}
+
+.sector-pricing-cta {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin-top: var(--spacing-8px);
+}
+
+.sector-pricing-note {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-secondary);
+    text-align: center;
+    margin: 0;
+    line-height: 1.4;
+}

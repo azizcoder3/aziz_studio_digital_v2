@@ -1,0 +1,269 @@
+<!-- ==========================================================================
+   OFFRE CLINIQUE - FRAGMENT SOURCE (SPRINT 40)
+   Aziz Studio Digital V2
+   ========================================================================== -->
+
+<main class="main-content" id="main-content" role="main">
+
+    <!-- 1. Breadcrumb -->
+    <div class="services-breadcrumb-wrapper">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Fil d'Ariane">
+                <ol class="breadcrumb-list" role="list">
+                    <li class="breadcrumb-item"><a href="index.html" class="breadcrumb-link">Accueil</a></li>
+                    <li class="breadcrumb-separator" aria-hidden="true">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </li>
+                    <li class="breadcrumb-item"><a href="index.html#secteurs" class="breadcrumb-link">Secteurs</a></li>
+                    <li class="breadcrumb-separator" aria-hidden="true">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </li>
+                    <li class="breadcrumb-item breadcrumb-item-active" aria-current="page"><span>Cliniques</span></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- 2. Hero Sectoriel -->
+    <section class="section sector-hero" id="hero-sectoriel">
+        <div class="container">
+            <div class="sector-hero-grid">
+                <div class="sector-hero-content">
+                    <div class="sector-hero-badge-wrapper">
+                        <span class="badge badge-primary">🏥 Offre Cliniques</span>
+                    </div>
+                    <h1 class="sector-hero-title">Site web pour cliniques</h1>
+                    <p class="sector-hero-subtitle">
+                        Présentation des services, prise de rendez-vous et informations médicales pour un site clinique performant.
+                    </p>
+                    <p class="sector-hero-description">
+                        Instaurez la confiance auprès de vos patients au Congo grâce à une plateforme médicale claire, sécurisée et présentant vos corps médicaux, vos spécialités et votre plateau technique.
+                    </p>
+                    <div class="sector-hero-actions">
+                        <a href="commande.html?secteur=clinique&amp;offre=Site%20web%20pour%20cliniques&amp;prix=500k%20FCFA" class="btn btn-primary">Continuer avec cette offre</a>
+                        <a href="contact.html?type=conseil" class="btn btn-outline">Demander conseil</a>
+                    </div>
+                </div>
+                <div class="sector-hero-visual">
+                    <div class="sector-hero-image-frame">
+                        <img src="assets/images/secteurs/clinique.webp" alt="Aperçu du site web clinique" class="sector-hero-img" loading="eager" width="1200" height="675">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Layout principal : Détails + Bloc Résumé Sticky -->
+    <section class="section section-surface" id="details-offre">
+        <div class="container">
+            <div class="sector-content-layout">
+                
+                <div class="sector-main-body">
+                    
+                    <!-- Ce que vous obtenez -->
+                    <div class="deliverables-block">
+                        <div class="section-header">
+                            <span class="badge badge-secondary">📦 Inclus dans l'offre</span>
+                            <h2 class="section-title">Ce que vous obtenez</h2>
+                            <p class="section-subtitle">Une solution digitale médicale complète. Le tarif indicatif démarre à 500k FCFA pour une architecture multi-pages et s'adapte selon les besoins complexes de votre établissement.</p>
+                        </div>
+                        <div class="deliverables-grid">
+                            <div class="deliverable-card">
+                                <div class="deliverable-icon-wrapper" aria-hidden="true">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                </div>
+                                <div class="deliverable-info">
+                                    <h3 class="deliverable-title">Présentation des spécialités &amp; Services</h3>
+                                    <p class="deliverable-text">Fiches détaillées par pôle médical (maternité, pédiatrie, chirurgie, urgences) et tarifs des consultations.</p>
+                                </div>
+                            </div>
+
+                            <div class="deliverable-card">
+                                <div class="deliverable-icon-wrapper" aria-hidden="true">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                </div>
+                                <div class="deliverable-info">
+                                    <h3 class="deliverable-title">Prise de rendez-vous en ligne</h3>
+                                    <p class="deliverable-text">Formulaire structuré pour simplifier la réservation de consultation selon la spécialité et le praticien.</p>
+                                </div>
+                            </div>
+
+                            <div class="deliverable-card">
+                                <div class="deliverable-icon-wrapper" aria-hidden="true">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                </div>
+                                <div class="deliverable-info">
+                                    <h3 class="deliverable-title">Annuaire de l'équipe médicale</h3>
+                                    <p class="deliverable-text">Présentation des médecins, chirurgiens et spécialistes avec leurs diplômes et horaires de réception.</p>
+                                </div>
+                            </div>
+
+                            <div class="deliverable-card">
+                                <div class="deliverable-icon-wrapper" aria-hidden="true">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                </div>
+                                <div class="deliverable-info">
+                                    <h3 class="deliverable-title">Consignes patients &amp; Informations urgences</h3>
+                                    <p class="deliverable-text">Numéros directs de garde, consignes d'hospitalisation et horaires de visite clairement mis en évidence.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Comment ça marche -->
+                    <div class="process-section">
+                        <div class="section-header">
+                            <span class="badge badge-secondary">⚡ Méthode de travail</span>
+                            <h2 class="section-title">Comment ça marche</h2>
+                            <p class="section-subtitle">Un processus rigoureux adapté aux exigences des structures de santé.</p>
+                        </div>
+                        <div class="process-steps-list">
+                            <div class="process-step-item">
+                                <div class="process-step-number">01</div>
+                                <div class="process-step-content">
+                                    <h3 class="process-step-title">Étude du projet &amp; Devis sous 72h</h3>
+                                    <p class="process-step-desc">Recueil du périmètre des services médicaux, des besoins d'orientation patients et chiffrage transparent.</p>
+                                </div>
+                            </div>
+
+                            <div class="process-step-item">
+                                <div class="process-step-number">02</div>
+                                <div class="process-step-content">
+                                    <h3 class="process-step-title">Maquetter l'ergonomie médicale</h3>
+                                    <p class="process-step-desc">Conception d'une interface rassurante, lisible et conforme aux règles d'accessibilité.</p>
+                                </div>
+                            </div>
+
+                            <div class="process-step-item">
+                                <div class="process-step-number">03</div>
+                                <div class="process-step-content">
+                                    <h3 class="process-step-title">Validation des contenus &amp; Sécurité</h3>
+                                    <p class="process-step-desc">Vérification de l'exactitude des informations médicales et configuration du certificat SSL sécurisé.</p>
+                                </div>
+                            </div>
+
+                            <div class="process-step-item">
+                                <div class="process-step-number">04</div>
+                                <div class="process-step-content">
+                                    <h3 class="process-step-title">Mise en ligne &amp; Assistance</h3>
+                                    <p class="process-step-desc">Mise en service du site et accompagnement de l'équipe d'accueil de la clinique.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ -->
+                    <div class="faq-section">
+                        <div class="section-header">
+                            <span class="badge badge-secondary">❓ Questions fréquentes</span>
+                            <h2 class="section-title">Foire aux questions — Offre Clinique</h2>
+                        </div>
+                        <div class="faq-accordion-wrapper">
+                            <div class="faq-accordion">
+                                <details class="faq-item card" open>
+                                    <summary class="faq-summary">
+                                        <div class="faq-question">
+                                            <h3 class="faq-question-title">Le site permet-il d'orienter les urgences médicales ?</h3>
+                                        </div>
+                                        <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                                    </summary>
+                                    <div class="faq-answer">
+                                        <p class="faq-answer-text">Oui, un bouton d'appel direct pour les urgences est fixé en haut de page pour permettre un contact téléphonique immédiat.</p>
+                                    </div>
+                                </details>
+
+                                <details class="faq-item card">
+                                    <summary class="faq-summary">
+                                        <div class="faq-question">
+                                            <h3 class="faq-question-title">Est-il possible d'intégrer des formulaires spécifiques par pôle ?</h3>
+                                        </div>
+                                        <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                                    </summary>
+                                    <div class="faq-answer">
+                                        <p class="faq-answer-text">Absolument, chaque spécialité (maternité, imagerie, consultations externes) peut avoir son propre formulaire dédié.</p>
+                                    </div>
+                                </details>
+
+                                <details class="faq-item card">
+                                    <summary class="faq-summary">
+                                        <div class="faq-question">
+                                            <h3 class="faq-question-title">Les données des formulaires sont-elles confidentielles ?</h3>
+                                        </div>
+                                        <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                                    </summary>
+                                    <div class="faq-answer">
+                                        <p class="faq-answer-text">Oui, toutes les transmissions de données sont chiffrées SSL et envoyées uniquement sur les boîtes mail autorisées de la clinique.</p>
+                                    </div>
+                                </details>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Colonne latérale sticky : Bloc Résumé -->
+                <aside class="sector-sidebar">
+                    <div class="sector-pricing-card sector-pricing-sticky">
+                        <div class="sector-pricing-header">
+                            <div class="sector-pricing-badge">
+                                <span class="badge badge-primary">Formule Sectorielle</span>
+                            </div>
+                            <h3 class="sector-pricing-title">Site web pour cliniques</h3>
+                            <div class="sector-pricing-amount-block">
+                                <span class="sector-pricing-label">Tarif de départ</span>
+                                <div class="sector-pricing-amount">500k FCFA</div>
+                            </div>
+                        </div>
+                        <ul class="sector-pricing-features" role="list">
+                            <li class="sector-pricing-feature-item">
+                                <svg class="sector-pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span>Multi-pages à sur-mesure</span>
+                            </li>
+                            <li class="sector-pricing-feature-item">
+                                <svg class="sector-pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span>Présentation des pôles &amp; spécialités</span>
+                            </li>
+                            <li class="sector-pricing-feature-item">
+                                <svg class="sector-pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span>Module de demande de RDV</span>
+                            </li>
+                            <li class="sector-pricing-feature-item">
+                                <svg class="sector-pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span>Bouton d'appel urgences 24/7</span>
+                            </li>
+                            <li class="sector-pricing-feature-item">
+                                <svg class="sector-pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span>Certificat SSL &amp; données sécurisées</span>
+                            </li>
+                        </ul>
+                        <div>
+                            <a href="commande.html?secteur=clinique&amp;offre=Site%20web%20pour%20cliniques&amp;prix=500k%20FCFA" class="btn btn-primary sector-pricing-cta">Continuer avec cette offre</a>
+                        </div>
+                        <p class="sector-pricing-note">Devis sur mesure selon la taille et les besoins de la clinique.</p>
+                    </div>
+                </aside>
+
+            </div>
+
+            <!-- Navigation inter-secteurs -->
+            <nav class="sector-navigation" aria-label="Navigation entre offres sectorielles">
+                <a href="immobilier.html" class="sector-nav-link" aria-label="Secteur précédent : Immobilier">
+                    <span aria-hidden="true">←</span>
+                    <div>
+                        <div class="sector-nav-label">Secteur précédent</div>
+                        <div class="sector-nav-title">Immobilier</div>
+                    </div>
+                </a>
+                <a href="cabinet-medical.html" class="sector-nav-link" aria-label="Secteur suivant : Cabinets médicaux">
+                    <div>
+                        <div class="sector-nav-label">Secteur suivant</div>
+                        <div class="sector-nav-title">Cabinets médicaux</div>
+                    </div>
+                    <span aria-hidden="true">→</span>
+                </a>
+            </nav>
+
+        </div>
+    </section>
+
+</main>

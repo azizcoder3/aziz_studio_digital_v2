@@ -1,0 +1,1513 @@
+[
+  {
+    "file": "404.html",
+    "lang": "fr",
+    "title": "Page non trouvée | Aziz Studio Digital",
+    "h1_count": 1,
+    "h1_text": "Page non trouvée",
+    "images_count": 0,
+    "images_sans_alt": 0,
+    "links_count": 43,
+    "buttons_count": 2,
+    "inputs_count": 1,
+    "labels_count": 1,
+    "has_main": true,
+    "has_header": true,
+    "has_footer": true,
+    "has_nav": true,
+    "has_skip": false,
+    "aria_current": false,
+    "aria_expanded": true,
+    "details_faq": 0,
+    "issues": [
+      [
+        "MOYEN",
+        "2.4.1",
+        "Skip link absent ou non detecte",
+        "Ajouter lien \"Aller au contenu\""
+      ],
+      [
+        "MOYEN",
+        "4.1.2",
+        "Aucun aria-current detecte dans la navigation",
+        "Verifier aria-current=\"page\" sur le lien actif"
+      ]
+    ],
+    "critique": 0,
+    "moyen": 2,
+    "info": 0,
+    "statut": "ATTENTION"
+  },
+  {
+    "file": "a-propos.html",
+    "lang": "fr",
+    "title": "Agence web indépendante au Congo | Aziz Studio Digital",
+    "h1_count": 1,
+    "h1_text": "Aziz Studio Digital, un studio web indépendant au ",
+    "images_count": 0,
+    "images_sans_alt": 0,
+    "links_count": 46,
+    "buttons_count": 2,
+    "inputs_count": 1,
+    "labels_count": 1,
+    "has_main": true,
+    "has_header": true,
+    "has_footer": true,
+    "has_nav": true,
+    "has_skip": false,
+    "aria_current": true,
+    "aria_expanded": true,
+    "details_faq": 5,
+    "issues": [
+      [
+        "MOYEN",
+        "2.4.1",
+        "Skip link absent ou non detecte",
+        "Ajouter lien \"Aller au contenu\""
+      ]
+    ],
+    "critique": 0,
+    "moyen": 1,
+    "info": 0,
+    "statut": "ATTENTION"
+  },
+  {
+    "file": "audit-conseil.html",
+    "lang": "fr",
+    "title": "Audit digital au Congo | Aziz Studio Digital",
+    "h1_count": 1,
+    "h1_text": "Audit digital au Congo pour identifier les opportu",
+    "images_count": 0,
+    "images_sans_alt": 0,
+    "links_count": 47,
+    "buttons_count": 2,
+    "inputs_count": 1,
+    "labels_count": 1,
+    "has_main": true,
+    "has_header": true,
+    "has_footer": true,
+    "has_nav": true,
+    "has_skip": false,
+    "aria_current": true,
+    "aria_expanded": true,
+    "details_faq": 5,
+    "issues": [
+      [
+        "MOYEN",
+        "2.4.1",
+        "Skip link absent ou non detecte",
+        "Ajouter lien \"Aller au contenu\""
+      ]
+    ],
+    "critique": 0,
+    "moyen": 1,
+    "info": 0,
+    "statut": "ATTENTION"
+  },
+  {
+    "file": "blog-article-developpement-web.html",
+    "lang": "fr",
+    "title": "Développement web : les étapes clés | Aziz Studio Digital",
+    "h1_count": 1,
+    "h1_text": "Les étapes clés du développement web avec une agen",
+    "images_count": 1,
+    "images_sans_alt": 0,
+    "links_count": 52,
+    "buttons_count": 2,
+    "inputs_count": 1,
+    "labels_count": 1,
+    "has_main": true,
+    "has_header": true,
+    "has_footer": true,
+    "has_nav": true,
+    "has_skip": false,
+    "aria_current": true,
+    "aria_expanded": true,
+    "details_faq": 4,
+    "issues": [
+      [
+        "MOYEN",
+        "2.4.1",
+        "Skip link absent ou non detecte",
+        "Ajouter lien \"Aller au contenu\""
+      ]
+    ],
+    "critique": 0,
+    "moyen": 1,
+    "info": 0,
+    "statut": "ATTENTION"
+  },
+  {
+    "file": "blog-article-seo.html",
+    "lang": "fr",
+    "title": "SEO au Congo : apparaître sur Google | Aziz Studio Digital",
+    "h1_count": 1,
+    "h1_text": "SEO au Congo : comment apparaître sur Google en 20",
+    "images_count": 1,
+    "images_sans_alt": 0,
+    "links_count": 51,
+    "buttons_count": 2,
+    "inputs_count": 1,
+    "labels_count": 1,
+    "has_main": true,
+    "has_header": true,
+    "has_footer": true,
+    "has_nav": true,
+    "has_skip": false,
+    "aria_current": true,
+    "aria_expanded": true,
+    "details_faq": 4,
+    "issues": [
+      [
+        "MOYEN",
+        "2.4.1",
+        "Skip link absent ou non detecte",
+        "Ajouter lien \"Aller au contenu\""
+      ]
+    ],
+    "critique": 0,
+    "moyen": 1,
+    "info": 0,
+    "statut": "ATTENTION"
+  },
+  {
+    "file": "blog-article-wordpress.html",
+    "lang": "fr",
+    "title": "WordPress pour votre site d'entreprise | Aziz Studio Digital",
+    "h1_count": 1,
+    "h1_text": "Pourquoi choisir WordPress pour la création de sit",
+    "images_count": 1,
+    "images_sans_alt": 0,
+    "links_count": 52,
+    "buttons_count": 2,
+    "inputs_count": 1,
+    "labels_count": 1,
+    "has_main": true,
+    "has_header": true,
+    "has_footer": true,
+    "has_nav": true,
+    "has_skip": false,
+    "aria_current": true,
+    "aria_expanded": true,
+    "details_faq": 4,
+    "issues": [
+      [
+        "MOYEN",
+        "2.4.1",
+        "Skip link absent ou non detecte",
+        "Ajouter lien \"Aller au contenu\""
+      ]
+    ],
+    "critique": 0,
+    "moyen": 1,
+    "info": 0,
+    "statut": "ATTENTION"
+  },
+  {
+    "file": "blog.html",
+    "lang": "fr",
+    "title": "Blog, SEO & WordPress au Congo | Aziz Studio Digital",
+    "h1_count": 1,
+    "h1_text": "Le blog d'Aziz Studio Digital",
+    "images_count": 3,
+    "images_sans_alt": 0,
+    "links_count": 49,
+    "buttons_count": 2,
+    "inputs_count": 1,
+    "labels_count": 1,
+    "has_main": true,
+    "has_header": true,
+    "has_footer": true,
+    "has_nav": true,
+    "has_skip": false,
+    "aria_current": true,
+    "aria_expanded": true,
+    "details_faq": 5,
+    "issues": [
+      [
+        "MOYEN",
+        "2.4.1",
+        "Skip link absent ou non detecte",
+        "Ajouter lien \"Aller au contenu\""
+      ]
+    ],
+    "critique": 0,
+    "moyen": 1,
+    "info": 0,
+    "statut": "ATTENTION"
+  },
+  {
+    "file": "cabinet-dentaire.html",
+    "lang": "fr",
+    "title": "Site web cabinet dentaire au Congo | Aziz Studio Digital",
+    "h1_count": 1,
+    "h1_text": "Site web pour cabinets dentaires",
+    "images_count": 1,
+    "images_sans_alt": 0,
+    "links_count": 48,
+    "buttons_count": 2,
+    "inputs_count": 1,
+    "labels_count": 1,
+    "has_main": true,
+    "has_header": true,
+    "has_footer": true,
+    "has_nav": true,
+    "has_skip": false,
+    "aria_current": true,
+    "aria_expanded": true,
+    "details_faq": 3,
+    "issues": [
+      [
+        "CRITIQUE",
+        "2.4.4",
+        "Lien sans texte ni aria-label : href=\"cabinet-medical.html\"",
+        "Ajouter texte ou aria-label"
+      ],
+      [
+        "CRITIQUE",
+        "2.4.4",
+        "Lien sans texte ni aria-label : href=\"pharmacie.html\"",
+        "Ajouter texte ou aria-label"
+      ],
+      [
+        "MOYEN",
+        "2.4.1",
+        "Skip link absent ou non detecte",
+        "Ajouter lien \"Aller au contenu\""
+      ]
+    ],
+    "critique": 2,
+    "moyen": 1,
+    "info": 0,
+    "statut": "ANOMALIE"
+  },
+  {
+    "file": "cabinet-medical.html",
+    "lang": "fr",
+    "title": "Site web cabinet médical au Congo | Aziz Studio Digital",
+    "h1_count": 1,
+    "h1_text": "Site web pour cabinets médicaux",
+    "images_count": 1,
+    "images_sans_alt": 0,
+    "links_count": 48,
+    "buttons_count": 2,
+    "inputs_count": 1,
+    "labels_count": 1,
+    "has_main": true,
+    "has_header": true,
+    "has_footer": true,
+    "has_nav": true,
+    "has_skip": false,
+    "aria_current": true,
+    "aria_expanded": true,
+    "details_faq": 3,
+    "issues": [
+      [
+        "CRITIQUE",
+        "2.4.4",
+        "Lien sans texte ni aria-label : href=\"clinique.html\"",
+        "Ajouter texte ou aria-label"
+      ],
+      [
+        "CRITIQUE",
+        "2.4.4",
+        "Lien sans texte ni aria-label : href=\"cabinet-dentaire.html\"",
+        "Ajouter texte ou aria-label"
+      ],
+      [
+        "MOYEN",
+        "2.4.1",
+        "Skip link absent ou non detecte",
+        "Ajouter lien \"Aller au contenu\""
+      ]
+    ],
+    "critique": 2,
+    "moyen": 1,
+    "info": 0,
+    "statut": "ANOMALIE"
+  },
+  {
+    "file": "clinique.html",
+    "lang": "fr",
+    "title": "Site web pour clinique au Congo | Aziz Studio Digital",
+    "h1_count": 1,
+    "h1_text": "Site web pour cliniques",
+    "images_count": 1,
+    "images_sans_alt": 0,
+    "links_count": 48,
+    "buttons_count": 2,
+    "inputs_count": 1,
+    "labels_count": 1,
+    "has_main": true,
+    "has_header": true,
+    "has_footer": true,
+    "has_nav": true,
+    "has_skip": false,
+    "aria_current": true,
+    "aria_expanded": true,
+    "details_faq": 3,
+    "issues": [
+      [
+        "CRITIQUE",
+        "2.4.4",
+        "Lien sans texte ni aria-label : href=\"immobilier.html\"",
+        "Ajouter texte ou aria-label"
+      ],
+      [
+        "CRITIQUE",
+        "2.4.4",
+        "Lien sans texte ni aria-label : href=\"cabinet-medical.html\"",
+        "Ajouter texte ou aria-label"
+      ],
+      [
+        "MOYEN",
+        "2.4.1",
+        "Skip link absent ou non detecte",
+        "Ajouter lien \"Aller au contenu\""
+      ]
+    ],
+    "critique": 2,
+    "moyen": 1,
+    "info": 0,
+    "statut": "ANOMALIE"
+  },
+  {
+    "file": "commande.html",
+    "lang": "fr",
+    "title": "Commander une offre web au Congo | Aziz Studio Digital",
+    "h1_count": 1,
+    "h1_text": "Finalisez votre demande d'offre",
+    "images_count": 0,
+    "images_sans_alt": 0,
+    "links_count": 42,
+    "buttons_count": 3,
+    "inputs_count": 9,
+    "labels_count": 8,
+    "has_main": true,
+    "has_header": true,
+    "has_footer": true,
+    "has_nav": true,
+    "has_skip": false,
+    "aria_current": true,
+    "aria_expanded": true,
+    "details_faq": 0,
+    "issues": [
+      [
+        "MOYEN",
+        "1.3.1",
+        "Saut de titre : H1 -> H3 (\"Newsletter\")",
+        "Corriger la hierarchie"
+      ],
+      [
+        "MOYEN",
+        "2.4.1",
+        "Skip link absent ou non detecte",
+        "Ajouter lien \"Aller au contenu\""
+      ],
+      [
+        "CRITIQUE",
+        "3.3.2",
+        "Input sans label associe (id=None, type=text)",
+        "Ajouter <label for=...> ou aria-label"
+      ],
+      [
+        "CRITIQUE",
+        "3.3.2",
+        "Input sans label associe (id=None, type=checkbox)",
+        "Ajouter <label for=...> ou aria-label"
+      ],
+      [
+        "MOYEN",
+        "2.4.7",
+        ":focus ou outline non detecte dans la page",
+        "Verifier CSS focus"
+      ]
+    ],
+    "critique": 2,
+    "moyen": 3,
+    "info": 0,
+    "statut": "ANOMALIE"
+  },
+  {
+    "file": "conditions-utilisation.html",
+    "lang": "fr",
+    "title": "Conditions d'utilisation | Aziz Studio Digital",
+    "h1_count": 1,
+    "h1_text": "Conditions d'utilisation",
+    "images_count": 0,
+    "images_sans_alt": 0,
+    "links_count": 42,
+    "buttons_count": 2,
+    "inputs_count": 1,
+    "labels_count": 1,
+    "has_main": true,
+    "has_header": true,
+    "has_footer": true,
+    "has_nav": true,
+    "has_skip": false,
+    "aria_current": false,
+    "aria_expanded": true,
+    "details_faq": 0,
+    "issues": [
+      [
+        "MOYEN",
+        "2.4.1",
+        "Skip link absent ou non detecte",
+        "Ajouter lien \"Aller au contenu\""
+      ],
+      [
+        "MOYEN",
+        "4.1.2",
+        "Aucun aria-current detecte dans la navigation",
+        "Verifier aria-current=\"page\" sur le lien actif"
+      ],
+      [
+        "MOYEN",
+        "2.4.7",
+        ":focus ou outline non detecte dans la page",
+        "Verifier CSS focus"
+      ]
+    ],
+    "critique": 0,
+    "moyen": 3,
+    "info": 0,
+    "statut": "ATTENTION"
+  },
+  {
+    "file": "contact.html",
+    "lang": "fr",
+    "title": "Contact & Devis gratuit au Congo | Aziz Studio Digital",
+    "h1_count": 1,
+    "h1_text": "Parlons de votre projet web",
+    "images_count": 0,
+    "images_sans_alt": 0,
+    "links_count": 48,
+    "buttons_count": 3,
+    "inputs_count": 9,
+    "labels_count": 11,
+    "has_main": true,
+    "has_header": true,
+    "has_footer": true,
+    "has_nav": true,
+    "has_skip": false,
+    "aria_current": true,
+    "aria_expanded": true,
+    "details_faq": 5,
+    "issues": [
+      [
+        "MOYEN",
+        "2.4.1",
+        "Skip link absent ou non detecte",
+        "Ajouter lien \"Aller au contenu\""
+      ],
+      [
+        "CRITIQUE",
+        "3.3.2",
+        "Input sans label associe (id=None, type=text)",
+        "Ajouter <label for=...> ou aria-label"
+      ],
+      [
+        "CRITIQUE",
+        "3.3.2",
+        "Input sans label associe (id=rgpd, type=checkbox)",
+        "Ajouter <label for=...> ou aria-label"
+      ]
+    ],
+    "critique": 2,
+    "moyen": 1,
+    "info": 0,
+    "statut": "ANOMALIE"
+  },
+  {
+    "file": "creation-site-web.html",
+    "lang": "fr",
+    "title": "Création de site web au Congo | Aziz Studio Digital",
+    "h1_count": 1,
+    "h1_text": "Création de sites web professionnels & sur-mesure ",
+    "images_count": 0,
+    "images_sans_alt": 0,
+    "links_count": 47,
+    "buttons_count": 2,
+    "inputs_count": 1,
+    "labels_count": 1,
+    "has_main": true,
+    "has_header": true,
+    "has_footer": true,
+    "has_nav": true,
+    "has_skip": false,
+    "aria_current": true,
+    "aria_expanded": true,
+    "details_faq": 5,
+    "issues": [
+      [
+        "MOYEN",
+        "2.4.1",
+        "Skip link absent ou non detecte",
+        "Ajouter lien \"Aller au contenu\""
+      ]
+    ],
+    "critique": 0,
+    "moyen": 1,
+    "info": 0,
+    "statut": "ATTENTION"
+  },
+  {
+    "file": "hotel.html",
+    "lang": "fr",
+    "title": "Site web pour hôtel au Congo | Aziz Studio Digital",
+    "h1_count": 1,
+    "h1_text": "Site web pour hôtels",
+    "images_count": 1,
+    "images_sans_alt": 0,
+    "links_count": 48,
+    "buttons_count": 2,
+    "inputs_count": 1,
+    "labels_count": 1,
+    "has_main": true,
+    "has_header": true,
+    "has_footer": true,
+    "has_nav": true,
+    "has_skip": false,
+    "aria_current": true,
+    "aria_expanded": true,
+    "details_faq": 3,
+    "issues": [
+      [
+        "CRITIQUE",
+        "2.4.4",
+        "Lien sans texte ni aria-label : href=\"voyage.html\"",
+        "Ajouter texte ou aria-label"
+      ],
+      [
+        "CRITIQUE",
+        "2.4.4",
+        "Lien sans texte ni aria-label : href=\"restaurant.html\"",
+        "Ajouter texte ou aria-label"
+      ],
+      [
+        "MOYEN",
+        "2.4.1",
+        "Skip link absent ou non detecte",
+        "Ajouter lien \"Aller au contenu\""
+      ]
+    ],
+    "critique": 2,
+    "moyen": 1,
+    "info": 0,
+    "statut": "ANOMALIE"
+  },
+  {
+    "file": "immobilier.html",
+    "lang": "fr",
+    "title": "Site web pour l'immobilier au Congo | Aziz Studio Digital",
+    "h1_count": 1,
+    "h1_text": "Site web pour l'immobilier",
+    "images_count": 1,
+    "images_sans_alt": 0,
+    "links_count": 48,
+    "buttons_count": 2,
+    "inputs_count": 1,
+    "labels_count": 1,
+    "has_main": true,
+    "has_header": true,
+    "has_footer": true,
+    "has_nav": true,
+    "has_skip": false,
+    "aria_current": true,
+    "aria_expanded": true,
+    "details_faq": 3,
+    "issues": [
+      [
+        "CRITIQUE",
+        "2.4.4",
+        "Lien sans texte ni aria-label : href=\"restaurant.html\"",
+        "Ajouter texte ou aria-label"
+      ],
+      [
+        "CRITIQUE",
+        "2.4.4",
+        "Lien sans texte ni aria-label : href=\"clinique.html\"",
+        "Ajouter texte ou aria-label"
+      ],
+      [
+        "MOYEN",
+        "2.4.1",
+        "Skip link absent ou non detecte",
+        "Ajouter lien \"Aller au contenu\""
+      ]
+    ],
+    "critique": 2,
+    "moyen": 1,
+    "info": 0,
+    "statut": "ANOMALIE"
+  },
+  {
+    "file": "index.html",
+    "lang": "fr",
+    "title": "Agence web & Création de site au Congo | Aziz Studio Digital",
+    "h1_count": 1,
+    "h1_text": "Création de sites web professionnels pour les entr",
+    "images_count": 10,
+    "images_sans_alt": 0,
+    "links_count": 84,
+    "buttons_count": 2,
+    "inputs_count": 2,
+    "labels_count": 2,
+    "has_main": true,
+    "has_header": true,
+    "has_footer": true,
+    "has_nav": true,
+    "has_skip": true,
+    "aria_current": true,
+    "aria_expanded": true,
+    "details_faq": 15,
+    "issues": [],
+    "critique": 0,
+    "moyen": 0,
+    "info": 0,
+    "statut": "OK"
+  },
+  {
+    "file": "maintenance.html",
+    "lang": "fr",
+    "title": "Maintenance de site web au Congo | Aziz Studio Digital",
+    "h1_count": 1,
+    "h1_text": "Maintenance de site web pour un site toujours rapi",
+    "images_count": 0,
+    "images_sans_alt": 0,
+    "links_count": 47,
+    "buttons_count": 2,
+    "inputs_count": 1,
+    "labels_count": 1,
+    "has_main": true,
+    "has_header": true,
+    "has_footer": true,
+    "has_nav": true,
+    "has_skip": false,
+    "aria_current": true,
+    "aria_expanded": true,
+    "details_faq": 5,
+    "issues": [
+      [
+        "MOYEN",
+        "2.4.1",
+        "Skip link absent ou non detecte",
+        "Ajouter lien \"Aller au contenu\""
+      ]
+    ],
+    "critique": 0,
+    "moyen": 1,
+    "info": 0,
+    "statut": "ATTENTION"
+  },
+  {
+    "file": "mentions-legales.html",
+    "lang": "fr",
+    "title": "Mentions légales | Aziz Studio Digital",
+    "h1_count": 1,
+    "h1_text": "Mentions légales",
+    "images_count": 0,
+    "images_sans_alt": 0,
+    "links_count": 42,
+    "buttons_count": 2,
+    "inputs_count": 1,
+    "labels_count": 1,
+    "has_main": true,
+    "has_header": true,
+    "has_footer": true,
+    "has_nav": true,
+    "has_skip": false,
+    "aria_current": false,
+    "aria_expanded": true,
+    "details_faq": 0,
+    "issues": [
+      [
+        "MOYEN",
+        "2.4.1",
+        "Skip link absent ou non detecte",
+        "Ajouter lien \"Aller au contenu\""
+      ],
+      [
+        "MOYEN",
+        "4.1.2",
+        "Aucun aria-current detecte dans la navigation",
+        "Verifier aria-current=\"page\" sur le lien actif"
+      ],
+      [
+        "MOYEN",
+        "2.4.7",
+        ":focus ou outline non detecte dans la page",
+        "Verifier CSS focus"
+      ]
+    ],
+    "critique": 0,
+    "moyen": 3,
+    "info": 0,
+    "statut": "ATTENTION"
+  },
+  {
+    "file": "merci.html",
+    "lang": "fr",
+    "title": "Demande de projet transmise | Aziz Studio Digital",
+    "h1_count": 1,
+    "h1_text": "Demande bien reçue !",
+    "images_count": 0,
+    "images_sans_alt": 0,
+    "links_count": 44,
+    "buttons_count": 2,
+    "inputs_count": 1,
+    "labels_count": 1,
+    "has_main": true,
+    "has_header": true,
+    "has_footer": true,
+    "has_nav": true,
+    "has_skip": false,
+    "aria_current": true,
+    "aria_expanded": true,
+    "details_faq": 0,
+    "issues": [
+      [
+        "MOYEN",
+        "1.3.1",
+        "Saut de titre : H1 -> H3 (\"Newsletter\")",
+        "Corriger la hierarchie"
+      ],
+      [
+        "MOYEN",
+        "2.4.1",
+        "Skip link absent ou non detecte",
+        "Ajouter lien \"Aller au contenu\""
+      ]
+    ],
+    "critique": 0,
+    "moyen": 2,
+    "info": 0,
+    "statut": "ATTENTION"
+  },
+  {
+    "file": "pharmacie.html",
+    "lang": "fr",
+    "title": "Site web pour pharmacie au Congo | Aziz Studio Digital",
+    "h1_count": 1,
+    "h1_text": "Site web pour pharmacies",
+    "images_count": 1,
+    "images_sans_alt": 0,
+    "links_count": 48,
+    "buttons_count": 2,
+    "inputs_count": 1,
+    "labels_count": 1,
+    "has_main": true,
+    "has_header": true,
+    "has_footer": true,
+    "has_nav": true,
+    "has_skip": false,
+    "aria_current": true,
+    "aria_expanded": true,
+    "details_faq": 3,
+    "issues": [
+      [
+        "CRITIQUE",
+        "2.4.4",
+        "Lien sans texte ni aria-label : href=\"cabinet-dentaire.html\"",
+        "Ajouter texte ou aria-label"
+      ],
+      [
+        "CRITIQUE",
+        "2.4.4",
+        "Lien sans texte ni aria-label : href=\"salon-beaute.html\"",
+        "Ajouter texte ou aria-label"
+      ],
+      [
+        "MOYEN",
+        "2.4.1",
+        "Skip link absent ou non detecte",
+        "Ajouter lien \"Aller au contenu\""
+      ]
+    ],
+    "critique": 2,
+    "moyen": 1,
+    "info": 0,
+    "statut": "ANOMALIE"
+  },
+  {
+    "file": "politique-confidentialite.html",
+    "lang": "fr",
+    "title": "Politique de confidentialité | Aziz Studio Digital",
+    "h1_count": 1,
+    "h1_text": "Politique de confidentialité",
+    "images_count": 0,
+    "images_sans_alt": 0,
+    "links_count": 42,
+    "buttons_count": 2,
+    "inputs_count": 1,
+    "labels_count": 1,
+    "has_main": true,
+    "has_header": true,
+    "has_footer": true,
+    "has_nav": true,
+    "has_skip": false,
+    "aria_current": false,
+    "aria_expanded": true,
+    "details_faq": 0,
+    "issues": [
+      [
+        "MOYEN",
+        "2.4.1",
+        "Skip link absent ou non detecte",
+        "Ajouter lien \"Aller au contenu\""
+      ],
+      [
+        "MOYEN",
+        "4.1.2",
+        "Aucun aria-current detecte dans la navigation",
+        "Verifier aria-current=\"page\" sur le lien actif"
+      ],
+      [
+        "MOYEN",
+        "2.4.7",
+        ":focus ou outline non detecte dans la page",
+        "Verifier CSS focus"
+      ]
+    ],
+    "critique": 0,
+    "moyen": 3,
+    "info": 0,
+    "statut": "ATTENTION"
+  },
+  {
+    "file": "portfolio.html",
+    "lang": "fr",
+    "title": "Portfolio & Réalisations web au Congo | Aziz Studio Digital",
+    "h1_count": 1,
+    "h1_text": "Découvrez quelques réalisations conçues pour dével",
+    "images_count": 6,
+    "images_sans_alt": 0,
+    "links_count": 62,
+    "buttons_count": 2,
+    "inputs_count": 1,
+    "labels_count": 1,
+    "has_main": true,
+    "has_header": true,
+    "has_footer": true,
+    "has_nav": true,
+    "has_skip": false,
+    "aria_current": true,
+    "aria_expanded": true,
+    "details_faq": 5,
+    "issues": [
+      [
+        "MOYEN",
+        "2.4.1",
+        "Skip link absent ou non detecte",
+        "Ajouter lien \"Aller au contenu\""
+      ]
+    ],
+    "critique": 0,
+    "moyen": 1,
+    "info": 0,
+    "statut": "ATTENTION"
+  },
+  {
+    "file": "projet-agence-voyage.html",
+    "lang": "fr",
+    "title": "Océan du Nord — Réservation bus en ligne Congo | Aziz Studio",
+    "h1_count": 1,
+    "h1_text": "Océan du Nord",
+    "images_count": 2,
+    "images_sans_alt": 0,
+    "links_count": 49,
+    "buttons_count": 2,
+    "inputs_count": 5,
+    "labels_count": 5,
+    "has_main": true,
+    "has_header": true,
+    "has_footer": true,
+    "has_nav": true,
+    "has_skip": false,
+    "aria_current": true,
+    "aria_expanded": true,
+    "details_faq": 0,
+    "issues": [
+      [
+        "CRITIQUE",
+        "2.4.4",
+        "Lien sans texte ni aria-label : href=\"projet-molato-commerce.html\"",
+        "Ajouter texte ou aria-label"
+      ],
+      [
+        "CRITIQUE",
+        "2.4.4",
+        "Lien sans texte ni aria-label : href=\"projet-boulevard-hotel.html\"",
+        "Ajouter texte ou aria-label"
+      ],
+      [
+        "MOYEN",
+        "2.4.1",
+        "Skip link absent ou non detecte",
+        "Ajouter lien \"Aller au contenu\""
+      ]
+    ],
+    "critique": 2,
+    "moyen": 1,
+    "info": 0,
+    "statut": "ANOMALIE"
+  },
+  {
+    "file": "projet-atre-steakhouse.html",
+    "lang": "fr",
+    "title": "L'Âtre Steakhouse — Projet site vitrine premium | Aziz Studi",
+    "h1_count": 1,
+    "h1_text": "L'Âtre Steakhouse",
+    "images_count": 2,
+    "images_sans_alt": 0,
+    "links_count": 49,
+    "buttons_count": 2,
+    "inputs_count": 5,
+    "labels_count": 5,
+    "has_main": true,
+    "has_header": true,
+    "has_footer": true,
+    "has_nav": true,
+    "has_skip": false,
+    "aria_current": true,
+    "aria_expanded": true,
+    "details_faq": 0,
+    "issues": [
+      [
+        "CRITIQUE",
+        "2.4.4",
+        "Lien sans texte ni aria-label : href=\"projet-boulevard-hotel.html\"",
+        "Ajouter texte ou aria-label"
+      ],
+      [
+        "CRITIQUE",
+        "2.4.4",
+        "Lien sans texte ni aria-label : href=\"projet-cabinet-maxwell.html\"",
+        "Ajouter texte ou aria-label"
+      ],
+      [
+        "MOYEN",
+        "2.4.1",
+        "Skip link absent ou non detecte",
+        "Ajouter lien \"Aller au contenu\""
+      ]
+    ],
+    "critique": 2,
+    "moyen": 1,
+    "info": 0,
+    "statut": "ANOMALIE"
+  },
+  {
+    "file": "projet-boulevard-hotel.html",
+    "lang": "fr",
+    "title": "Boulevard Hôtel — Projet web hôtelier | Aziz Studio Digital",
+    "h1_count": 1,
+    "h1_text": "Boulevard Hôtel",
+    "images_count": 2,
+    "images_sans_alt": 0,
+    "links_count": 49,
+    "buttons_count": 2,
+    "inputs_count": 5,
+    "labels_count": 5,
+    "has_main": true,
+    "has_header": true,
+    "has_footer": true,
+    "has_nav": true,
+    "has_skip": false,
+    "aria_current": true,
+    "aria_expanded": true,
+    "details_faq": 0,
+    "issues": [
+      [
+        "CRITIQUE",
+        "2.4.4",
+        "Lien sans texte ni aria-label : href=\"projet-agence-voyage.html\"",
+        "Ajouter texte ou aria-label"
+      ],
+      [
+        "CRITIQUE",
+        "2.4.4",
+        "Lien sans texte ni aria-label : href=\"projet-atre-steakhouse.html\"",
+        "Ajouter texte ou aria-label"
+      ],
+      [
+        "MOYEN",
+        "2.4.1",
+        "Skip link absent ou non detecte",
+        "Ajouter lien \"Aller au contenu\""
+      ]
+    ],
+    "critique": 2,
+    "moyen": 1,
+    "info": 0,
+    "statut": "ANOMALIE"
+  },
+  {
+    "file": "projet-cabinet-maxwell.html",
+    "lang": "fr",
+    "title": "Cabinet Maxwell — Landing page cabinet d'avocats | Aziz Stud",
+    "h1_count": 1,
+    "h1_text": "Cabinet Maxwell",
+    "images_count": 2,
+    "images_sans_alt": 0,
+    "links_count": 49,
+    "buttons_count": 2,
+    "inputs_count": 5,
+    "labels_count": 5,
+    "has_main": true,
+    "has_header": true,
+    "has_footer": true,
+    "has_nav": true,
+    "has_skip": false,
+    "aria_current": true,
+    "aria_expanded": true,
+    "details_faq": 0,
+    "issues": [
+      [
+        "CRITIQUE",
+        "2.4.4",
+        "Lien sans texte ni aria-label : href=\"projet-atre-steakhouse.html\"",
+        "Ajouter texte ou aria-label"
+      ],
+      [
+        "CRITIQUE",
+        "2.4.4",
+        "Lien sans texte ni aria-label : href=\"projet-dental-glow.html\"",
+        "Ajouter texte ou aria-label"
+      ],
+      [
+        "MOYEN",
+        "2.4.1",
+        "Skip link absent ou non detecte",
+        "Ajouter lien \"Aller au contenu\""
+      ]
+    ],
+    "critique": 2,
+    "moyen": 1,
+    "info": 0,
+    "statut": "ANOMALIE"
+  },
+  {
+    "file": "projet-dental-glow.html",
+    "lang": "fr",
+    "title": "Dental Glow — Site cabinet dentaire premium | Aziz Studio Di",
+    "h1_count": 1,
+    "h1_text": "Dental Glow",
+    "images_count": 2,
+    "images_sans_alt": 0,
+    "links_count": 49,
+    "buttons_count": 2,
+    "inputs_count": 5,
+    "labels_count": 5,
+    "has_main": true,
+    "has_header": true,
+    "has_footer": true,
+    "has_nav": true,
+    "has_skip": false,
+    "aria_current": true,
+    "aria_expanded": true,
+    "details_faq": 0,
+    "issues": [
+      [
+        "CRITIQUE",
+        "2.4.4",
+        "Lien sans texte ni aria-label : href=\"projet-cabinet-maxwell.html\"",
+        "Ajouter texte ou aria-label"
+      ],
+      [
+        "CRITIQUE",
+        "2.4.4",
+        "Lien sans texte ni aria-label : href=\"projet-molato-commerce.html\"",
+        "Ajouter texte ou aria-label"
+      ],
+      [
+        "MOYEN",
+        "2.4.1",
+        "Skip link absent ou non detecte",
+        "Ajouter lien \"Aller au contenu\""
+      ]
+    ],
+    "critique": 2,
+    "moyen": 1,
+    "info": 0,
+    "statut": "ANOMALIE"
+  },
+  {
+    "file": "projet-molato-commerce.html",
+    "lang": "fr",
+    "title": "Molato Commerce — Marketplace e-commerce africain | Aziz Stu",
+    "h1_count": 1,
+    "h1_text": "Molato Commerce",
+    "images_count": 2,
+    "images_sans_alt": 0,
+    "links_count": 49,
+    "buttons_count": 2,
+    "inputs_count": 5,
+    "labels_count": 5,
+    "has_main": true,
+    "has_header": true,
+    "has_footer": true,
+    "has_nav": true,
+    "has_skip": false,
+    "aria_current": true,
+    "aria_expanded": true,
+    "details_faq": 0,
+    "issues": [
+      [
+        "CRITIQUE",
+        "2.4.4",
+        "Lien sans texte ni aria-label : href=\"projet-dental-glow.html\"",
+        "Ajouter texte ou aria-label"
+      ],
+      [
+        "CRITIQUE",
+        "2.4.4",
+        "Lien sans texte ni aria-label : href=\"projet-agence-voyage.html\"",
+        "Ajouter texte ou aria-label"
+      ],
+      [
+        "MOYEN",
+        "2.4.1",
+        "Skip link absent ou non detecte",
+        "Ajouter lien \"Aller au contenu\""
+      ]
+    ],
+    "critique": 2,
+    "moyen": 1,
+    "info": 0,
+    "statut": "ANOMALIE"
+  },
+  {
+    "file": "refonte-site.html",
+    "lang": "fr",
+    "title": "Refonte de site web au Congo | Aziz Studio Digital",
+    "h1_count": 1,
+    "h1_text": "Modernisez votre site web pour gagner en performan",
+    "images_count": 0,
+    "images_sans_alt": 0,
+    "links_count": 47,
+    "buttons_count": 2,
+    "inputs_count": 1,
+    "labels_count": 1,
+    "has_main": true,
+    "has_header": true,
+    "has_footer": true,
+    "has_nav": true,
+    "has_skip": false,
+    "aria_current": true,
+    "aria_expanded": true,
+    "details_faq": 5,
+    "issues": [
+      [
+        "MOYEN",
+        "2.4.1",
+        "Skip link absent ou non detecte",
+        "Ajouter lien \"Aller au contenu\""
+      ]
+    ],
+    "critique": 0,
+    "moyen": 1,
+    "info": 0,
+    "statut": "ATTENTION"
+  },
+  {
+    "file": "restaurant.html",
+    "lang": "fr",
+    "title": "Site web pour restaurant au Congo | Aziz Studio Digital",
+    "h1_count": 1,
+    "h1_text": "Site web pour restaurants",
+    "images_count": 1,
+    "images_sans_alt": 0,
+    "links_count": 48,
+    "buttons_count": 2,
+    "inputs_count": 1,
+    "labels_count": 1,
+    "has_main": true,
+    "has_header": true,
+    "has_footer": true,
+    "has_nav": true,
+    "has_skip": false,
+    "aria_current": true,
+    "aria_expanded": true,
+    "details_faq": 3,
+    "issues": [
+      [
+        "CRITIQUE",
+        "2.4.4",
+        "Lien sans texte ni aria-label : href=\"hotel.html\"",
+        "Ajouter texte ou aria-label"
+      ],
+      [
+        "CRITIQUE",
+        "2.4.4",
+        "Lien sans texte ni aria-label : href=\"immobilier.html\"",
+        "Ajouter texte ou aria-label"
+      ],
+      [
+        "MOYEN",
+        "2.4.1",
+        "Skip link absent ou non detecte",
+        "Ajouter lien \"Aller au contenu\""
+      ]
+    ],
+    "critique": 2,
+    "moyen": 1,
+    "info": 0,
+    "statut": "ANOMALIE"
+  },
+  {
+    "file": "salon-beaute.html",
+    "lang": "fr",
+    "title": "Site web salon de beauté au Congo | Aziz Studio Digital",
+    "h1_count": 1,
+    "h1_text": "Site web pour salons de beauté",
+    "images_count": 1,
+    "images_sans_alt": 0,
+    "links_count": 48,
+    "buttons_count": 2,
+    "inputs_count": 1,
+    "labels_count": 1,
+    "has_main": true,
+    "has_header": true,
+    "has_footer": true,
+    "has_nav": true,
+    "has_skip": false,
+    "aria_current": true,
+    "aria_expanded": true,
+    "details_faq": 3,
+    "issues": [
+      [
+        "CRITIQUE",
+        "2.4.4",
+        "Lien sans texte ni aria-label : href=\"pharmacie.html\"",
+        "Ajouter texte ou aria-label"
+      ],
+      [
+        "CRITIQUE",
+        "2.4.4",
+        "Lien sans texte ni aria-label : href=\"voyage.html\"",
+        "Ajouter texte ou aria-label"
+      ],
+      [
+        "MOYEN",
+        "2.4.1",
+        "Skip link absent ou non detecte",
+        "Ajouter lien \"Aller au contenu\""
+      ]
+    ],
+    "critique": 2,
+    "moyen": 1,
+    "info": 0,
+    "statut": "ANOMALIE"
+  },
+  {
+    "file": "seo.html",
+    "lang": "fr",
+    "title": "Référencement Naturel SEO au Congo | Aziz Studio Digital",
+    "h1_count": 1,
+    "h1_text": "Référencement naturel SEO au Congo pour attirer pl",
+    "images_count": 0,
+    "images_sans_alt": 0,
+    "links_count": 47,
+    "buttons_count": 2,
+    "inputs_count": 1,
+    "labels_count": 1,
+    "has_main": true,
+    "has_header": true,
+    "has_footer": true,
+    "has_nav": true,
+    "has_skip": false,
+    "aria_current": true,
+    "aria_expanded": true,
+    "details_faq": 5,
+    "issues": [
+      [
+        "MOYEN",
+        "2.4.1",
+        "Skip link absent ou non detecte",
+        "Ajouter lien \"Aller au contenu\""
+      ]
+    ],
+    "critique": 0,
+    "moyen": 1,
+    "info": 0,
+    "statut": "ATTENTION"
+  },
+  {
+    "file": "services.html",
+    "lang": "fr",
+    "title": "Nos Services web & SEO au Congo | Aziz Studio Digital",
+    "h1_count": 1,
+    "h1_text": "Des solutions web pensées pour développer votre en",
+    "images_count": 0,
+    "images_sans_alt": 0,
+    "links_count": 52,
+    "buttons_count": 2,
+    "inputs_count": 1,
+    "labels_count": 1,
+    "has_main": true,
+    "has_header": true,
+    "has_footer": true,
+    "has_nav": true,
+    "has_skip": false,
+    "aria_current": true,
+    "aria_expanded": true,
+    "details_faq": 0,
+    "issues": [
+      [
+        "MOYEN",
+        "2.4.1",
+        "Skip link absent ou non detecte",
+        "Ajouter lien \"Aller au contenu\""
+      ]
+    ],
+    "critique": 0,
+    "moyen": 1,
+    "info": 0,
+    "statut": "ATTENTION"
+  },
+  {
+    "file": "solutions.html",
+    "lang": "fr",
+    "title": "Solutions web par secteur au Congo | Aziz Studio Digital",
+    "h1_count": 1,
+    "h1_text": "Des solutions web conçues pour développer votre ac",
+    "images_count": 0,
+    "images_sans_alt": 0,
+    "links_count": 62,
+    "buttons_count": 2,
+    "inputs_count": 1,
+    "labels_count": 1,
+    "has_main": true,
+    "has_header": true,
+    "has_footer": true,
+    "has_nav": true,
+    "has_skip": false,
+    "aria_current": true,
+    "aria_expanded": true,
+    "details_faq": 5,
+    "issues": [
+      [
+        "MOYEN",
+        "2.4.1",
+        "Skip link absent ou non detecte",
+        "Ajouter lien \"Aller au contenu\""
+      ]
+    ],
+    "critique": 0,
+    "moyen": 1,
+    "info": 0,
+    "statut": "ATTENTION"
+  },
+  {
+    "file": "tarifs.html",
+    "lang": "fr",
+    "title": "Tarifs création de site web au Congo | Aziz Studio Digital",
+    "h1_count": 1,
+    "h1_text": "Tarifs création de site web & services digitaux au",
+    "images_count": 0,
+    "images_sans_alt": 0,
+    "links_count": 55,
+    "buttons_count": 2,
+    "inputs_count": 1,
+    "labels_count": 1,
+    "has_main": true,
+    "has_header": true,
+    "has_footer": true,
+    "has_nav": true,
+    "has_skip": false,
+    "aria_current": true,
+    "aria_expanded": true,
+    "details_faq": 6,
+    "issues": [
+      [
+        "MOYEN",
+        "2.4.1",
+        "Skip link absent ou non detecte",
+        "Ajouter lien \"Aller au contenu\""
+      ]
+    ],
+    "critique": 0,
+    "moyen": 1,
+    "info": 0,
+    "statut": "ATTENTION"
+  },
+  {
+    "file": "voyage.html",
+    "lang": "fr",
+    "title": "Site web agence de voyage au Congo | Aziz Studio Digital",
+    "h1_count": 1,
+    "h1_text": "Site web pour agences de voyage",
+    "images_count": 1,
+    "images_sans_alt": 0,
+    "links_count": 48,
+    "buttons_count": 2,
+    "inputs_count": 1,
+    "labels_count": 1,
+    "has_main": true,
+    "has_header": true,
+    "has_footer": true,
+    "has_nav": true,
+    "has_skip": false,
+    "aria_current": true,
+    "aria_expanded": true,
+    "details_faq": 3,
+    "issues": [
+      [
+        "CRITIQUE",
+        "2.4.4",
+        "Lien sans texte ni aria-label : href=\"salon-beaute.html\"",
+        "Ajouter texte ou aria-label"
+      ],
+      [
+        "CRITIQUE",
+        "2.4.4",
+        "Lien sans texte ni aria-label : href=\"hotel.html\"",
+        "Ajouter texte ou aria-label"
+      ],
+      [
+        "MOYEN",
+        "2.4.1",
+        "Skip link absent ou non detecte",
+        "Ajouter lien \"Aller au contenu\""
+      ]
+    ],
+    "critique": 2,
+    "moyen": 1,
+    "info": 0,
+    "statut": "ANOMALIE"
+  },
+  {
+    "file": "wordpress.html",
+    "lang": "fr",
+    "title": "Développement WordPress au Congo | Aziz Studio Digital",
+    "h1_count": 1,
+    "h1_text": "Développement WordPress sur-mesure & performant au",
+    "images_count": 0,
+    "images_sans_alt": 0,
+    "links_count": 47,
+    "buttons_count": 2,
+    "inputs_count": 1,
+    "labels_count": 1,
+    "has_main": true,
+    "has_header": true,
+    "has_footer": true,
+    "has_nav": true,
+    "has_skip": false,
+    "aria_current": true,
+    "aria_expanded": true,
+    "details_faq": 5,
+    "issues": [
+      [
+        "MOYEN",
+        "2.4.1",
+        "Skip link absent ou non detecte",
+        "Ajouter lien \"Aller au contenu\""
+      ]
+    ],
+    "critique": 0,
+    "moyen": 1,
+    "info": 0,
+    "statut": "ATTENTION"
+  }
+]

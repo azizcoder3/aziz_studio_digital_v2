@@ -1,0 +1,141 @@
+/* ==========================================================================
+   TYPOGRAPHY STYLES
+   ========================================================================== */
+
+body {
+    font-family: var(--font-primary);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-400);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: var(--color-text-primary);
+    font-weight: var(--font-weight-700);
+    line-height: 1.25;
+    margin-bottom: var(--spacing-16px);
+}
+
+h1 {
+    font-size: var(--font-size-3xl); /* Desktop size scaled down for mobile-first */
+    font-weight: var(--font-weight-800);
+    letter-spacing: -0.02em;
+}
+
+h2 {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-700);
+    letter-spacing: -0.01em;
+}
+
+h3 {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-700);
+}
+
+h4 {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-600);
+}
+
+h5 {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-600);
+}
+
+h6 {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-600);
+}
+
+/* Responsive Headings Scaling (Desktop adjustments) */
+@media (min-width: 768px) {
+    h1 {
+        font-size: var(--font-size-4xl);
+    }
+    h2 {
+        font-size: var(--font-size-3xl);
+    }
+    h3 {
+        font-size: var(--font-size-2xl);
+    }
+    h4 {
+        font-size: var(--font-size-xl);
+    }
+    h5 {
+        font-size: var(--font-size-lg);
+    }
+    h6 {
+        font-size: var(--font-size-base);
+    }
+}
+
+/* Paragraphs & Inline Formatting */
+p {
+    font-size: var(--font-size-base);
+    margin-bottom: var(--spacing-16px);
+}
+
+strong {
+    font-weight: var(--font-weight-700);
+    color: var(--color-text-primary);
+}
+
+small {
+    font-size: var(--font-size-sm);
+}
+
+/* Anchor links */
+a {
+    color: var(--color-accent);
+    transition: color var(--transition-fast);
+}
+
+a:hover:not(.btn),
+a:focus:not(.btn) {
+    color: var(--color-primary);
+    outline: none;
+}
+
+/* Lists */
+ul, ol {
+    margin-bottom: var(--spacing-16px);
+    padding-left: var(--spacing-24px);
+}
+
+ul {
+    list-style-type: disc;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+li {
+    margin-bottom: var(--spacing-8px);
+}
+
+/* Blockquote */
+blockquote {
+    border-left: 4px solid var(--color-accent);
+    padding: var(--spacing-8px) var(--spacing-16px);
+    margin: 0 0 var(--spacing-16px) 0;
+    font-style: italic;
+    color: var(--color-text-primary);
+    background-color: var(--color-surface);
+    border-radius: 0 var(--radius-medium) var(--radius-medium) 0;
+}
+
+/* Code */
+code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-size: var(--font-size-sm);
+    color: var(--color-accent);
+    background-color: var(--color-background);
+    padding: var(--spacing-4px) var(--spacing-8px);
+    border-radius: var(--radius-small);
+    border: 1px solid var(--color-border);
+}

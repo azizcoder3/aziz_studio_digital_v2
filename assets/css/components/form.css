@@ -1,0 +1,159 @@
+/* ==========================================================================
+   FORMS STYLING
+   ========================================================================== */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-8px);
+    margin-bottom: var(--spacing-24px);
+    width: 100%;
+}
+
+.form-label {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-600);
+    color: var(--color-text-primary);
+}
+
+/* Inputs, Textareas, Selects */
+.form-input,
+.form-textarea,
+.form-select {
+    width: 100%;
+    padding: var(--spacing-12px) var(--spacing-16px);
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-medium);
+    color: var(--color-text-primary);
+    font-family: var(--font-primary);
+    font-size: var(--font-size-base);
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.form-input:focus,
+.form-textarea:focus,
+.form-select:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px hsla(var(--color-accent-h), var(--color-accent-s), var(--color-accent-l), 0.15);
+}
+
+.form-input:disabled,
+.form-textarea:disabled,
+.form-select:disabled {
+    background-color: var(--color-background);
+    color: var(--color-text-secondary);
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+/* Custom styling for file selection or selects */
+.form-select {
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+    background-position: right var(--spacing-12px) center;
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+    padding-right: var(--spacing-48px);
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+/* Checkbox and Radio styling wrapper */
+.form-check {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-8px);
+    cursor: pointer;
+    user-select: none;
+}
+
+.form-check-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
+    padding: 0;
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-small);
+    outline: none;
+    cursor: pointer;
+    display: inline-grid;
+    place-content: center;
+    background-color: var(--color-surface);
+    transition: all var(--transition-fast);
+    margin-top: 2px;
+    flex-shrink: 0;
+    box-sizing: content-box;
+}
+
+.form-check-input[type="radio"] {
+    border-radius: var(--radius-circle);
+}
+
+.form-check-input::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    transform: scale(0);
+    transition: transform var(--transition-fast);
+    background-color: var(--color-accent);
+    box-shadow: inset 1em 1em var(--color-accent);
+}
+
+.form-check-input[type="checkbox"]::before {
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+.form-check-input[type="radio"]::before {
+    border-radius: var(--radius-circle);
+}
+
+.form-check-input:checked::before {
+    transform: scale(1);
+}
+
+.form-check-input:checked {
+    border-color: var(--color-accent);
+}
+
+.form-check-input:focus-visible {
+    box-shadow: 0 0 0 3px hsla(var(--color-accent-h), var(--color-accent-s), var(--color-accent-l), 0.15);
+}
+
+/* States: Error & Success */
+.form-group.has-error .form-input,
+.form-group.has-error .form-textarea,
+.form-group.has-error .form-select {
+    border-color: var(--color-danger);
+}
+
+.form-group.has-error .form-input:focus {
+    box-shadow: 0 0 0 3px hsla(var(--color-danger-h), var(--color-danger-s), var(--color-danger-l), 0.15);
+}
+
+.form-group.has-error .form-feedback {
+    font-size: var(--font-size-xs);
+    color: var(--color-danger);
+    font-weight: var(--font-weight-500);
+}
+
+.form-group.has-success .form-input,
+.form-group.has-success .form-textarea,
+.form-group.has-success .form-select {
+    border-color: var(--color-success);
+}
+
+.form-group.has-success .form-input:focus {
+    box-shadow: 0 0 0 3px hsla(var(--color-success-h), var(--color-success-s), var(--color-success-l), 0.15);
+}
+
+.form-group.has-success .form-feedback {
+    font-size: var(--font-size-xs);
+    color: var(--color-success);
+    font-weight: var(--font-weight-500);
+}

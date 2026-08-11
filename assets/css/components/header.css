@@ -1,0 +1,288 @@
+/* ==========================================================================
+   HEADER COMPONENT
+   ========================================================================== */
+
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: var(--z-index-header);
+    background-color: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+    transition: padding var(--transition-normal), 
+                background-color var(--transition-normal), 
+                box-shadow var(--transition-normal);
+    padding: var(--spacing-16px) 0;
+}
+
+/* Header container layout */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo styling */
+.logo {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-800);
+    color: var(--color-text-primary);
+    white-space: nowrap;
+    transition: transform var(--transition-fast);
+}
+
+.logo:hover {
+    transform: scale(1.02);
+}
+
+.logo .text-accent {
+    color: var(--color-accent);
+}
+
+/* ==========================================================================
+   NAVIGATION - MOBILE PANEL (MOBILE-FIRST DEFAULT)
+   ========================================================================== */
+
+.primary-navigation {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: calc(var(--z-index-header) - 1);
+    background-color: var(--color-surface);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-64px) var(--spacing-24px);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: opacity var(--transition-normal),
+                visibility var(--transition-normal),
+                transform var(--transition-normal);
+}
+
+/* State when menu is open */
+.primary-navigation.is-open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-24px);
+    margin-bottom: var(--spacing-32px);
+}
+
+.nav-link {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-600);
+    color: var(--color-text-primary);
+    transition: color var(--transition-fast);
+    position: relative;
+    padding: var(--spacing-4px) 0;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--color-accent);
+}
+
+/* Active Link Indicator */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-accent);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform var(--transition-fast);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Mobile CTA placement */
+.mobile-cta-wrapper {
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+}
+
+.desktop-cta-wrapper {
+    display: none; /* Hidden on mobile */
+}
+
+/* ==========================================================================
+   HAMBURGER BUTTON STYLING
+   ========================================================================== */
+
+.mobile-nav-toggle {
+    display: block;
+    z-index: var(--z-index-header);
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-medium);
+    transition: background-color var(--transition-fast);
+}
+
+.mobile-nav-toggle:hover {
+    background-color: var(--color-background);
+}
+
+.hamburger-box {
+    width: 24px;
+    height: 18px;
+    display: inline-block;
+    position: relative;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+    width: 24px;
+    height: 2px;
+    background-color: var(--color-text-primary);
+    position: absolute;
+    transition: transform var(--transition-normal),
+                background-color var(--transition-fast);
+    border-radius: var(--radius-pill);
+}
+
+.hamburger-inner {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hamburger-inner::before {
+    content: '';
+    top: -8px;
+}
+
+.hamburger-inner::after {
+    content: '';
+    bottom: -8px;
+}
+
+/* Active Hamburger Animation */
+.mobile-nav-toggle[aria-expanded="true"] .hamburger-inner {
+    background-color: transparent;
+}
+
+.mobile-nav-toggle[aria-expanded="true"] .hamburger-inner::before {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.mobile-nav-toggle[aria-expanded="true"] .hamburger-inner::after {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* ==========================================================================
+   BUTTONS (LOCAL CTA OVERRIDES)
+   ========================================================================== */
+
+.cta-button {
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-600);
+    padding: var(--spacing-12px) var(--spacing-24px);
+    border-radius: var(--radius-pill);
+    font-size: var(--font-size-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    background-color: var(--color-accent);
+    color: hsl(var(--color-surface-h), var(--color-surface-s), var(--color-surface-l)) !important;
+    box-shadow: var(--shadow-md);
+    transition: background-color var(--transition-fast),
+                transform var(--transition-fast),
+                box-shadow var(--transition-fast);
+    display: inline-block;
+}
+
+.cta-button:hover,
+.cta-button:focus-visible {
+    background-color: var(--color-primary);
+    color: hsl(var(--color-surface-h), var(--color-surface-s), var(--color-surface-l)) !important;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.cta-button:active {
+    transform: translateY(0);
+}
+
+/* ==========================================================================
+   STICKY HEADER SCROLLED STATE
+   ========================================================================== */
+
+.site-header.is-scrolled {
+    padding: var(--spacing-8px) 0;
+    box-shadow: var(--shadow-md);
+    background-color: hsla(var(--color-surface-h), var(--color-surface-s), var(--color-surface-l), 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN - LAPTOP BREAKPOINT AND UP
+   ========================================================================== */
+
+@media (min-width: 1024px) {
+    .site-header {
+        padding: var(--spacing-24px) 0;
+    }
+    
+    .mobile-nav-toggle {
+        display: none; /* Hide hamburger on desktop */
+    }
+    
+    .primary-navigation {
+        position: static;
+        z-index: auto;
+        background-color: transparent;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        transition: none;
+    }
+    
+    .nav-list {
+        flex-direction: row;
+        gap: var(--spacing-32px);
+        margin-bottom: 0;
+    }
+    
+    .nav-link {
+        font-size: var(--font-size-base);
+        font-weight: var(--font-weight-500);
+    }
+    
+    .mobile-cta-wrapper {
+        display: none; /* Hide mobile panel cta */
+    }
+    
+    .desktop-cta-wrapper {
+        display: block; /* Show desktop cta */
+    }
+}

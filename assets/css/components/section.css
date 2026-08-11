@@ -1,0 +1,63 @@
+/* ==========================================================================
+   SECTIONS STYLING
+   ========================================================================== */
+
+.section {
+    padding: var(--spacing-64px) 0;
+    position: relative;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .section {
+        padding: var(--spacing-96px) 0;
+    }
+}
+
+/* Section Header Alignment */
+.section-header {
+    max-width: 680px;
+    margin-bottom: var(--spacing-48px);
+}
+
+.section-header-center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.section-header .badge {
+    margin-bottom: var(--spacing-16px);
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    font-weight: var(--font-weight-800);
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-16px);
+}
+
+.section-subtitle {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
+/* Section Variations */
+.section-light {
+    background-color: var(--color-background);
+}
+
+.section-surface {
+    background-color: var(--color-surface);
+}
+
+.section-alt {
+    background-color: hsl(var(--color-primary-h), var(--color-primary-s), calc(var(--color-primary-l) + 65%));
+}
+
+@media (prefers-color-scheme: dark) {
+    .section-alt {
+        background-color: hsl(var(--color-primary-h), var(--color-primary-s), calc(var(--color-primary-l) - 15%));
+    }
+}

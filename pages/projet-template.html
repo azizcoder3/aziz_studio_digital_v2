@@ -1,0 +1,102 @@
+<main class="main-content" id="main-content" role="main">
+
+    <!-- 1. Breadcrumb -->
+    <div class="services-breadcrumb-wrapper">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Fil d'Ariane">
+                <ol class="breadcrumb-list" role="list">
+                    <li class="breadcrumb-item"><a href="index.html" class="breadcrumb-link">Accueil</a></li>
+                    <li class="breadcrumb-separator" aria-hidden="true">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+                    </li>
+                    <li class="breadcrumb-item"><a href="portfolio.html" class="breadcrumb-link">Réalisations</a></li>
+                    <li class="breadcrumb-separator" aria-hidden="true">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+                    </li>
+                    <li class="breadcrumb-item breadcrumb-item-active" aria-current="page"><span>Nom du Projet</span></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- 2. Hero split -->
+    <section class="section projet-hero" id="hero-projet">
+        <div class="container">
+            <div class="projet-hero-grid">
+                <div class="projet-hero-content">
+                    <div class="projet-hero-badge">
+                        <span class="badge badge-primary">Catégorie Projet</span>
+                    </div>
+                    <h1 class="projet-hero-title">Titre du Projet</h1>
+                    <p class="projet-hero-subtitle">Sous-titre descriptif du projet web</p>
+                    <p class="projet-hero-description">
+                        Description détaillée du projet, ses objectifs, les problématiques résolues et les technologies utilisées pour délivrer une expérience web optimale.
+                    </p>
+                    <div class="projet-hero-meta">
+                        <div class="projet-meta-item">
+                            <span class="projet-meta-label">Année</span>
+                            <span class="projet-meta-value">2026</span>
+                        </div>
+                        <div class="projet-meta-item">
+                            <span class="projet-meta-label">Catégorie</span>
+                            <span class="projet-meta-value">Type de Projet</span>
+                        </div>
+                        <div class="projet-meta-item">
+                            <span class="projet-meta-label">Marché</span>
+                            <span class="projet-meta-value">Congo</span>
+                        </div>
+                    </div>
+                    <div class="projet-hero-actions">
+                        <a href="contact.html" class="btn btn-primary">Voir le projet en ligne</a>
+                        <a href="portfolio.html" class="btn btn-outline">Toutes les réalisations</a>
+                    </div>
+                </div>
+                <div class="projet-hero-image-wrapper">
+                    <img
+                        src="assets/images/portfolio/hero-placeholder.webp"
+                        alt="Capture d'écran de l'aperçu du projet"
+                        class="projet-hero-img"
+                        loading="eager"
+                        width="800"
+                        height="460"
+                    >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Aperçu interactif -->
+    <section class="section projet-apercu-section" id="apercu-demo">
+        <div class="container">
+            <div class="section-header section-header-center">
+                <span class="badge badge-secondary">👁️ Aperçu interactif</span>
+                <h2 class="section-title">Démo du site</h2>
+                <p class="section-subtitle">Survolez la fenêtre pour faire défiler l'aperçu complet du site.</p>
+            </div>
+            <div class="browser-mockup" tabindex="0" aria-label="Aperçu interactif — survolez pour faire défiler">
+                <div class="browser-bar" aria-hidden="true">
+                    <div class="browser-dots">
+                        <span class="browser-dot browser-dot-red"></span>
+                        <span class="browser-dot browser-dot-yellow"></span>
+                        <span class="browser-dot browser-dot-green"></span>
+                    </div>
+                    <span class="browser-address-bar">projet-demo.netlify.app</span>
+                </div>
+                <div class="browser-viewport">
+                    <img
+                        src="assets/images/portfolio/hero-placeholder.webp"
+                        alt="Capture complète du site"
+                        class="browser-scroll-img"
+                        loading="lazy"
+                        width="1200"
+                    >
+                </div>
+            </div>
+            <p class="browser-hint">
+                <svg class="browser-hint-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+                Survolez l'aperçu pour faire défiler le site
+            </p>
+        </div>
+    </section>
+
+</main>

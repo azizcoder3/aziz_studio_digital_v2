@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Développement web : les étapes clés | Aziz Studio Digital</title>
+    <meta name="description" content="Découvrez les 6 étapes concrètes qui jalonnent un projet web professionnel : découverte, proposition, design, développement, validation et mise en ligne.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://azizstudiodigital.netlify.app/blog-article-developpement-web.html">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Développement web : les étapes clés | Aziz Studio Digital">
+    <meta property="og:description" content="Découvrez les 6 étapes concrètes qui jalonnent un projet web professionnel : découverte, proposition, design, développement, validation et mise en ligne.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://azizstudiodigital.netlify.app/blog-article-developpement-web.html">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&q=80">
+    <meta property="og:locale" content="fr_FR">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Développement web : les étapes clés | Aziz Studio Digital">
+    <meta name="twitter:description" content="Découvrez les 6 étapes concrètes qui jalonnent un projet web professionnel : découverte, proposition, design, développement, validation et mise en ligne.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&q=80">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS Base -->
+    <link rel="stylesheet" href="assets/css/base/variables.css">
+    <link rel="stylesheet" href="assets/css/base/reset.css">
+    <link rel="stylesheet" href="assets/css/base/typography.css">
+    <link rel="stylesheet" href="assets/css/base/base.css">
+
+    <!-- CSS Composants -->
+    <link rel="stylesheet" href="assets/css/components/container.css">
+    <link rel="stylesheet" href="assets/css/components/grid.css">
+    <link rel="stylesheet" href="assets/css/components/section.css">
+    <link rel="stylesheet" href="assets/css/components/card.css">
+    <link rel="stylesheet" href="assets/css/components/badge.css">
+    <link rel="stylesheet" href="assets/css/components/button.css">
+    <link rel="stylesheet" href="assets/css/components/header.css">
+    <link rel="stylesheet" href="assets/css/components/footer.css">
+
+    <link rel="stylesheet" href="assets/css/pages/services.css">
+    <link rel="stylesheet" href="assets/css/pages/creation-site-web.css">
+    <link rel="stylesheet" href="assets/css/pages/blog.css">
+    <link rel="stylesheet" href="assets/css/pages/blog-article.css">
+
+    <style>
+        body {
+            padding-top: 73px;
+        }
+        @media (min-width: 1024px) {
+            body {
+                padding-top: 90px;
+            }
+        }
+
+        .nav-list,
+        .nav-list li {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links,
+        .footer-contact-info,
+        .hero-arguments,
+        .cta-benefits-list,
+        .cta-outcomes-list {
+            list-style: none;
+            padding-left: 0;
+        }
+    </style>
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Aller au contenu principal</a>
+<header class="site-header" id="site-header" role="banner">
+    <div class="container header-container">
+        <!-- Logo -->
+        <a href="index.html" class="logo" aria-label="Aziz Studio Digital - Retour à l'accueil">
+            <span class="logo-text">Aziz <span class="text-accent">Studio</span> Digital</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button type="button" class="mobile-nav-toggle" id="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Menu principal">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+
+        <!-- Navigation System -->
+        <nav class="primary-navigation" id="primary-navigation" aria-label="Navigation principale">
+            <ul class="nav-list" role="list">
+                <li class="nav-item"><a href="index.html" class="nav-link" id="nav-home">Accueil</a></li>
+                <li class="nav-item"><a href="services.html" class="nav-link" id="nav-services">Services</a></li>
+                <li class="nav-item"><a href="solutions.html" class="nav-link" id="nav-solutions">Solutions</a></li>
+                <li class="nav-item"><a href="portfolio.html" class="nav-link" id="nav-portfolio">Portfolio</a></li>
+                <li class="nav-item"><a href="blog.html" class="nav-link active" aria-current="page" id="nav-blog">Blog</a></li>
+                <li class="nav-item"><a href="tarifs.html" class="nav-link" id="nav-tarifs">Tarifs</a></li>
+                <li class="nav-item"><a href="a-propos.html" class="nav-link" id="nav-about">À propos</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link" id="nav-contact">Contact</a></li>
+            </ul>
+            
+            <!-- Mobile CTA (shows only in mobile panel) -->
+            <div class="mobile-cta-wrapper">
+                <a href="contact.html?type=devis" class="btn btn-primary cta-button">Demander un devis</a>
+            </div>
+        </nav>
+
+        <!-- Desktop CTA -->
+        <div class="desktop-cta-wrapper">
+            <a href="contact.html?type=devis" class="btn btn-primary cta-button">Demander un devis</a>
+        </div>
+    </div>
+</header>
+
+
+<!-- ==========================================================================
+   ARTICLE 3 - DEVELOPPEMENT WEB - FRAGMENT SOURCE (SPRINT 37)
+   Aziz Studio Digital V2
+   ========================================================================== -->
+
+<main class="main-content" id="main-content" role="main" itemscope itemtype="https://schema.org/Article">
+
+    <!-- 1. Breadcrumb -->
+    <div class="services-breadcrumb-wrapper">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Fil d'Ariane">
+                <ol class="breadcrumb-list" role="list">
+                    <li class="breadcrumb-item">
+                        <a href="index.html" class="breadcrumb-link">Accueil</a>
+                    </li>
+                    <li class="breadcrumb-separator" aria-hidden="true">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="blog.html" class="breadcrumb-link">Blog</a>
+                    </li>
+                    <li class="breadcrumb-separator" aria-hidden="true">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </li>
+                    <li class="breadcrumb-item breadcrumb-item-active" aria-current="page">
+                        <span itemprop="name">Création Web</span>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- 2. Hero Article -->
+    <section class="article-hero" id="hero-article-devweb">
+        <div class="container">
+            <span class="badge badge-primary" itemprop="articleSection">Création Web</span>
+
+            <h1 class="service-hero-title" itemprop="headline" style="max-width: 800px; margin: var(--spacing-16px) auto 0 auto;">
+                Les étapes clés du développement web avec une agence professionnelle
+            </h1>
+
+            <div class="article-meta-header">
+                <div class="article-meta-item" itemprop="author" itemscope itemtype="https://schema.org/Person">
+                    <svg class="meta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    <span itemprop="name">Aziz</span>
+                </div>
+                <div class="article-meta-item">
+                    <svg class="meta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                    <time itemprop="datePublished" datetime="2026-07-27">27/07/2026</time>
+                </div>
+                <div class="article-meta-item">
+                    <svg class="meta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                    <span>Temps de lecture : 6 min</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Contenu de l'article -->
+    <section class="section" id="article-content-devweb">
+        <div class="container">
+            <div class="article-content-wrapper" itemprop="articleBody">
+
+                <!-- Image de mise en avant (Simulée) -->
+                <div class="article-hero-image-wrapper" style="border-radius: var(--radius-large); overflow: hidden; margin-bottom: var(--spacing-48px);" itemprop="image">
+                    <img
+                        src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&q=80"
+                        alt="Illustration article développement web - Étapes clés avec une agence professionnelle"
+                        style="width: 100%; height: 350px; object-fit: cover; display: block;"
+                        width="800"
+                        height="350"
+                        loading="eager"
+                    >
+                </div>
+
+                <div class="article-body">
+                    <p class="lead" style="font-size: var(--font-size-lg); font-weight: var(--font-weight-600); margin-bottom: var(--spacing-32px);">
+                        Confier la création de son site web à une agence peut sembler flou quand on ne connaît pas le processus. Voici, étape par étape, ce qui se passe concrètement entre le premier contact et la mise en ligne de votre site — pour savoir à quoi vous attendre.
+                    </p>
+
+                    <!-- Sommaire -->
+                    <div class="article-toc">
+                        <h2 class="article-toc-title">Sommaire</h2>
+                        <ul class="article-toc-list">
+                            <li>
+                                <svg class="meta-icon" style="color: var(--color-accent);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                                <a href="#dw-en-bref">En bref</a>
+                            </li>
+                            <li>
+                                <svg class="meta-icon" style="color: var(--color-accent);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                                <a href="#dw-section-1">1. La découverte : comprendre votre besoin réel</a>
+                            </li>
+                            <li>
+                                <svg class="meta-icon" style="color: var(--color-accent);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                                <a href="#dw-section-2">2. La proposition : un cadre clair avant de commencer</a>
+                            </li>
+                            <li>
+                                <svg class="meta-icon" style="color: var(--color-accent);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                                <a href="#dw-section-3">3. Le design : donner une identité visuelle</a>
+                            </li>
+                            <li>
+                                <svg class="meta-icon" style="color: var(--color-accent);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                                <a href="#dw-section-4">4. Le développement : construire le site</a>
+                            </li>
+                            <li>
+                                <svg class="meta-icon" style="color: var(--color-accent);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                                <a href="#dw-section-5">5. La validation et la mise en ligne</a>
+                            </li>
+                            <li>
+                                <svg class="meta-icon" style="color: var(--color-accent);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                                <a href="#faq-dw">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <h2 id="dw-en-bref">En bref</h2>
+                    <ul>
+                        <li>Un projet web sérieux se déroule toujours en plusieurs étapes distinctes, jamais en un seul bloc.</li>
+                        <li>Chaque étape produit un livrable concret que vous pouvez valider avant de passer à la suivante.</li>
+                        <li>La durée totale dépend de la complexité du site, mais un site vitrine se réalise généralement en quelques semaines.</li>
+                    </ul>
+
+                    <h2 id="dw-section-1">1. La découverte : comprendre votre besoin réel</h2>
+                    <p>Tout projet commence par un échange sur votre activité, vos objectifs et vos contraintes. Cette étape sert à cadrer précisément ce dont vous avez besoin — un site vitrine simple n'a pas les mêmes exigences qu'une boutique en ligne ou un site institutionnel.</p>
+                    <p><strong>Ce que vous obtenez :</strong> une vision claire du projet, et des conseils adaptés à votre situation plutôt qu'une solution générique.</p>
+
+                    <h2 id="dw-section-2">2. La proposition : un cadre clair avant de commencer</h2>
+                    <p>Sur la base des échanges précédents, l'agence prépare une offre détaillée : ce qui est inclus, le délai estimé, et le prix. C'est le moment de poser toutes vos questions avant de vous engager.</p>
+
+                    <div class="article-info-box">
+                        <div class="article-info-box-title">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                            Info utile
+                        </div>
+                        <p style="margin-bottom: 0;">Méfiez-vous d'un devis flou ou d'un prix "à l'instinct" sans détail des prestations incluses. Un devis sérieux précise exactement ce qui est livré : nombre de pages, fonctionnalités, hébergement, maintenance éventuelle.</p>
+                    </div>
+
+                    <h2 id="dw-section-3">3. Le design : donner une identité visuelle à votre projet</h2>
+                    <p>Avant de développer quoi que ce soit, l'agence conçoit une maquette qui représente l'apparence future du site — couleurs, mise en page, ton visuel. Cette étape permet de valider le rendu avant de passer au développement, pour éviter les allers-retours coûteux plus tard.</p>
+                    <p><strong>Ce que vous obtenez :</strong> une maquette sur-mesure et, souvent, un prototype interactif pour se projeter concrètement.</p>
+
+                    <h2 id="dw-section-4">4. Le développement : construire le site pour de vrai</h2>
+                    <p>C'est l'étape où le design validé devient un vrai site fonctionnel : intégration technique, optimisation pour les moteurs de recherche (SEO), adaptation à tous les écrans (responsive), tests de bon fonctionnement.</p>
+                    <p><strong>Ce que vous obtenez :</strong> un site rapide, fonctionnel, et déjà pensé pour être bien référencé sur Google.</p>
+
+                    <h2 id="dw-section-5">5. La validation et la mise en ligne</h2>
+                    <p>Avant la mise en ligne, le site passe par une phase de test rigoureuse : vérification des formulaires, des liens, de l'affichage sur différents appareils, correction des derniers détails. C'est aussi le moment pour vous de faire vos dernières remarques.</p>
+
+                    <div class="article-info-box">
+                        <div class="article-info-box-title">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                            Erreur fréquente
+                        </div>
+                        <p style="margin-bottom: 0;">Sauter cette étape pour gagner du temps est risqué : un lien cassé ou un formulaire défaillant découvert après la mise en ligne peut coûter des clients potentiels.</p>
+                    </div>
+
+                    <p>Le site est ensuite publié officiellement sur votre nom de domaine. Une bonne agence vous forme aussi à la prise en main de votre site et reste disponible pour un accompagnement après le lancement.</p>
+
+                    <h2>Combien de temps dure vraiment ce processus ?</h2>
+                    <p>Pour un site vitrine classique, comptez généralement de quelques jours à quelques semaines selon la complexité et votre réactivité à fournir les contenus (textes, photos). Un projet plus complexe (e-commerce, fonctionnalités sur-mesure) demandera naturellement plus de temps.</p>
+
+                    <div class="article-blockquote">
+                        Chaque étape produit un livrable concret que vous validez avant de passer à la suivante — pas de mauvaise surprise à la livraison.
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. FAQ Article Développement Web -->
+    <section class="section section-surface" id="faq-dw">
+        <div class="container">
+            <div class="section-header section-header-center">
+                <div class="faq-badge-wrapper">
+                    <span class="badge badge-secondary">❓ Questions fréquentes</span>
+                </div>
+                <h2 class="section-title">FAQ sur le développement web avec une agence</h2>
+            </div>
+
+            <div class="faq-accordion-wrapper" style="max-width: 800px; margin: 0 auto;">
+                <div class="faq-accordion">
+
+                    <details class="faq-item card" open>
+                        <summary class="faq-summary">
+                            <div class="faq-question">
+                                <div class="faq-icon-wrapper" aria-hidden="true">
+                                    <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                </div>
+                                <h3 class="faq-question-title">Dois-je préparer quelque chose avant de contacter une agence ?</h3>
+                            </div>
+                            <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p class="faq-answer-text">Ce n'est pas indispensable, mais avoir une idée de vos objectifs et, si possible, quelques exemples de sites que vous aimez accélère grandement la phase de découverte.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item card">
+                        <summary class="faq-summary">
+                            <div class="faq-question">
+                                <div class="faq-icon-wrapper" aria-hidden="true">
+                                    <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                                </div>
+                                <h3 class="faq-question-title">Puis-je demander des modifications en cours de projet ?</h3>
+                            </div>
+                            <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p class="faq-answer-text">Oui, c'est justement le rôle des étapes de validation (design, puis test final) — elles existent pour ajuster le projet avant la livraison finale, pas seulement après.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item card">
+                        <summary class="faq-summary">
+                            <div class="faq-question">
+                                <div class="faq-icon-wrapper" aria-hidden="true">
+                                    <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                                </div>
+                                <h3 class="faq-question-title">Que se passe-t-il après la mise en ligne de mon site ?</h3>
+                            </div>
+                            <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p class="faq-answer-text">Un bon accompagnement ne s'arrête pas à la livraison : maintenance, mises à jour de sécurité et support restent importants pour garder un site performant dans la durée.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item card">
+                        <summary class="faq-summary">
+                            <div class="faq-question">
+                                <div class="faq-icon-wrapper" aria-hidden="true">
+                                    <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+                                </div>
+                                <h3 class="faq-question-title">Puis-je gérer mon site moi-même après la livraison ?</h3>
+                            </div>
+                            <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p class="faq-answer-text">Cela dépend de la technologie utilisée (par exemple WordPress le permet facilement) et c'est une question à poser dès la phase de découverte pour que la solution soit adaptée à votre autonomie souhaitée.</p>
+                        </div>
+                    </details>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. CTA Final (composant officiel) -->
+    <section class="section service-final-cta-section" id="cta-final-article-devweb">
+        <div class="container">
+            <div class="card service-cta-final-card">
+                <div class="card-body service-cta-final-body">
+                    <div class="service-cta-final-content">
+                        <span class="badge badge-primary">⚡ Lancez votre projet</span>
+                        <h2 class="service-cta-final-title">Prêt à démarrer votre projet web ?</h2>
+                        <p class="service-cta-final-text">
+                            Obtenez un devis gratuit et détaillé sous 72h ou discutez directement de votre projet avec notre équipe.
+                        </p>
+                    </div>
+                    <div class="service-cta-final-actions">
+                        <a href="contact.html?type=devis&amp;service=creation-site-web" class="btn btn-primary">Demander un devis gratuit</a>
+                        <a href="contact.html" class="btn btn-outline">Parler de votre projet</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+
+<footer class="site-footer" id="site-footer" role="contentinfo">
+    <div class="container footer-container">
+        <!-- Top Section: Logo & Newsletter -->
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="index.html" class="logo" aria-label="Aziz Studio Digital - Retour à l'accueil">
+                    <span class="logo-text">Aziz <span class="text-accent">Studio</span> Digital</span>
+                </a>
+                <p class="brand-description">
+                    Aziz Studio Digital accompagne les entreprises, hôtels, restaurants, agences immobilières, cabinets médicaux et autres professionnels dans leur transformation digitale grâce à la création de sites web modernes, au référencement SEO et aux solutions numériques.
+                </p>
+                <div class="social-links">
+                    <a href="https://facebook.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <svg class="social-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                    </a>
+                    <a href="https://linkedin.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg class="social-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                    <a href="https://github.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <svg class="social-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Newsletter Section -->
+            <div class="footer-newsletter">
+                <h2 class="footer-title">Newsletter</h2>
+                <p class="newsletter-text">Abonnez-vous à notre newsletter pour recevoir nos dernières actualités et conseils du digital.</p>
+                <form class="newsletter-form" id="newsletter-form" onsubmit="event.preventDefault();">
+                    <div class="form-group">
+                        <label for="newsletter-email" class="sr-only">Adresse e-mail</label>
+                        <input type="email" id="newsletter-email" name="email" class="newsletter-input" placeholder="Votre adresse e-mail" required aria-required="true">
+                        <button type="submit" class="newsletter-submit" aria-label="S'abonner">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="submit-icon" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Middle Section: Navigation Links & Columns -->
+        <div class="footer-middle">
+            <!-- Col 1: Navigation Rapide -->
+            <div class="footer-col">
+                <h2 class="footer-title">Navigation</h2>
+                <ul class="footer-links">
+                    <li><a href="index.html" class="footer-link">Accueil</a></li>
+                    <li><a href="services.html" class="footer-link">Services</a></li>
+                    <li><a href="solutions.html" class="footer-link">Solutions</a></li>
+                    <li><a href="portfolio.html" class="footer-link">Portfolio</a></li>
+                    <li><a href="blog.html" class="footer-link">Blog</a></li>
+                    <li><a href="tarifs.html" class="footer-link">Tarifs</a></li>
+                    <li><a href="a-propos.html" class="footer-link">À propos</a></li>
+                    <li><a href="contact.html" class="footer-link">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 2: Services -->
+            <div class="footer-col footer-col-double">
+                <h2 class="footer-title">Nos Services</h2>
+                <ul class="footer-links services-grid">
+                    <li><a href="services.html#vitrine" class="footer-link">Site vitrine</a></li>
+                    <li><a href="services.html#ecommerce" class="footer-link">Site e-commerce</a></li>
+                    <li><a href="hotel.html" class="footer-link">Site hôtel</a></li>
+                    <li><a href="restaurant.html" class="footer-link">Site restaurant</a></li>
+                    <li><a href="immobilier.html" class="footer-link">Site agence immobilière</a></li>
+                    <li><a href="clinique.html" class="footer-link">Site clinique</a></li>
+                    <li><a href="cabinet-medical.html" class="footer-link">Site cabinet médical</a></li>
+                    <li><a href="cabinet-dentaire.html" class="footer-link">Site cabinet dentaire</a></li>
+                    <li><a href="pharmacie.html" class="footer-link">Site pharmacie</a></li>
+                    <li><a href="salon-beaute.html" class="footer-link">Site salon de beauté</a></li>
+                    <li><a href="voyage.html" class="footer-link">Site agence de voyage</a></li>
+                    <li><a href="services.html#seo" class="footer-link">Référencement SEO</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Coordonnées -->
+            <div class="footer-col">
+                <h2 class="footer-title">Coordonnées</h2>
+                <ul class="footer-contact-info">
+                    <li class="contact-item">
+                        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                        <span>République du Congo (Brazzaville / Pointe-Noire)</span>
+                    </li>
+                    <li class="contact-item">
+                        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                        <a href="tel:+242060000000" class="contact-link">+242 06 000 00 00</a>
+                    </li>
+                    <li class="contact-item">
+                        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12a4 4 0 118 0 4 4 0 01-8 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" /><path stroke-linecap="round" stroke-linejoin="round" d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" /></svg>
+                        <a href="https://wa.me/242060000000" class="contact-link" target="_blank" rel="noopener noreferrer">WhatsApp Chat</a>
+                    </li>
+                    <li class="contact-item">
+                        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                        <a href="mailto:azizstudio.dev@gmail.com" class="contact-link">azizstudio.dev@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom Section: Copyright & Legal links -->
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                <p>&copy; <span id="footer-year">2026</span> Aziz Studio Digital. Tous droits réservés.</p>
+            </div>
+            <div class="footer-legal-links">
+                <a href="politique-confidentialite.html" class="legal-link">Politique de confidentialité</a>
+                <a href="mentions-legales.html" class="legal-link">Mentions légales</a>
+                <a href="conditions-utilisation.html" class="legal-link">Conditions d'utilisation</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

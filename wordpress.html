@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Développement WordPress au Congo | Aziz Studio Digital</title>
+    <meta name="description" content="Création et développement de sites WordPress professionnels, autonomes, sécurisés et optimisés pour le SEO au Congo par Aziz Studio Digital.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://azizstudiodigital.netlify.app/wordpress.html">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Développement WordPress au Congo | Aziz Studio Digital">
+    <meta property="og:description" content="Création et développement de sites WordPress professionnels, autonomes, sécurisés et optimisés pour le SEO au Congo par Aziz Studio Digital.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://azizstudiodigital.netlify.app/wordpress.html">
+    <meta property="og:image" content="https://azizstudiodigital.netlify.app/assets/images/home/hero-illustration.webp">
+    <meta property="og:locale" content="fr_FR">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Développement WordPress au Congo | Aziz Studio Digital">
+    <meta name="twitter:description" content="Création et développement de sites WordPress professionnels, autonomes, sécurisés et optimisés pour le SEO au Congo par Aziz Studio Digital.">
+    <meta name="twitter:image" content="https://azizstudiodigital.netlify.app/assets/images/home/hero-illustration.webp">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS Base -->
+    <link rel="stylesheet" href="assets/css/base/variables.css">
+    <link rel="stylesheet" href="assets/css/base/reset.css">
+    <link rel="stylesheet" href="assets/css/base/typography.css">
+    <link rel="stylesheet" href="assets/css/base/base.css">
+
+    <!-- CSS Composants -->
+    <link rel="stylesheet" href="assets/css/components/container.css">
+    <link rel="stylesheet" href="assets/css/components/grid.css">
+    <link rel="stylesheet" href="assets/css/components/section.css">
+    <link rel="stylesheet" href="assets/css/components/card.css">
+    <link rel="stylesheet" href="assets/css/components/badge.css">
+    <link rel="stylesheet" href="assets/css/components/button.css">
+    <link rel="stylesheet" href="assets/css/components/header.css">
+    <link rel="stylesheet" href="assets/css/components/footer.css">
+
+    <link rel="stylesheet" href="assets/css/pages/services.css">
+    <link rel="stylesheet" href="assets/css/pages/creation-site-web.css">
+    <link rel="stylesheet" href="assets/css/pages/wordpress.css">
+
+    <style>
+        body {
+            padding-top: 73px;
+        }
+        @media (min-width: 1024px) {
+            body {
+                padding-top: 90px;
+            }
+        }
+
+        .nav-list,
+        .nav-list li {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links,
+        .footer-contact-info,
+        .hero-arguments,
+        .cta-benefits-list,
+        .cta-outcomes-list {
+            list-style: none;
+            padding-left: 0;
+        }
+    </style>
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Aller au contenu principal</a>
+<header class="site-header" id="site-header" role="banner">
+    <div class="container header-container">
+        <!-- Logo -->
+        <a href="index.html" class="logo" aria-label="Aziz Studio Digital - Retour à l'accueil">
+            <span class="logo-text">Aziz <span class="text-accent">Studio</span> Digital</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button type="button" class="mobile-nav-toggle" id="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Menu principal">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+
+        <!-- Navigation System -->
+        <nav class="primary-navigation" id="primary-navigation" aria-label="Navigation principale">
+            <ul class="nav-list" role="list">
+                <li class="nav-item"><a href="index.html" class="nav-link" id="nav-home">Accueil</a></li>
+                <li class="nav-item"><a href="services.html" class="nav-link active" aria-current="page" id="nav-services">Services</a></li>
+                <li class="nav-item"><a href="solutions.html" class="nav-link" id="nav-solutions">Solutions</a></li>
+                <li class="nav-item"><a href="portfolio.html" class="nav-link" id="nav-portfolio">Portfolio</a></li>
+                <li class="nav-item"><a href="blog.html" class="nav-link" id="nav-blog">Blog</a></li>
+                <li class="nav-item"><a href="tarifs.html" class="nav-link" id="nav-tarifs">Tarifs</a></li>
+                <li class="nav-item"><a href="a-propos.html" class="nav-link" id="nav-about">À propos</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link" id="nav-contact">Contact</a></li>
+            </ul>
+            
+            <!-- Mobile CTA (shows only in mobile panel) -->
+            <div class="mobile-cta-wrapper">
+                <a href="contact.html?type=devis" class="btn btn-primary cta-button">Demander un devis</a>
+            </div>
+        </nav>
+
+        <!-- Desktop CTA -->
+        <div class="desktop-cta-wrapper">
+            <a href="contact.html?type=devis" class="btn btn-primary cta-button">Demander un devis</a>
+        </div>
+    </div>
+</header>
+
+
+<!-- ==========================================================================
+   DEVELOPPEMENT WORDPRESS - PAGE SERVICE (SPRINT 23)
+   Aziz Studio Digital V2 - Base sur Template Officiel (creation-site-web.html)
+   ========================================================================== -->
+
+<main class="main-content" id="main-content" role="main">
+
+    <!-- 1. Breadcrumb & Hero Section -->
+    <div class="services-breadcrumb-wrapper">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Fil d'Ariane">
+                <ol class="breadcrumb-list" role="list">
+                    <li class="breadcrumb-item">
+                        <a href="index.html" class="breadcrumb-link">Accueil</a>
+                    </li>
+                    <li class="breadcrumb-separator" aria-hidden="true">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="services.html" class="breadcrumb-link">Services</a>
+                    </li>
+                    <li class="breadcrumb-separator" aria-hidden="true">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </li>
+                    <li class="breadcrumb-item breadcrumb-item-active" aria-current="page">
+                        <span>Développement WordPress</span>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="section service-single-hero" id="hero-service-detail">
+        <div class="container">
+            <div class="grid grid-md-2 service-hero-grid">
+                
+                <!-- Left Column: Content -->
+                <div class="service-hero-content">
+                    <div class="service-hero-badge-wrapper">
+                        <span class="badge badge-primary">🔷 DÉVELOPPEMENT WORDPRESS</span>
+                    </div>
+
+                    <h1 class="service-hero-title">
+                        Développement WordPress sur-mesure &amp; performant au Congo
+                    </h1>
+
+                    <p class="service-hero-description">
+                        Spécialiste du <strong>CMS WordPress</strong> au <strong>Congo</strong>, notre <strong>agence web</strong> conçoit des sites d'entreprise autonomes, rapides, 100% sécurisés et optimisés pour le <strong>SEO</strong> sur Google afin de développer efficacement votre présence en ligne.
+                    </p>
+
+                    <div class="service-hero-actions">
+                        <a href="contact.html?type=devis&amp;service=wordpress" class="btn btn-primary">Demander un devis WordPress</a>
+                        <a href="portfolio.html" class="btn btn-outline">Voir nos réalisations</a>
+                    </div>
+                </div>
+
+                <!-- Right Column: Visual Mockup Illustration -->
+                <div class="service-hero-visual" aria-hidden="true">
+                    <div class="hero-dashboard">
+                        <div class="hero-dashboard-header">
+                            <div class="hero-dashboard-dots">
+                                <span class="dot dot-red"></span>
+                                <span class="dot dot-yellow"></span>
+                                <span class="dot dot-green"></span>
+                            </div>
+                            <div class="hero-dashboard-title-bar">
+                                <span class="dashboard-url-badge">votre-site.cg</span>
+                            </div>
+                        </div>
+
+                        <div class="hero-dashboard-body">
+                            <div class="dashboard-sidebar">
+                                <div class="sidebar-item active"></div>
+                                <div class="sidebar-item"></div>
+                                <div class="sidebar-item"></div>
+                            </div>
+                            
+                            <div class="dashboard-main">
+                                <div class="dashboard-stats-row">
+                                    <div class="dash-card">
+                                        <div class="dash-card-header">
+                                            <span class="dash-label">Score Vitesse</span>
+                                            <span class="dash-value">98/100</span>
+                                        </div>
+                                        <div class="dash-progress-bar">
+                                            <div class="dash-progress-fill p-99"></div>
+                                        </div>
+                                    </div>
+                                    <div class="dash-card">
+                                        <div class="dash-card-header">
+                                            <span class="dash-label">Mobile Ready</span>
+                                            <span class="dash-value">100%</span>
+                                        </div>
+                                        <div class="dash-sparkline">
+                                            <div class="spark-bar h-60"></div>
+                                            <div class="spark-bar h-80"></div>
+                                            <div class="spark-bar h-100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="dashboard-grid-row">
+                                    <div class="dash-card code-preview-card">
+                                        <div class="code-line code-line-lg"></div>
+                                        <div class="code-line code-line-md"></div>
+                                    </div>
+                                    <div class="dash-card floating-feature-card">
+                                        <div class="feature-badge-icon">⚙️</div>
+                                        <div class="feature-card-text">
+                                            <span class="feature-title">WordPress Sur-Mesure</span>
+                                            <span class="feature-sub">Gutenberg &amp; SEO Ready</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Section Pourquoi choisir WordPress -->
+    <section class="section section-surface" id="pourquoi-ce-service">
+        <div class="container">
+            <div class="section-header section-header-center">
+                <span class="badge badge-secondary">💡 Vos enjeux</span>
+                <h2 class="section-title">Pourquoi choisir WordPress pour votre site d'entreprise ?</h2>
+                <p class="section-subtitle">
+                    WordPress alimente plus de 43% des sites web dans le monde. C'est la solution idéale pour allier autonomie de gestion, évolutivité et puissance SEO au Congo.
+                </p>
+            </div>
+
+            <div class="grid grid-md-2 grid-lg-4">
+                <article class="card service-reason-card">
+                    <div class="card-body">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Gestion 100% autonome</h3>
+                        <p class="card-description">
+                            Mettez à jour vos textes, images, actualités et offres très simplement depuis une interface intuitive, sans compétence technique.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card service-reason-card">
+                    <div class="card-body">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Flexibilité &amp; Évolutivité</h3>
+                        <p class="card-description">
+                            Du site vitrine à la plateforme sur-mesure, votre site évolue facilement au rythme de la croissance de votre entreprise.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card service-reason-card">
+                    <div class="card-body">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                <polyline points="2 17 12 22 22 17"></polyline>
+                                <polyline points="2 12 12 17 22 12"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Écosystème &amp; Plugins</h3>
+                        <p class="card-description">
+                            Accédez à un écosystème riche pour intégrer des fonctionnalités avancées (formulaires, e-commerce, multilingue) sans réinventer la roue.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card service-reason-card">
+                    <div class="card-body">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Optimisé pour Google</h3>
+                        <p class="card-description">
+                            Profitez d'une structure nativement pensée pour faciliter l'indexation, le référencement SEO et l'acquisition de prospects.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Section Ce qui est inclus -->
+    <section class="section" id="ce-qui-est-inclus">
+        <div class="container">
+            <div class="section-header section-header-center">
+                <span class="badge badge-primary">📦 Ce qui est inclus</span>
+                <h2 class="section-title">Une prestation WordPress clé en main sans mauvaise surprise</h2>
+                <p class="section-subtitle">
+                    Nous prenons en charge l'intégralité du déploiement technique et créatif de votre futur site WordPress.
+                </p>
+            </div>
+
+            <div class="grid grid-md-2 grid-lg-3">
+                <article class="card service-feature-card">
+                    <div class="card-body">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Installation &amp; Configuration</h3>
+                        <p class="card-description">
+                            Déploiement de la dernière version de WordPress sur des serveurs rapides avec base de données optimisée.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card service-feature-card">
+                    <div class="card-body">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Thème Sur-Mesure &amp; Responsive</h3>
+                        <p class="card-description">
+                            Conception d'un design unique respectant votre identité visuelle et adapté à tous les écrans mobiles.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card service-feature-card">
+                    <div class="card-body">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Plugins Essentiels &amp; Sécurité</h3>
+                        <p class="card-description">
+                            Sélection et paramétrage des meilleures extensions pour la sécurité, le cache, la vitesse et les sauvegardes.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card service-feature-card">
+                    <div class="card-body">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Optimisation SEO &amp; Vitesse</h3>
+                        <p class="card-description">
+                            Balisage HTML sémantique, compression des images et configuration complète de votre extension SEO (RankMath / Yoast).
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card service-feature-card">
+                    <div class="card-body">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Sécurisation SSL &amp; HTTPS</h3>
+                        <p class="card-description">
+                            Protection renforcée contre les piratages, installation d'un certificat SSL et sauvegardes automatiques.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card service-feature-card">
+                    <div class="card-body">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Formation &amp; Autonomie</h3>
+                        <p class="card-description">
+                            Session de formation sur-mesure pour apprendre à administrer votre site WordPress en toute indépendance.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Section Notre méthode (Timeline Premium identique Home) -->
+    <section class="section section-surface" id="notre-methode">
+        <div class="container">
+            <div class="section-header section-header-center">
+                <div class="processus-badge-wrapper">
+                    <span class="badge badge-primary">⚙️ Notre méthode</span>
+                </div>
+                <h2 class="section-title">Un processus éprouvé pour réussir votre site WordPress</h2>
+                <p class="section-subtitle">
+                    4 étapes rigoureuses pour concevoir votre projet WordPress dans le respect des délais et de votre budget.
+                </p>
+            </div>
+
+            <!-- Premium Process Timeline (Identique Home - 4 étapes) -->
+            <div class="processus-timeline" aria-label="Notre méthode en 4 étapes">
+                <!-- Ligne continue de connexion -->
+                <div class="timeline-track" aria-hidden="true"></div>
+
+                <!-- Grille des 4 étapes -->
+                <div class="processus-steps-grid grid-4-steps">
+                    
+                    <!-- Étape 01 -->
+                    <div class="timeline-step">
+                        <div class="timeline-node">
+                            <span class="step-number" aria-label="Étape 01">01</span>
+                        </div>
+                        <article class="card processus-card">
+                            <div class="card-body">
+                                <div class="processus-card-header">
+                                    <div class="processus-icon-wrapper" aria-hidden="true">
+                                        <svg class="processus-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                                    </div>
+                                </div>
+                                <h3 class="card-title">Audit &amp; Cahier des charges</h3>
+                                <p class="card-description">
+                                    Analyse de vos besoins au Congo, définition de l'arborescence et sélection des fonctionnalités WordPress adaptées.
+                                </p>
+                                <div class="processus-outcomes">
+                                    <h4 class="outcomes-title">Vous obtenez :</h4>
+                                    <ul class="outcomes-list" role="list">
+                                        <li><svg class="outcome-check" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Vision claire du projet</li>
+                                        <li><svg class="outcome-check" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Cahier des charges validé</li>
+                                    </ul>
+                                </div>
+                                <div class="processus-duration">
+                                    <svg class="clock-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                    <span>Durée : 1 à 2 jours</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Étape 02 -->
+                    <div class="timeline-step">
+                        <div class="timeline-node">
+                            <span class="step-number" aria-label="Étape 02">02</span>
+                        </div>
+                        <article class="card processus-card">
+                            <div class="card-body">
+                                <div class="processus-card-header">
+                                    <div class="processus-icon-wrapper" aria-hidden="true">
+                                        <svg class="processus-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                                    </div>
+                                </div>
+                                <h3 class="card-title">Design &amp; Maquettage UX</h3>
+                                <p class="card-description">
+                                    Conception des maquettes visuelles personnalisées et validation de l'expérience utilisateur (UI/UX).
+                                </p>
+                                <div class="processus-outcomes">
+                                    <h4 class="outcomes-title">Vous obtenez :</h4>
+                                    <ul class="outcomes-list" role="list">
+                                        <li><svg class="outcome-check" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Maquettes sur-mesure</li>
+                                        <li><svg class="outcome-check" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Prototype mobile validé</li>
+                                    </ul>
+                                </div>
+                                <div class="processus-duration">
+                                    <svg class="clock-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                    <span>Durée : 3 à 5 jours</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Étape 03 -->
+                    <div class="timeline-step">
+                        <div class="timeline-node">
+                            <span class="step-number" aria-label="Étape 03">03</span>
+                        </div>
+                        <article class="card processus-card">
+                            <div class="card-body">
+                                <div class="processus-card-header">
+                                    <div class="processus-icon-wrapper" aria-hidden="true">
+                                        <svg class="processus-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                                    </div>
+                                </div>
+                                <h3 class="card-title">Développement WordPress</h3>
+                                <p class="card-description">
+                                    Intégration du thème sur-mesure, configuration des extensions et optimisation de la vitesse de chargement.
+                                </p>
+                                <div class="processus-outcomes">
+                                    <h4 class="outcomes-title">Vous obtenez :</h4>
+                                    <ul class="outcomes-list" role="list">
+                                        <li><svg class="outcome-check" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Thème propre &amp; rapide</li>
+                                        <li><svg class="outcome-check" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Site fonctionnel &amp; SEO</li>
+                                    </ul>
+                                </div>
+                                <div class="processus-duration">
+                                    <svg class="clock-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                    <span>Durée : 1 à 2 semaines</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Étape 04 -->
+                    <div class="timeline-step">
+                        <div class="timeline-node">
+                            <span class="step-number" aria-label="Étape 04">04</span>
+                        </div>
+                        <article class="card processus-card">
+                            <div class="card-body">
+                                <div class="processus-card-header">
+                                    <div class="processus-icon-wrapper" aria-hidden="true">
+                                        <svg class="processus-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                    </div>
+                                </div>
+                                <h3 class="card-title">Recette, Formation &amp; Lancement</h3>
+                                <p class="card-description">
+                                    Tests de sécurité, mise en ligne officielle sur votre nom de domaine et formation vidéo à la gestion du CMS.
+                                </p>
+                                <div class="processus-outcomes">
+                                    <h4 class="outcomes-title">Vous obtenez :</h4>
+                                    <ul class="outcomes-list" role="list">
+                                        <li><svg class="outcome-check" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Site WordPress en ligne</li>
+                                        <li><svg class="outcome-check" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Formation &amp; Support inclus</li>
+                                    </ul>
+                                </div>
+                                <div class="processus-duration">
+                                    <svg class="clock-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                    <span>Durée : Suivi continu</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Section Pourquoi Aziz Studio Digital -->
+    <section class="section" id="pourquoi-aziz-studio">
+        <div class="container">
+            <div class="section-header section-header-center">
+                <span class="badge badge-primary">⭐ Pourquoi nous choisir</span>
+                <h2 class="section-title">Votre agence partenaire pour vos projets WordPress au Congo</h2>
+                <p class="section-subtitle">
+                    Nous combinons expertise technique WordPress, réactivité locale et vision orientée conversion.
+                </p>
+            </div>
+
+            <div class="grid grid-md-2 grid-lg-4">
+                <div class="card service-trust-card">
+                    <div class="card-body">
+                        <div class="service-icon" aria-hidden="true">💻</div>
+                        <h3 class="card-title">Experts WordPress</h3>
+                        <p class="card-description">Maîtrise approfondie du CMS WordPress, développement de thèmes sur-mesure et code propre sans surcharge.</p>
+                    </div>
+                </div>
+
+                <div class="card service-trust-card">
+                    <div class="card-body">
+                        <div class="service-icon" aria-hidden="true">💎</div>
+                        <h3 class="card-title">Transparence totale</h3>
+                        <p class="card-description">Devis clair, tarifs sans surprise et propriété exclusive à 100% de votre site et de ses accès.</p>
+                    </div>
+                </div>
+
+                <div class="card service-trust-card">
+                    <div class="card-body">
+                        <div class="service-icon" aria-hidden="true">⚡</div>
+                        <h3 class="card-title">Sites ultrarapides</h3>
+                        <p class="card-description">Optimisation avancée des performances (Core Web Vitals) pour des chargements sous les 2 secondes.</p>
+                    </div>
+                </div>
+
+                <div class="card service-trust-card">
+                    <div class="card-body">
+                        <div class="service-icon" aria-hidden="true">🛠️</div>
+                        <h3 class="card-title">Accompagnement réactif</h3>
+                        <p class="card-description">Un support client humain et disponible au Congo pour vous accompagner après le lancement.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Section FAQ (Premium Accordion identique Home) -->
+    <section class="section section-surface" id="faq-service">
+        <div class="container">
+            <div class="section-header section-header-center">
+                <div class="faq-badge-wrapper">
+                    <span class="badge badge-primary">❓ Questions fréquentes</span>
+                </div>
+                <h2 class="section-title">Questions fréquentes sur le développement WordPress</h2>
+                <p class="section-subtitle">
+                    Des réponses claires et précises aux interrogations les plus courantes sur nos prestations WordPress.
+                </p>
+            </div>
+
+            <div class="faq-accordion-wrapper">
+                <div class="faq-accordion">
+                    
+                    <!-- Q1 -->
+                    <details class="faq-item card" open>
+                        <summary class="faq-summary">
+                            <div class="faq-question">
+                                <div class="faq-icon-wrapper" aria-hidden="true">
+                                    <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                </div>
+                                <h3 class="faq-question-title">Combien de temps faut-il pour développer un site WordPress ?</h3>
+                            </div>
+                            <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p class="faq-answer-text">
+                                Le délai moyen pour la réalisation d'un site vitrine WordPress professionnel est de 2 à 3 semaines, selon le nombre de pages et les fonctionnalités demandées.
+                            </p>
+                        </div>
+                    </details>
+
+                    <!-- Q2 -->
+                    <details class="faq-item card">
+                        <summary class="faq-summary">
+                            <div class="faq-question">
+                                <div class="faq-icon-wrapper" aria-hidden="true">
+                                    <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                                </div>
+                                <h3 class="faq-question-title">Puis-je modifier les contenus de mon site WordPress facilement ?</h3>
+                            </div>
+                            <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p class="faq-answer-text">
+                                Tout à fait. WordPress est réputé pour sa simplicité. Grâce à l'éditeur Gutenberg et à la formation personnalisée que nous vous fournissons, vous pourrez modifier textes, images et ajouter de nouveaux articles en toute autonomie.
+                            </p>
+                        </div>
+                    </details>
+
+                    <!-- Q3 -->
+                    <details class="faq-item card">
+                        <summary class="faq-summary">
+                            <div class="faq-question">
+                                <div class="faq-icon-wrapper" aria-hidden="true">
+                                    <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                                </div>
+                                <h3 class="faq-question-title">WordPress est-il performant pour le référencement Google au Congo ?</h3>
+                            </div>
+                            <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p class="faq-answer-text">
+                                Oui, parfaitement. WordPress offre une structure de code idéale pour les moteurs de recherche. Associé à notre travail d'optimisation SEO (balises, vitesse, sitemap XML), votre site disposera de tous les atouts pour se positionner au Congo.
+                            </p>
+                        </div>
+                    </details>
+
+                    <!-- Q4 -->
+                    <details class="faq-item card">
+                        <summary class="faq-summary">
+                            <div class="faq-question">
+                                <div class="faq-icon-wrapper" aria-hidden="true">
+                                    <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+                                </div>
+                                <h3 class="faq-question-title">Assurez-vous la maintenance et la sécurité de mon site WordPress ?</h3>
+                            </div>
+                            <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p class="faq-answer-text">
+                                Oui. Nous proposons des formules de maintenance préventive incluant les mises à jour du cœur WordPress, des plugins, les sauvegardes régulières et la surveillance contre les vulnérabilités.
+                            </p>
+                        </div>
+                    </details>
+
+                    <!-- Q5 -->
+                    <details class="faq-item card">
+                        <summary class="faq-summary">
+                            <div class="faq-question">
+                                <div class="faq-icon-wrapper" aria-hidden="true">
+                                    <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
+                                </div>
+                                <h3 class="faq-question-title">Quel est le coût d'une création de site WordPress ?</h3>
+                            </div>
+                            <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p class="faq-answer-text">
+                                Nos tarifs sont transparents et personnalisés selon l'envergure de votre projet. Nous proposons des modalités de paiement échelonnées (ex: 50% à la commande, 50% à la livraison) pour préserver votre trésorerie.
+                            </p>
+                        </div>
+                    </details>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Section CTA Final -->
+    <section class="section service-final-cta-section" id="cta-final-service">
+        <div class="container">
+            <div class="card service-cta-final-card">
+                <div class="card-body service-cta-final-body">
+                    <div class="service-cta-final-content">
+                        <span class="badge badge-primary">⚡ Lancez votre projet</span>
+                        <h2 class="service-cta-final-title">Prêt à créer votre site WordPress professionnel au Congo ?</h2>
+                        <p class="service-cta-final-text">
+                            Obtenez un devis gratuit et détaillé sous 72h ou discutez directement de votre projet avec notre équipe d'experts.
+                        </p>
+                    </div>
+                    <div class="service-cta-final-actions">
+                        <a href="contact.html?type=devis&amp;service=wordpress" class="btn btn-primary">Demander un devis WordPress</a>
+                        <a href="contact.html" class="btn btn-outline">Parler de votre projet</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+
+<footer class="site-footer" id="site-footer" role="contentinfo">
+    <div class="container footer-container">
+        <!-- Top Section: Logo & Newsletter -->
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="index.html" class="logo" aria-label="Aziz Studio Digital - Retour à l'accueil">
+                    <span class="logo-text">Aziz <span class="text-accent">Studio</span> Digital</span>
+                </a>
+                <p class="brand-description">
+                    Aziz Studio Digital accompagne les entreprises, hôtels, restaurants, agences immobilières, cabinets médicaux et autres professionnels dans leur transformation digitale grâce à la création de sites web modernes, au référencement SEO et aux solutions numériques.
+                </p>
+                <div class="social-links">
+                    <a href="https://facebook.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <svg class="social-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                    </a>
+                    <a href="https://linkedin.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg class="social-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                    <a href="https://github.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <svg class="social-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Newsletter Section -->
+            <div class="footer-newsletter">
+                <h2 class="footer-title">Newsletter</h2>
+                <p class="newsletter-text">Abonnez-vous à notre newsletter pour recevoir nos dernières actualités et conseils du digital.</p>
+                <form class="newsletter-form" id="newsletter-form" onsubmit="event.preventDefault();">
+                    <div class="form-group">
+                        <label for="newsletter-email" class="sr-only">Adresse e-mail</label>
+                        <input type="email" id="newsletter-email" name="email" class="newsletter-input" placeholder="Votre adresse e-mail" required aria-required="true">
+                        <button type="submit" class="newsletter-submit" aria-label="S'abonner">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="submit-icon" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Middle Section: Navigation Links & Columns -->
+        <div class="footer-middle">
+            <!-- Col 1: Navigation Rapide -->
+            <div class="footer-col">
+                <h2 class="footer-title">Navigation</h2>
+                <ul class="footer-links">
+                    <li><a href="index.html" class="footer-link">Accueil</a></li>
+                    <li><a href="services.html" class="footer-link">Services</a></li>
+                    <li><a href="solutions.html" class="footer-link">Solutions</a></li>
+                    <li><a href="portfolio.html" class="footer-link">Portfolio</a></li>
+                    <li><a href="blog.html" class="footer-link">Blog</a></li>
+                    <li><a href="tarifs.html" class="footer-link">Tarifs</a></li>
+                    <li><a href="a-propos.html" class="footer-link">À propos</a></li>
+                    <li><a href="contact.html" class="footer-link">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 2: Services -->
+            <div class="footer-col footer-col-double">
+                <h2 class="footer-title">Nos Services</h2>
+                <ul class="footer-links services-grid">
+                    <li><a href="services.html#vitrine" class="footer-link">Site vitrine</a></li>
+                    <li><a href="services.html#ecommerce" class="footer-link">Site e-commerce</a></li>
+                    <li><a href="hotel.html" class="footer-link">Site hôtel</a></li>
+                    <li><a href="restaurant.html" class="footer-link">Site restaurant</a></li>
+                    <li><a href="immobilier.html" class="footer-link">Site agence immobilière</a></li>
+                    <li><a href="clinique.html" class="footer-link">Site clinique</a></li>
+                    <li><a href="cabinet-medical.html" class="footer-link">Site cabinet médical</a></li>
+                    <li><a href="cabinet-dentaire.html" class="footer-link">Site cabinet dentaire</a></li>
+                    <li><a href="pharmacie.html" class="footer-link">Site pharmacie</a></li>
+                    <li><a href="salon-beaute.html" class="footer-link">Site salon de beauté</a></li>
+                    <li><a href="voyage.html" class="footer-link">Site agence de voyage</a></li>
+                    <li><a href="services.html#seo" class="footer-link">Référencement SEO</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Coordonnées -->
+            <div class="footer-col">
+                <h2 class="footer-title">Coordonnées</h2>
+                <ul class="footer-contact-info">
+                    <li class="contact-item">
+                        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                        <span>République du Congo (Brazzaville / Pointe-Noire)</span>
+                    </li>
+                    <li class="contact-item">
+                        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                        <a href="tel:+242060000000" class="contact-link">+242 06 000 00 00</a>
+                    </li>
+                    <li class="contact-item">
+                        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12a4 4 0 118 0 4 4 0 01-8 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" /><path stroke-linecap="round" stroke-linejoin="round" d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" /></svg>
+                        <a href="https://wa.me/242060000000" class="contact-link" target="_blank" rel="noopener noreferrer">WhatsApp Chat</a>
+                    </li>
+                    <li class="contact-item">
+                        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                        <a href="mailto:azizstudio.dev@gmail.com" class="contact-link">azizstudio.dev@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom Section: Copyright & Legal links -->
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                <p>&copy; <span id="footer-year">2026</span> Aziz Studio Digital. Tous droits réservés.</p>
+            </div>
+            <div class="footer-legal-links">
+                <a href="politique-confidentialite.html" class="legal-link">Politique de confidentialité</a>
+                <a href="mentions-legales.html" class="legal-link">Mentions légales</a>
+                <a href="conditions-utilisation.html" class="legal-link">Conditions d'utilisation</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WordPress pour votre site d'entreprise | Aziz Studio Digital</title>
+    <meta name="description" content="WordPress est-il le bon choix pour votre entreprise au Congo ? Avantages, limites et cas d'usage expliqués clairement par Aziz Studio Digital.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://azizstudiodigital.netlify.app/blog-article-wordpress.html">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="WordPress pour votre site d'entreprise | Aziz Studio Digital">
+    <meta property="og:description" content="WordPress est-il le bon choix pour votre entreprise au Congo ? Avantages, limites et cas d'usage expliqués clairement par Aziz Studio Digital.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://azizstudiodigital.netlify.app/blog-article-wordpress.html">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1547658719-da2b51169166?w=800&q=80">
+    <meta property="og:locale" content="fr_FR">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="WordPress pour votre site d'entreprise | Aziz Studio Digital">
+    <meta name="twitter:description" content="WordPress est-il le bon choix pour votre entreprise au Congo ? Avantages, limites et cas d'usage expliqués clairement par Aziz Studio Digital.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1547658719-da2b51169166?w=800&q=80">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS Base -->
+    <link rel="stylesheet" href="assets/css/base/variables.css">
+    <link rel="stylesheet" href="assets/css/base/reset.css">
+    <link rel="stylesheet" href="assets/css/base/typography.css">
+    <link rel="stylesheet" href="assets/css/base/base.css">
+
+    <!-- CSS Composants -->
+    <link rel="stylesheet" href="assets/css/components/container.css">
+    <link rel="stylesheet" href="assets/css/components/grid.css">
+    <link rel="stylesheet" href="assets/css/components/section.css">
+    <link rel="stylesheet" href="assets/css/components/card.css">
+    <link rel="stylesheet" href="assets/css/components/badge.css">
+    <link rel="stylesheet" href="assets/css/components/button.css">
+    <link rel="stylesheet" href="assets/css/components/header.css">
+    <link rel="stylesheet" href="assets/css/components/footer.css">
+
+    <link rel="stylesheet" href="assets/css/pages/services.css">
+    <link rel="stylesheet" href="assets/css/pages/creation-site-web.css">
+    <link rel="stylesheet" href="assets/css/pages/blog.css">
+    <link rel="stylesheet" href="assets/css/pages/blog-article.css">
+
+    <style>
+        body {
+            padding-top: 73px;
+        }
+        @media (min-width: 1024px) {
+            body {
+                padding-top: 90px;
+            }
+        }
+
+        .nav-list,
+        .nav-list li {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links,
+        .footer-contact-info,
+        .hero-arguments,
+        .cta-benefits-list,
+        .cta-outcomes-list {
+            list-style: none;
+            padding-left: 0;
+        }
+    </style>
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Aller au contenu principal</a>
+<header class="site-header" id="site-header" role="banner">
+    <div class="container header-container">
+        <!-- Logo -->
+        <a href="index.html" class="logo" aria-label="Aziz Studio Digital - Retour à l'accueil">
+            <span class="logo-text">Aziz <span class="text-accent">Studio</span> Digital</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button type="button" class="mobile-nav-toggle" id="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Menu principal">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+
+        <!-- Navigation System -->
+        <nav class="primary-navigation" id="primary-navigation" aria-label="Navigation principale">
+            <ul class="nav-list" role="list">
+                <li class="nav-item"><a href="index.html" class="nav-link" id="nav-home">Accueil</a></li>
+                <li class="nav-item"><a href="services.html" class="nav-link" id="nav-services">Services</a></li>
+                <li class="nav-item"><a href="solutions.html" class="nav-link" id="nav-solutions">Solutions</a></li>
+                <li class="nav-item"><a href="portfolio.html" class="nav-link" id="nav-portfolio">Portfolio</a></li>
+                <li class="nav-item"><a href="blog.html" class="nav-link active" aria-current="page" id="nav-blog">Blog</a></li>
+                <li class="nav-item"><a href="tarifs.html" class="nav-link" id="nav-tarifs">Tarifs</a></li>
+                <li class="nav-item"><a href="a-propos.html" class="nav-link" id="nav-about">À propos</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link" id="nav-contact">Contact</a></li>
+            </ul>
+            
+            <!-- Mobile CTA (shows only in mobile panel) -->
+            <div class="mobile-cta-wrapper">
+                <a href="contact.html?type=devis" class="btn btn-primary cta-button">Demander un devis</a>
+            </div>
+        </nav>
+
+        <!-- Desktop CTA -->
+        <div class="desktop-cta-wrapper">
+            <a href="contact.html?type=devis" class="btn btn-primary cta-button">Demander un devis</a>
+        </div>
+    </div>
+</header>
+
+
+<!-- ==========================================================================
+   ARTICLE 2 - WORDPRESS - FRAGMENT SOURCE (SPRINT 37)
+   Aziz Studio Digital V2
+   ========================================================================== -->
+
+<main class="main-content" id="main-content" role="main" itemscope itemtype="https://schema.org/Article">
+
+    <!-- 1. Breadcrumb -->
+    <div class="services-breadcrumb-wrapper">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Fil d'Ariane">
+                <ol class="breadcrumb-list" role="list">
+                    <li class="breadcrumb-item">
+                        <a href="index.html" class="breadcrumb-link">Accueil</a>
+                    </li>
+                    <li class="breadcrumb-separator" aria-hidden="true">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="blog.html" class="breadcrumb-link">Blog</a>
+                    </li>
+                    <li class="breadcrumb-separator" aria-hidden="true">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </li>
+                    <li class="breadcrumb-item breadcrumb-item-active" aria-current="page">
+                        <span itemprop="name">WordPress</span>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- 2. Hero Article -->
+    <section class="article-hero" id="hero-article-wordpress">
+        <div class="container">
+            <span class="badge badge-primary" itemprop="articleSection">WordPress</span>
+
+            <h1 class="service-hero-title" itemprop="headline" style="max-width: 800px; margin: var(--spacing-16px) auto 0 auto;">
+                Pourquoi choisir WordPress pour la création de site web d'entreprise ?
+            </h1>
+
+            <div class="article-meta-header">
+                <div class="article-meta-item" itemprop="author" itemscope itemtype="https://schema.org/Person">
+                    <svg class="meta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    <span itemprop="name">Aziz</span>
+                </div>
+                <div class="article-meta-item">
+                    <svg class="meta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                    <time itemprop="datePublished" datetime="2026-07-27">27/07/2026</time>
+                </div>
+                <div class="article-meta-item">
+                    <svg class="meta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                    <span>Temps de lecture : 6 min</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Contenu de l'article -->
+    <section class="section" id="article-content-wordpress">
+        <div class="container">
+            <div class="article-content-wrapper" itemprop="articleBody">
+
+                <!-- Image de mise en avant (Simulée) -->
+                <div class="article-hero-image-wrapper" style="border-radius: var(--radius-large); overflow: hidden; margin-bottom: var(--spacing-48px);" itemprop="image">
+                    <img
+                        src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=800&q=80"
+                        alt="Illustration article WordPress CMS - Création de site web entreprise"
+                        style="width: 100%; height: 350px; object-fit: cover; display: block;"
+                        width="800"
+                        height="350"
+                        loading="eager"
+                    >
+                </div>
+
+                <div class="article-body">
+                    <p class="lead" style="font-size: var(--font-size-lg); font-weight: var(--font-weight-600); margin-bottom: var(--spacing-32px);">
+                        Quand vient le moment de choisir une technologie pour son site web, beaucoup d'entrepreneurs hésitent : site "sur-mesure", plateforme clé en main, ou WordPress ? Ce guide vous explique pourquoi WordPress reste, en 2026, l'un des choix les plus solides pour une entreprise au Congo — et dans quels cas il ne l'est pas.
+                    </p>
+
+                    <!-- Sommaire -->
+                    <div class="article-toc">
+                        <h2 class="article-toc-title">Sommaire</h2>
+                        <ul class="article-toc-list">
+                            <li>
+                                <svg class="meta-icon" style="color: var(--color-accent);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                                <a href="#wp-en-bref">En bref</a>
+                            </li>
+                            <li>
+                                <svg class="meta-icon" style="color: var(--color-accent);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                                <a href="#wp-section-1">1. Qu'est-ce que WordPress, concrètement ?</a>
+                            </li>
+                            <li>
+                                <svg class="meta-icon" style="color: var(--color-accent);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                                <a href="#wp-section-2">2. Les vrais avantages de WordPress</a>
+                            </li>
+                            <li>
+                                <svg class="meta-icon" style="color: var(--color-accent);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                                <a href="#wp-section-3">3. Dans quels cas WordPress est-il le bon choix ?</a>
+                            </li>
+                            <li>
+                                <svg class="meta-icon" style="color: var(--color-accent);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                                <a href="#wp-section-4">4. Quand WordPress n'est pas la meilleure option</a>
+                            </li>
+                            <li>
+                                <svg class="meta-icon" style="color: var(--color-accent);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                                <a href="#wp-section-5">5. Sécurité et maintenance</a>
+                            </li>
+                            <li>
+                                <svg class="meta-icon" style="color: var(--color-accent);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                                <a href="#faq-wp">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <h2 id="wp-en-bref">En bref</h2>
+                    <ul>
+                        <li>WordPress alimente une part très importante des sites web dans le monde — ce n'est pas un hasard.</li>
+                        <li>Il permet de gérer son contenu soi-même, sans dépendre d'un développeur pour chaque modification.</li>
+                        <li>Ce n'est pas la solution idéale dans tous les cas : certains projets ont intérêt à un développement sur-mesure.</li>
+                    </ul>
+
+                    <h2 id="wp-section-1">1. Qu'est-ce que WordPress, concrètement ?</h2>
+                    <p>WordPress est un CMS (système de gestion de contenu) : une plateforme qui permet de créer et de mettre à jour un site web sans écrire de code. Vous vous connectez à une interface d'administration, vous modifiez vos textes, ajoutez des photos ou publiez un article — le tout sans toucher à une ligne de programmation.</p>
+
+                    <div class="article-info-box">
+                        <div class="article-info-box-title">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                            Info utile
+                        </div>
+                        <p style="margin-bottom: 0;">WordPress n'est pas un "site tout fait" : c'est une base sur laquelle on construit un site personnalisé, avec un thème et un design propres à votre entreprise. Deux sites WordPress peuvent être aussi différents l'un de l'autre qu'un site codé entièrement sur-mesure.</p>
+                    </div>
+
+                    <h2 id="wp-section-2">2. Les vrais avantages de WordPress pour une entreprise</h2>
+                    <ul>
+                        <li><strong>Autonomie de gestion.</strong> Une fois le site livré, vous pouvez modifier vos textes, ajouter des photos ou publier des actualités vous-même, sans dépendre systématiquement d'un prestataire pour chaque petit changement.</li>
+                        <li><strong>Écosystème riche.</strong> Des milliers d'extensions ("plugins") permettent d'ajouter des fonctionnalités : formulaire de contact, boutique en ligne, réservation, multilingue — sans repartir de zéro.</li>
+                        <li><strong>Bon terrain pour le SEO.</strong> La structure de WordPress est nativement compatible avec les bonnes pratiques de référencement (structure de titres, URLs propres, vitesse optimisable), à condition d'être bien configuré dès le départ.</li>
+                        <li><strong>Évolutif.</strong> Un site WordPress peut grandir avec votre activité : commencer comme un simple site vitrine, puis ajouter une boutique en ligne ou un espace client plus tard, sans tout reconstruire.</li>
+                    </ul>
+
+                    <h2 id="wp-section-3">3. Dans quels cas WordPress est-il le bon choix ?</h2>
+                    <p>WordPress convient particulièrement bien :</p>
+                    <ul>
+                        <li>aux sites vitrines d'entreprise (présentation, services, contact) ;</li>
+                        <li>aux sites nécessitant des mises à jour de contenu fréquentes (actualités, blog) ;</li>
+                        <li>aux commerçants qui veulent une boutique en ligne simple à gérer ;</li>
+                        <li>aux associations et institutions qui publient régulièrement du contenu.</li>
+                    </ul>
+
+                    <h2 id="wp-section-4">4. Et quand WordPress n'est-il pas la meilleure option ?</h2>
+                    <p>Il faut aussi être honnête sur ses limites. Pour une application web complexe avec des fonctionnalités très spécifiques (un outil métier sur-mesure, une plateforme avec une logique métier unique), un développement entièrement sur-mesure peut être plus adapté — WordPress est avant tout pensé pour la gestion de contenu, pas pour remplacer un logiciel métier complet.</p>
+
+                    <div class="article-info-box">
+                        <div class="article-info-box-title">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                            Erreur fréquente
+                        </div>
+                        <p style="margin-bottom: 0;">Installer trop d'extensions "au cas où" ralentit un site WordPress et complique sa maintenance. Mieux vaut un site plus simple et rapide qu'un site chargé de fonctionnalités inutilisées.</p>
+                    </div>
+
+                    <h2 id="wp-section-5">5. Sécurité et maintenance : un point essentiel</h2>
+                    <p>Un site WordPress doit être maintenu à jour régulièrement — cœur du logiciel, thème, extensions. C'est justement ce qui permet d'éviter la grande majorité des failles de sécurité qui touchent les sites mal entretenus. Un accompagnement de maintenance dès le départ évite bien des mauvaises surprises.</p>
+
+                    <div class="article-blockquote">
+                        WordPress accélère le développement grâce à ses briques déjà existantes, tout en restant hautement personnalisable.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. FAQ Article WordPress -->
+    <section class="section section-surface" id="faq-wp">
+        <div class="container">
+            <div class="section-header section-header-center">
+                <div class="faq-badge-wrapper">
+                    <span class="badge badge-secondary">❓ Questions fréquentes</span>
+                </div>
+                <h2 class="section-title">FAQ sur WordPress</h2>
+            </div>
+
+            <div class="faq-accordion-wrapper" style="max-width: 800px; margin: 0 auto;">
+                <div class="faq-accordion">
+
+                    <details class="faq-item card" open>
+                        <summary class="faq-summary">
+                            <div class="faq-question">
+                                <div class="faq-icon-wrapper" aria-hidden="true">
+                                    <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                </div>
+                                <h3 class="faq-question-title">WordPress est-il gratuit ?</h3>
+                            </div>
+                            <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p class="faq-answer-text">Le logiciel WordPress lui-même est gratuit et open source. Les coûts viennent de l'hébergement, du nom de domaine, du thème et de la personnalisation du design, ainsi que des extensions premium si nécessaire.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item card">
+                        <summary class="faq-summary">
+                            <div class="faq-question">
+                                <div class="faq-icon-wrapper" aria-hidden="true">
+                                    <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                                </div>
+                                <h3 class="faq-question-title">Puis-je vraiment gérer mon site moi-même après la livraison ?</h3>
+                            </div>
+                            <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p class="faq-answer-text">Oui, c'est justement l'un des grands atouts de WordPress — avec une courte formation à la prise en main, la plupart des clients gèrent facilement leurs mises à jour de contenu au quotidien.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item card">
+                        <summary class="faq-summary">
+                            <div class="faq-question">
+                                <div class="faq-icon-wrapper" aria-hidden="true">
+                                    <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                                </div>
+                                <h3 class="faq-question-title">WordPress est-il bon pour le référencement Google ?</h3>
+                            </div>
+                            <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p class="faq-answer-text">Oui, à condition d'être bien configuré dès la conception : structure claire, vitesse de chargement optimisée, balises SEO bien renseignées.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item card">
+                        <summary class="faq-summary">
+                            <div class="faq-question">
+                                <div class="faq-icon-wrapper" aria-hidden="true">
+                                    <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+                                </div>
+                                <h3 class="faq-question-title">Quelle est la différence entre WordPress et un site "sur-mesure codé de zéro" ?</h3>
+                            </div>
+                            <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p class="faq-answer-text">WordPress accélère le développement grâce à ses briques déjà existantes, tout en restant personnalisable. Un site codé entièrement sur-mesure prend plus de temps à développer mais peut aller plus loin sur des besoins très spécifiques.</p>
+                        </div>
+                    </details>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. CTA Final (composant officiel) -->
+    <section class="section service-final-cta-section" id="cta-final-article-wordpress">
+        <div class="container">
+            <div class="card service-cta-final-card">
+                <div class="card-body service-cta-final-body">
+                    <div class="service-cta-final-content">
+                        <span class="badge badge-primary">⚡ Lancez votre projet</span>
+                        <h2 class="service-cta-final-title">Vous hésitez entre WordPress et un développement sur-mesure ?</h2>
+                        <p class="service-cta-final-text">
+                            Discutons de votre projet ensemble — nous vous aiderons à choisir la technologie la mieux adaptée à vos objectifs et à votre budget.
+                        </p>
+                    </div>
+                    <div class="service-cta-final-actions">
+                        <a href="contact.html?type=devis&amp;service=wordpress" class="btn btn-primary">Demander un devis WordPress</a>
+                        <a href="contact.html" class="btn btn-outline">Parler de votre projet</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+
+<footer class="site-footer" id="site-footer" role="contentinfo">
+    <div class="container footer-container">
+        <!-- Top Section: Logo & Newsletter -->
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="index.html" class="logo" aria-label="Aziz Studio Digital - Retour à l'accueil">
+                    <span class="logo-text">Aziz <span class="text-accent">Studio</span> Digital</span>
+                </a>
+                <p class="brand-description">
+                    Aziz Studio Digital accompagne les entreprises, hôtels, restaurants, agences immobilières, cabinets médicaux et autres professionnels dans leur transformation digitale grâce à la création de sites web modernes, au référencement SEO et aux solutions numériques.
+                </p>
+                <div class="social-links">
+                    <a href="https://facebook.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <svg class="social-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                    </a>
+                    <a href="https://linkedin.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg class="social-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                    <a href="https://github.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <svg class="social-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Newsletter Section -->
+            <div class="footer-newsletter">
+                <h2 class="footer-title">Newsletter</h2>
+                <p class="newsletter-text">Abonnez-vous à notre newsletter pour recevoir nos dernières actualités et conseils du digital.</p>
+                <form class="newsletter-form" id="newsletter-form" onsubmit="event.preventDefault();">
+                    <div class="form-group">
+                        <label for="newsletter-email" class="sr-only">Adresse e-mail</label>
+                        <input type="email" id="newsletter-email" name="email" class="newsletter-input" placeholder="Votre adresse e-mail" required aria-required="true">
+                        <button type="submit" class="newsletter-submit" aria-label="S'abonner">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="submit-icon" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Middle Section: Navigation Links & Columns -->
+        <div class="footer-middle">
+            <!-- Col 1: Navigation Rapide -->
+            <div class="footer-col">
+                <h2 class="footer-title">Navigation</h2>
+                <ul class="footer-links">
+                    <li><a href="index.html" class="footer-link">Accueil</a></li>
+                    <li><a href="services.html" class="footer-link">Services</a></li>
+                    <li><a href="solutions.html" class="footer-link">Solutions</a></li>
+                    <li><a href="portfolio.html" class="footer-link">Portfolio</a></li>
+                    <li><a href="blog.html" class="footer-link">Blog</a></li>
+                    <li><a href="tarifs.html" class="footer-link">Tarifs</a></li>
+                    <li><a href="a-propos.html" class="footer-link">À propos</a></li>
+                    <li><a href="contact.html" class="footer-link">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 2: Services -->
+            <div class="footer-col footer-col-double">
+                <h2 class="footer-title">Nos Services</h2>
+                <ul class="footer-links services-grid">
+                    <li><a href="services.html#vitrine" class="footer-link">Site vitrine</a></li>
+                    <li><a href="services.html#ecommerce" class="footer-link">Site e-commerce</a></li>
+                    <li><a href="hotel.html" class="footer-link">Site hôtel</a></li>
+                    <li><a href="restaurant.html" class="footer-link">Site restaurant</a></li>
+                    <li><a href="immobilier.html" class="footer-link">Site agence immobilière</a></li>
+                    <li><a href="clinique.html" class="footer-link">Site clinique</a></li>
+                    <li><a href="cabinet-medical.html" class="footer-link">Site cabinet médical</a></li>
+                    <li><a href="cabinet-dentaire.html" class="footer-link">Site cabinet dentaire</a></li>
+                    <li><a href="pharmacie.html" class="footer-link">Site pharmacie</a></li>
+                    <li><a href="salon-beaute.html" class="footer-link">Site salon de beauté</a></li>
+                    <li><a href="voyage.html" class="footer-link">Site agence de voyage</a></li>
+                    <li><a href="services.html#seo" class="footer-link">Référencement SEO</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Coordonnées -->
+            <div class="footer-col">
+                <h2 class="footer-title">Coordonnées</h2>
+                <ul class="footer-contact-info">
+                    <li class="contact-item">
+                        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                        <span>République du Congo (Brazzaville / Pointe-Noire)</span>
+                    </li>
+                    <li class="contact-item">
+                        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                        <a href="tel:+242060000000" class="contact-link">+242 06 000 00 00</a>
+                    </li>
+                    <li class="contact-item">
+                        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12a4 4 0 118 0 4 4 0 01-8 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" /><path stroke-linecap="round" stroke-linejoin="round" d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" /></svg>
+                        <a href="https://wa.me/242060000000" class="contact-link" target="_blank" rel="noopener noreferrer">WhatsApp Chat</a>
+                    </li>
+                    <li class="contact-item">
+                        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                        <a href="mailto:azizstudio.dev@gmail.com" class="contact-link">azizstudio.dev@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom Section: Copyright & Legal links -->
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                <p>&copy; <span id="footer-year">2026</span> Aziz Studio Digital. Tous droits réservés.</p>
+            </div>
+            <div class="footer-legal-links">
+                <a href="politique-confidentialite.html" class="legal-link">Politique de confidentialité</a>
+                <a href="mentions-legales.html" class="legal-link">Mentions légales</a>
+                <a href="conditions-utilisation.html" class="legal-link">Conditions d'utilisation</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

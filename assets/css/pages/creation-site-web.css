@@ -1,0 +1,659 @@
+/* ==========================================================================
+   CREATION DE SITE WEB - PAGE STYLING (SPRINT 22 TEMPLATE)
+   Aziz Studio Digital V2
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Breadcrumb Component (shared styles — independent of services.css)
+   -------------------------------------------------------------------------- */
+.services-breadcrumb-wrapper {
+    padding-top: var(--spacing-24px);
+    padding-bottom: var(--spacing-16px);
+    background-color: var(--color-background);
+}
+
+.breadcrumb-list {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-8px);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: var(--font-size-sm);
+}
+
+.breadcrumb-link {
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+.breadcrumb-link:hover,
+.breadcrumb-link:focus-visible {
+    color: var(--color-accent);
+}
+
+.breadcrumb-separator {
+    display: inline-flex;
+    align-items: center;
+    color: var(--color-text-secondary);
+    opacity: 0.6;
+}
+
+.breadcrumb-item-active {
+    color: var(--color-text-primary);
+    font-weight: var(--font-weight-600);
+}
+
+/* --------------------------------------------------------------------------
+   2. Hero Section
+   -------------------------------------------------------------------------- */
+.service-single-hero {
+    padding-top: var(--spacing-32px);
+    padding-bottom: var(--spacing-64px);
+    background-color: var(--color-background);
+    position: relative;
+    overflow-x: clip;
+    overflow-y: visible;
+}
+
+.service-single-hero::before {
+    content: '';
+    position: absolute;
+    top: -120px;
+    right: -40px;
+    width: 700px;
+    height: 550px;
+    background: radial-gradient(
+        ellipse at center,
+        hsla(var(--color-accent-h), var(--color-accent-s), var(--color-accent-l), 0.16) 0%,
+        hsla(var(--color-primary-h), var(--color-primary-s), var(--color-primary-l), 0.05) 45%,
+        transparent 70%
+    );
+    border-radius: 50%;
+    filter: blur(90px);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.service-single-hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.service-hero-grid {
+    align-items: center;
+}
+
+.service-hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-20px);
+}
+
+.service-hero-badge-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.service-hero-title {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-800);
+    color: var(--color-text-primary);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+
+@media (min-width: 768px) {
+    .service-hero-title {
+        font-size: var(--font-size-4xl);
+    }
+}
+
+.service-hero-description {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-secondary);
+    line-height: 1.65;
+}
+
+.service-hero-description strong {
+    color: var(--color-text-primary);
+    font-weight: var(--font-weight-600);
+}
+
+.service-hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-16px);
+    margin-top: var(--spacing-8px);
+}
+
+.service-hero-visual {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* --------------------------------------------------------------------------
+   2. Reason & Feature Cards
+   -------------------------------------------------------------------------- */
+.service-reason-card,
+.service-feature-card,
+.service-trust-card {
+    transition: transform var(--transition-normal), border-color var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.service-reason-card:hover,
+.service-feature-card:hover,
+.service-trust-card:hover {
+    transform: translateY(-4px);
+    border-color: hsla(var(--color-accent-h), var(--color-accent-s), var(--color-accent-l), 0.3);
+    box-shadow: var(--shadow-lg);
+}
+
+/* --------------------------------------------------------------------------
+   3. Timeline Premium Component (Identique Home - 4 Étapes avec Ligne & Nodes Premium)
+   -------------------------------------------------------------------------- */
+.processus-badge-wrapper {
+    margin-bottom: var(--spacing-16px);
+}
+
+.processus-timeline {
+    position: relative;
+    width: 100%;
+    margin-top: var(--spacing-32px);
+    margin-bottom: var(--spacing-48px);
+}
+
+/* ── Step Nodes (Numbered Double-Ring Circles Identiques Home) ───────────── */
+.timeline-node {
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-circle);
+    background-color: var(--color-surface);
+    border: 2px solid var(--color-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 0 12px hsla(var(--color-accent-h), var(--color-accent-s), var(--color-accent-l), 0.2);
+    transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+    position: relative;
+    z-index: 2;
+}
+
+.step-number {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-800);
+    color: var(--color-accent);
+    background: hsla(var(--color-accent-h), var(--color-accent-s), var(--color-accent-l), 0.12);
+    width: 42px;
+    height: 42px;
+    border-radius: var(--radius-circle);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid hsla(var(--color-accent-h), var(--color-accent-s), var(--color-accent-l), 0.3);
+    position: relative;
+    z-index: 2;
+    line-height: 1;
+}
+
+/* ── Hover Micro-interactions ─────────────────────────────────────────────── */
+.timeline-step:hover .timeline-node {
+    transform: scale(1.15);
+    border-color: var(--color-accent);
+    box-shadow: 0 0 20px hsla(var(--color-accent-h), var(--color-accent-s), var(--color-accent-l), 0.4);
+}
+
+.timeline-step:hover .processus-card {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-xl);
+    border-color: hsla(var(--color-accent-h), var(--color-accent-s), var(--color-accent-l), 0.35);
+}
+
+.timeline-step {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Mobile Layout (<768px): Vertical Timeline with Continuous Left Line */
+@media (max-width: 767px) {
+    .timeline-track {
+        display: block;
+        position: absolute;
+        top: 24px;
+        bottom: 24px;
+        left: 24px;
+        width: 2px;
+        background: linear-gradient(180deg, var(--color-accent), hsla(var(--color-accent-h), var(--color-accent-s), var(--color-accent-l), 0.3), var(--color-accent));
+        z-index: 1;
+    }
+
+    .processus-steps-grid {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-24px);
+    }
+
+    .timeline-step {
+        display: flex;
+        flex-direction: row;
+        gap: var(--spacing-16px);
+        align-items: flex-start;
+    }
+
+    .timeline-node {
+        margin: 0;
+        flex-shrink: 0;
+    }
+
+    .timeline-step .processus-card {
+        flex: 1;
+    }
+}
+
+/* Tablet Layout (768px - 1023px): 2x2 Grid with Row Connecting Lines */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .processus-steps-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: var(--spacing-24px);
+        row-gap: var(--spacing-32px);
+        position: relative;
+    }
+
+    .timeline-track {
+        display: none;
+    }
+
+    .timeline-step {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .timeline-step::before {
+        content: '';
+        position: absolute;
+        top: 24px;
+        left: -50%;
+        right: 50%;
+        height: 2px;
+        background: linear-gradient(90deg, hsla(var(--color-accent-h), var(--color-accent-s), var(--color-accent-l), 0.3), var(--color-accent));
+        z-index: 1;
+    }
+
+    .timeline-step:nth-child(2n + 1)::before {
+        display: none;
+    }
+
+    .timeline-node {
+        margin: 0 auto var(--spacing-16px) auto;
+    }
+
+    .timeline-step .processus-card {
+        width: 100%;
+        flex: 1;
+    }
+}
+
+/* Desktop Layout (≥ 1024px): 4-Step Continuous Horizontal Timeline Line */
+@media (min-width: 1024px) {
+    .processus-steps-grid.grid-4-steps {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--spacing-20px);
+        position: relative;
+    }
+
+    .timeline-track {
+        display: block;
+        position: absolute;
+        top: 24px;
+        left: 12.5%;
+        right: 12.5%;
+        height: 2px;
+        background: linear-gradient(90deg, var(--color-accent), hsla(var(--color-accent-h), var(--color-accent-s), var(--color-accent-l), 0.3), var(--color-accent));
+        border-radius: var(--radius-pill);
+        z-index: 1;
+    }
+
+    .timeline-step {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        height: 100%;
+    }
+
+    .timeline-node {
+        margin: 0 auto var(--spacing-20px) auto;
+    }
+
+    .timeline-step .processus-card {
+        width: 100%;
+        flex: 1;
+    }
+}
+
+/* Processus Card Inner Content */
+.processus-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--spacing-16px);
+}
+
+.processus-icon-wrapper {
+    width: 42px;
+    height: 42px;
+    border-radius: var(--radius-medium);
+    background-color: hsla(var(--color-primary-h), var(--color-primary-s), var(--color-primary-l), 0.08);
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.processus-card:hover .processus-icon-wrapper {
+    background-color: var(--color-primary);
+    color: hsl(var(--color-surface-h), var(--color-surface-s), var(--color-surface-l));
+}
+
+.processus-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.processus-outcomes {
+    margin-top: var(--spacing-16px);
+    margin-bottom: var(--spacing-16px);
+    padding-top: var(--spacing-12px);
+    border-top: 1px dashed var(--color-border);
+}
+
+.outcomes-title {
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-700);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-8px);
+}
+
+.outcomes-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6px);
+}
+
+.outcomes-list li {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-6px);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-500);
+    color: var(--color-text-primary);
+}
+
+.outcome-check {
+    width: 14px;
+    height: 14px;
+    color: var(--color-success);
+    flex-shrink: 0;
+}
+
+.processus-duration {
+    margin-top: auto;
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-6px);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-600);
+    color: var(--color-text-secondary);
+    padding: var(--spacing-4px) var(--spacing-12px);
+    background-color: var(--color-background);
+    border-radius: var(--radius-pill);
+    border: 1px solid var(--color-border);
+}
+
+.clock-icon {
+    width: 14px;
+    height: 14px;
+    color: var(--color-accent);
+    flex-shrink: 0;
+}
+
+/* --------------------------------------------------------------------------
+   4. FAQ Premium Accordion Component (Identique Home avec Icônes Violettes)
+   -------------------------------------------------------------------------- */
+.faq-badge-wrapper {
+    margin-bottom: var(--spacing-16px);
+}
+
+.faq-accordion-wrapper {
+    max-width: 860px;
+    margin: var(--spacing-32px) auto 0 auto;
+}
+
+.faq-accordion {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-16px);
+}
+
+.faq-item {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-large);
+    overflow: hidden;
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.faq-item[open] {
+    border-color: hsla(var(--color-accent-h), var(--color-accent-s), var(--color-accent-l), 0.35);
+    box-shadow: var(--shadow-md);
+}
+
+.faq-summary {
+    padding: var(--spacing-20px) var(--spacing-24px);
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    user-select: none;
+}
+
+.faq-summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-summary:focus-visible {
+    outline: none;
+    background-color: hsla(var(--color-accent-h), var(--color-accent-s), var(--color-accent-l), 0.05);
+}
+
+.faq-question {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-16px);
+}
+
+.faq-icon-wrapper {
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-circle);
+    background-color: hsla(var(--color-accent-h), var(--color-accent-s), var(--color-accent-l), 0.12);
+    color: var(--color-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border: 1px solid hsla(var(--color-accent-h), var(--color-accent-s), var(--color-accent-l), 0.25);
+    transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.faq-item:hover .faq-icon-wrapper,
+.faq-item[open] .faq-icon-wrapper {
+    background-color: var(--color-accent);
+    color: hsl(var(--color-surface-h), var(--color-surface-s), var(--color-surface-l));
+}
+
+.faq-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.faq-question-title {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-600);
+    color: var(--color-text-primary);
+    margin: 0;
+}
+
+.faq-chevron {
+    width: 20px;
+    height: 20px;
+    color: var(--color-accent);
+    transition: transform var(--transition-fast);
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+    margin-left: var(--spacing-12px);
+}
+
+.faq-item[open] .faq-chevron {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    padding: 0 var(--spacing-24px) var(--spacing-24px) var(--spacing-24px);
+    border-top: 1px dashed var(--color-border);
+    margin-top: var(--spacing-8px);
+    padding-top: var(--spacing-16px);
+}
+
+.faq-answer-text {
+    font-size: var(--font-size-base);
+    color: var(--color-text-secondary);
+    line-height: 1.65;
+    margin: 0;
+}
+
+/* --------------------------------------------------------------------------
+   5. Final CTA Banner
+   -------------------------------------------------------------------------- */
+.service-final-cta-section {
+    position: relative;
+}
+
+.service-cta-final-card {
+    background-color: var(--color-surface);
+    border: 1px solid hsla(var(--color-accent-h), var(--color-accent-s), var(--color-accent-l), 0.3);
+    border-radius: var(--radius-large);
+    box-shadow: var(--shadow-xl);
+    position: relative;
+    overflow: hidden;
+}
+
+.service-cta-final-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 100%;
+    background-color: var(--color-accent);
+}
+
+.service-cta-final-body {
+    padding: var(--spacing-32px) var(--spacing-32px) var(--spacing-32px) var(--spacing-40px) !important;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-24px);
+    box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+    .service-cta-final-body {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: var(--spacing-48px) var(--spacing-48px) !important;
+    }
+}
+
+.service-cta-final-content {
+    max-width: 640px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-12px);
+}
+
+.section-header .badge,
+.section-header-center .badge {
+    display: inline-flex;
+    margin-bottom: var(--spacing-16px);
+}
+
+.service-cta-final-content .badge {
+    display: inline-flex;
+    align-self: flex-start;
+    width: fit-content;
+    max-width: 100%;
+    margin-bottom: var(--spacing-8px);
+}
+
+.service-cta-final-title {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-800);
+    color: var(--color-text-primary);
+    line-height: 1.3;
+}
+
+@media (min-width: 768px) {
+    .service-cta-final-title {
+        font-size: var(--font-size-3xl);
+    }
+}
+
+.service-cta-final-text {
+    font-size: var(--font-size-base);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
+.service-cta-final-actions {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-12px);
+}
+
+@media (min-width: 576px) {
+    .service-cta-final-actions {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 767px) {
+    .service-cta-final-actions {
+        width: 100%;
+    }
+    .service-cta-final-actions .btn {
+        width: 100%;
+    }
+}

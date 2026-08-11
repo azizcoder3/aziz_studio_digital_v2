@@ -1,0 +1,140 @@
+/* ==========================================================================
+   GLOBAL BASE STYLES
+   ========================================================================== */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: var(--color-background);
+    color: var(--color-text-secondary);
+    scroll-padding-top: var(--spacing-80px);
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--color-background);
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+main {
+    display: block;
+    width: 100%;
+}
+
+section {
+    padding: var(--spacing-48px) 0;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    section {
+        padding: var(--spacing-80px) 0;
+    }
+}
+
+img, video {
+    border-radius: var(--radius-medium);
+    transition: opacity var(--transition-normal);
+}
+
+/* Forms & Buttons Base Styling */
+button {
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-500);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition-fast);
+}
+
+input, textarea {
+    width: 100%;
+    padding: var(--spacing-12px) var(--spacing-16px);
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-medium);
+    color: var(--color-text-primary);
+    font-family: var(--font-primary);
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.15);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Base Container Class */
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: var(--spacing-16px);
+    padding-left: var(--spacing-16px);
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding-right: var(--spacing-24px);
+        padding-left: var(--spacing-24px);
+    }
+}
+
+/* ==========================================================================
+   SKIP LINK — WCAG 2.4.1 Contourner les blocs
+   ========================================================================== */
+
+.skip-link {
+    position: absolute;
+    top: -100%;
+    left: var(--spacing-16px);
+    z-index: 9999;
+    padding: var(--spacing-12px) var(--spacing-24px);
+    background-color: var(--color-accent);
+    color: #ffffff;
+    font-family: var(--font-primary);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-600);
+    border-radius: var(--radius-medium);
+    text-decoration: none;
+    transition: top var(--transition-fast);
+    outline-offset: 2px;
+}
+
+.skip-link:focus {
+    top: var(--spacing-16px);
+    outline: 3px solid #ffffff;
+}
+
+/* ==========================================================================
+   FOCUS VISIBLE GLOBAL — WCAG 2.4.7 Focus visible
+   ========================================================================== */
+
+:focus-visible {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 3px;
+    border-radius: var(--radius-small);
+}
+
+/* Override pour les inputs qui ont leur propre style de focus */
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px hsla(var(--color-accent-h), var(--color-accent-s), var(--color-accent-l), 0.2);
+}
+
+/* Retirer le focus par defaut uniquement quand focus-visible est actif */
+:focus:not(:focus-visible) {
+    outline: none;
+}
+

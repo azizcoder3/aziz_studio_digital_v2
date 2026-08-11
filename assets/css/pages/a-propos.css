@@ -1,0 +1,124 @@
+/* ==========================================================================
+   PAGE À PROPOS - STYLES SPÉCIFIQUES (SPRINT 35)
+   Aziz Studio Digital V2
+   Règles : Aucun import CSS, utilisation exclusive des variables CSS
+   ========================================================================== */
+
+/* ==========================================================================
+   TIMELINE PREMIUM 5 ÉTAPES (REUTILISATION DU DESIGN SYSTEM)
+   ========================================================================== */
+
+/* ── TABLET VIEW (768px - 1023px) : 3x2 Grid Horizontal Progression ─────── */
+@media (min-width: 768px) and (max-width: 1023px) {
+    #notre-methode .processus-steps-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: var(--spacing-20px);
+        row-gap: var(--spacing-32px);
+        position: relative;
+    }
+
+    #notre-methode .timeline-track {
+        display: none;
+    }
+
+    #notre-methode .timeline-step {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    #notre-methode .timeline-step::before {
+        content: '';
+        position: absolute;
+        top: 24px;
+        left: -50%;
+        right: 50%;
+        height: 2px;
+        background: linear-gradient(90deg,
+            hsla(var(--color-accent-h), var(--color-accent-s), var(--color-accent-l), 0.3),
+            var(--color-accent));
+        z-index: 1;
+    }
+
+    #notre-methode .timeline-step:nth-child(3n + 1)::before {
+        display: none;
+    }
+
+    #notre-methode .timeline-node {
+        margin: 0 auto var(--spacing-16px) auto;
+    }
+
+    #notre-methode .timeline-step .processus-card {
+        width: 100%;
+        flex: 1;
+    }
+}
+
+/* ── DESKTOP VIEW (≥ 1024px) : 5-Step Continuous Horizontal Timeline ──────── */
+@media (min-width: 1024px) {
+    #notre-methode .processus-steps-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: var(--spacing-16px);
+        position: relative;
+    }
+
+    #notre-methode .timeline-track {
+        display: block;
+        position: absolute;
+        top: 24px;
+        left: calc(100% / 10);
+        right: calc(100% / 10);
+        height: 2px;
+        background: linear-gradient(90deg,
+            var(--color-accent),
+            hsla(var(--color-accent-h), var(--color-accent-s), var(--color-accent-l), 0.3),
+            var(--color-accent));
+        border-radius: var(--radius-pill);
+        z-index: 1;
+    }
+
+    #notre-methode .timeline-step {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        height: 100%;
+    }
+
+    #notre-methode .timeline-node {
+        margin: 0 auto var(--spacing-20px) auto;
+    }
+
+    #notre-methode .timeline-step .processus-card {
+        width: 100%;
+        flex: 1;
+    }
+}
+
+/* ==========================================================================
+   HERO DASHBOARD BADGE FIX
+   ========================================================================== */
+.hero-floating-badge {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-8px);
+    margin-left: var(--spacing-16px);
+    margin-bottom: var(--spacing-16px);
+}
+
+.hero-floating-badge .floating-badge-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-floating-badge .badge-title {
+    font-weight: var(--font-weight-600);
+}
+
+.hero-floating-badge .badge-sub {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+}

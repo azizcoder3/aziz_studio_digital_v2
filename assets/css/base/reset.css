@@ -1,0 +1,131 @@
+/* ==========================================================================
+   MODERN CSS RESET
+   ========================================================================== */
+
+/* 1. Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. Prevent font size inflation and set default scrolling behaviour */
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    scroll-behavior: smooth;
+}
+
+/* 3. Remove default margins and paddings for all block/inline elements */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+    padding: 0;
+}
+
+/* 4. Remove list styles on ul, ol elements */
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* 5. Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* 6. Clean and reset links */
+a {
+    text-decoration: none;
+    color: inherit;
+    text-decoration-skip-ink: auto;
+}
+
+/* 7. Make images and videos responsive */
+img,
+picture,
+video,
+canvas,
+svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 8. Inherit fonts for inputs, textareas, selects, and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    color: inherit;
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* 9. Reset button styles to be clean & clickable */
+button {
+    cursor: pointer;
+    background-color: transparent;
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
+
+/* 10. Remove built-in styling for iOS/Safari */
+input, 
+textarea, 
+select, 
+button {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+/* 11. Remove table borders and spacing */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* 12. Remove default fieldset styling */
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* 13. Respect prefers-reduced-motion media query for accessibility */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+    
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

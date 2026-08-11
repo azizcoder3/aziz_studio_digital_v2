@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog, SEO &amp; WordPress au Congo | Aziz Studio Digital</title>
+    <meta name="description" content="Conseils, guides pratiques et articles d'experts sur la création de site web, le SEO et WordPress au Congo par Aziz Studio Digital.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://azizstudiodigital.netlify.app/blog.html">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Blog, SEO &amp; WordPress au Congo | Aziz Studio Digital">
+    <meta property="og:description" content="Conseils, guides pratiques et articles d'experts sur la création de site web, le SEO et WordPress au Congo par Aziz Studio Digital.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://azizstudiodigital.netlify.app/blog.html">
+    <meta property="og:image" content="https://azizstudiodigital.netlify.app/assets/images/home/hero-illustration.webp">
+    <meta property="og:locale" content="fr_FR">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Blog, SEO &amp; WordPress au Congo | Aziz Studio Digital">
+    <meta name="twitter:description" content="Conseils, guides pratiques et articles d'experts sur la création de site web, le SEO et WordPress au Congo par Aziz Studio Digital.">
+    <meta name="twitter:image" content="https://azizstudiodigital.netlify.app/assets/images/home/hero-illustration.webp">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS Base -->
+    <link rel="stylesheet" href="assets/css/base/variables.css">
+    <link rel="stylesheet" href="assets/css/base/reset.css">
+    <link rel="stylesheet" href="assets/css/base/typography.css">
+    <link rel="stylesheet" href="assets/css/base/base.css">
+
+    <!-- CSS Composants -->
+    <link rel="stylesheet" href="assets/css/components/container.css">
+    <link rel="stylesheet" href="assets/css/components/grid.css">
+    <link rel="stylesheet" href="assets/css/components/section.css">
+    <link rel="stylesheet" href="assets/css/components/card.css">
+    <link rel="stylesheet" href="assets/css/components/badge.css">
+    <link rel="stylesheet" href="assets/css/components/button.css">
+    <link rel="stylesheet" href="assets/css/components/header.css">
+    <link rel="stylesheet" href="assets/css/components/footer.css">
+
+    <link rel="stylesheet" href="assets/css/pages/services.css">
+    <link rel="stylesheet" href="assets/css/pages/creation-site-web.css">
+    <link rel="stylesheet" href="assets/css/pages/blog.css">
+
+    <style>
+        body {
+            padding-top: 73px;
+        }
+        @media (min-width: 1024px) {
+            body {
+                padding-top: 90px;
+            }
+        }
+
+        .nav-list,
+        .nav-list li {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links,
+        .footer-contact-info,
+        .hero-arguments,
+        .cta-benefits-list,
+        .cta-outcomes-list {
+            list-style: none;
+            padding-left: 0;
+        }
+    </style>
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Aller au contenu principal</a>
+<header class="site-header" id="site-header" role="banner">
+    <div class="container header-container">
+        <!-- Logo -->
+        <a href="index.html" class="logo" aria-label="Aziz Studio Digital - Retour à l'accueil">
+            <span class="logo-text">Aziz <span class="text-accent">Studio</span> Digital</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button type="button" class="mobile-nav-toggle" id="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Menu principal">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+
+        <!-- Navigation System -->
+        <nav class="primary-navigation" id="primary-navigation" aria-label="Navigation principale">
+            <ul class="nav-list" role="list">
+                <li class="nav-item"><a href="index.html" class="nav-link" id="nav-home">Accueil</a></li>
+                <li class="nav-item"><a href="services.html" class="nav-link" id="nav-services">Services</a></li>
+                <li class="nav-item"><a href="solutions.html" class="nav-link" id="nav-solutions">Solutions</a></li>
+                <li class="nav-item"><a href="portfolio.html" class="nav-link" id="nav-portfolio">Portfolio</a></li>
+                <li class="nav-item"><a href="blog.html" class="nav-link active" aria-current="page" id="nav-blog">Blog</a></li>
+                <li class="nav-item"><a href="tarifs.html" class="nav-link" id="nav-tarifs">Tarifs</a></li>
+                <li class="nav-item"><a href="a-propos.html" class="nav-link" id="nav-about">À propos</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link" id="nav-contact">Contact</a></li>
+            </ul>
+            
+            <!-- Mobile CTA (shows only in mobile panel) -->
+            <div class="mobile-cta-wrapper">
+                <a href="contact.html?type=devis" class="btn btn-primary cta-button">Demander un devis</a>
+            </div>
+        </nav>
+
+        <!-- Desktop CTA -->
+        <div class="desktop-cta-wrapper">
+            <a href="contact.html?type=devis" class="btn btn-primary cta-button">Demander un devis</a>
+        </div>
+    </div>
+</header>
+
+
+<!-- ==========================================================================
+   PAGE BLOG - FRAGMENT SOURCE (SPRINT 37)
+   Aziz Studio Digital V2
+   ========================================================================== -->
+
+<main class="main-content" id="main-content" role="main">
+
+    <!-- 1. Breadcrumb & Hero Section -->
+    <div class="services-breadcrumb-wrapper">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Fil d'Ariane">
+                <ol class="breadcrumb-list" role="list">
+                    <li class="breadcrumb-item">
+                        <a href="index.html" class="breadcrumb-link">Accueil</a>
+                    </li>
+                    <li class="breadcrumb-separator" aria-hidden="true">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </li>
+                    <li class="breadcrumb-item breadcrumb-item-active" aria-current="page">
+                        <span>Blog</span>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Hero Section Premium -->
+    <section class="section service-single-hero" id="hero-blog">
+        <div class="container">
+            <div class="grid grid-md-2 service-hero-grid">
+                
+                <!-- Left Column: Content -->
+                <div class="service-hero-content">
+                    <div class="service-hero-badge-wrapper">
+                        <span class="badge badge-primary">📝 Blog &amp; Ressources</span>
+                    </div>
+
+                    <h1 class="service-hero-title">
+                        Le blog d'Aziz Studio Digital
+                    </h1>
+
+                    <p class="service-hero-description">
+                        Conseils, guides pratiques et retours d'expérience autour de la création de sites web, du référencement naturel et de la stratégie digitale.
+                    </p>
+
+                    <div class="service-hero-actions">
+                        <a href="#derniers-articles" class="btn btn-primary">Découvrir les articles</a>
+                        <a href="contact.html" class="btn btn-outline">Parler de votre projet</a>
+                    </div>
+                </div>
+
+                <!-- Right Column: Visual Mockup Illustration -->
+                <div class="service-hero-visual" aria-hidden="true">
+                    <div class="hero-dashboard">
+                        <div class="hero-dashboard-header">
+                            <div class="hero-dashboard-dots">
+                                <span class="dot dot-red"></span>
+                                <span class="dot dot-yellow"></span>
+                                <span class="dot dot-green"></span>
+                            </div>
+                            <div class="hero-dashboard-title-bar">
+                                <span class="dashboard-url-badge">azizstudiodigital.netlify.app/blog</span>
+                            </div>
+                        </div>
+
+                        <div class="hero-dashboard-body">
+                            <div class="dashboard-sidebar">
+                                <div class="sidebar-item active"></div>
+                                <div class="sidebar-item"></div>
+                                <div class="sidebar-item"></div>
+                            </div>
+                            
+                            <div class="dashboard-main">
+                                <div class="dashboard-stats-row">
+                                    <div class="dash-card">
+                                        <div class="dash-card-header">
+                                            <span class="dash-label">Articles publiés</span>
+                                            <span class="dash-value">3</span>
+                                        </div>
+                                        <div class="dash-progress-bar">
+                                            <div class="dash-progress-fill p-100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="dash-card">
+                                        <div class="dash-card-header">
+                                            <span class="dash-label">Expertises couvertes</span>
+                                            <span class="dash-value">3</span>
+                                        </div>
+                                        <div class="dash-sparkline">
+                                            <div class="spark-bar h-100"></div>
+                                            <div class="spark-bar h-100"></div>
+                                            <div class="spark-bar h-100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="dashboard-grid-row">
+                                    <div class="dash-card code-preview-card">
+                                        <div class="code-line code-line-lg"></div>
+                                        <div class="code-line code-line-md"></div>
+                                    </div>
+                                    <div class="dash-card floating-feature-card">
+                                        <div class="feature-badge-icon">📚</div>
+                                        <div class="feature-card-text">
+                                            <span class="feature-title">Contenu Expert</span>
+                                            <span class="feature-sub">Astuces &amp; Guides</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Pourquoi suivre notre blog -->
+    <section class="section section-surface" id="pourquoi-suivre">
+        <div class="container">
+            <div class="section-header section-header-center">
+                <span class="badge badge-secondary">💡 Notre approche</span>
+                <h2 class="section-title">Pourquoi suivre notre blog ?</h2>
+                <p class="section-subtitle">
+                    Nous partageons des connaissances concrètes et adaptées au marché congolais pour vous aider à réussir votre transition digitale.
+                </p>
+            </div>
+
+            <div class="grid grid-md-2 grid-lg-4">
+                <article class="card service-reason-card">
+                    <div class="card-body">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Conseils pratiques</h3>
+                        <p class="card-description">
+                            Des actions concrètes que vous pouvez appliquer immédiatement à votre activité.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card service-reason-card">
+                    <div class="card-body">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">SEO au Congo</h3>
+                        <p class="card-description">
+                            Comprendre les enjeux du référencement naturel sur le marché africain.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card service-reason-card">
+                    <div class="card-body">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                <path d="M2 17l10 5 10-5"></path>
+                                <path d="M2 12l10 5 10-5"></path>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Expertise WordPress</h3>
+                        <p class="card-description">
+                            Tutoriels et recommandations pour tirer le meilleur du CMS le plus populaire.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card service-reason-card">
+                    <div class="card-body">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Bonnes pratiques</h3>
+                        <p class="card-description">
+                            Design, performances et expérience utilisateur pour un web de qualité.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Derniers articles -->
+    <section class="section" id="derniers-articles">
+        <div class="container">
+            <div class="section-header section-header-center">
+                <span class="badge badge-primary">📰 Nouveautés</span>
+                <h2 class="section-title">Nos derniers articles</h2>
+                <p class="section-subtitle">
+                    Plongez dans nos dernières publications et restez à jour sur les tendances du web.
+                </p>
+            </div>
+
+            <div class="grid grid-md-2 grid-lg-3 blog-grid">
+                
+                <!-- Article 1: SEO -->
+                <article class="blog-card">
+                    <div class="card-image-wrapper">
+                        <img
+                            src="https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=800&q=80"
+                            alt="Illustration article SEO - Apparaître sur Google au Congo en 2026"
+                            class="card-image portfolio-card-img"
+                            width="800"
+                            height="450"
+                            loading="lazy"
+                        >
+                    </div>
+                    <div class="card-body" style="display: flex; flex-direction: column; flex-grow: 1;">
+                        <div class="blog-card-meta">
+                            <div class="blog-meta-details">
+                                <span class="blog-date">
+                                    <svg class="meta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                                    27/07/2026
+                                </span>
+                                <span class="blog-read-time">
+                                    <svg class="meta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                    8 min
+                                </span>
+                            </div>
+                        </div>
+                        <h3 class="blog-title">SEO au Congo : comment apparaître sur Google en 2026 ?</h3>
+                        <p class="blog-excerpt">
+                            Pendant que vos concurrents dorment, vos futurs clients tapent déjà votre secteur sur Google. Ce guide complet vous explique étape par étape comment faire.
+                        </p>
+                        <div class="blog-cta">
+                            <a href="blog-article-seo.html" class="btn btn-outline" style="width: 100%;" id="lire-article-seo">Lire l'article</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 2: WordPress -->
+                <article class="blog-card">
+                    <div class="card-image-wrapper">
+                        <img
+                            src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=800&q=80"
+                            alt="Illustration article WordPress CMS - Création de site web entreprise"
+                            class="card-image portfolio-card-img"
+                            width="800"
+                            height="450"
+                            loading="lazy"
+                        >
+                    </div>
+                    <div class="card-body" style="display: flex; flex-direction: column; flex-grow: 1;">
+                        <div class="blog-card-meta">
+                            <div class="blog-meta-details">
+                                <span class="blog-date">
+                                    <svg class="meta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                                    27/07/2026
+                                </span>
+                                <span class="blog-read-time">
+                                    <svg class="meta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                    6 min
+                                </span>
+                            </div>
+                        </div>
+                        <h3 class="blog-title">Pourquoi choisir WordPress pour la création de site web d'entreprise ?</h3>
+                        <p class="blog-excerpt">
+                            Quand vient le moment de choisir une technologie, beaucoup d'entrepreneurs hésitent. Découvrez pourquoi WordPress reste l'un des choix les plus solides.
+                        </p>
+                        <div class="blog-cta">
+                            <a href="blog-article-wordpress.html" class="btn btn-outline" style="width: 100%;" id="lire-article-wordpress">Lire l'article</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 3: Création Web -->
+                <article class="blog-card">
+                    <div class="card-image-wrapper">
+                        <img
+                            src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&q=80"
+                            alt="Illustration article développement web - Étapes clés avec une agence professionnelle"
+                            class="card-image portfolio-card-img"
+                            width="800"
+                            height="450"
+                            loading="lazy"
+                        >
+                    </div>
+                    <div class="card-body" style="display: flex; flex-direction: column; flex-grow: 1;">
+                        <div class="blog-card-meta">
+                            <div class="blog-meta-details">
+                                <span class="blog-date">
+                                    <svg class="meta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                                    27/07/2026
+                                </span>
+                                <span class="blog-read-time">
+                                    <svg class="meta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                    6 min
+                                </span>
+                            </div>
+                        </div>
+                        <h3 class="blog-title">Les étapes clés du développement web avec une agence professionnelle</h3>
+                        <p class="blog-excerpt">
+                            Confier la création de son site web à une agence peut sembler flou. Voici étape par étape ce qui se passe concrètement.
+                        </p>
+                        <div class="blog-cta">
+                            <a href="blog-article-developpement-web.html" class="btn btn-outline" style="width: 100%;" id="lire-article-dev-web">Lire l'article</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Catégories -->
+    <section class="section section-surface" id="categories">
+        <div class="container">
+            <div class="section-header section-header-center">
+                <span class="badge badge-secondary">📂 Thématiques</span>
+                <h2 class="section-title">Explorez par catégorie</h2>
+            </div>
+            
+            <div class="blog-categories-grid">
+                <article class="card service-reason-card" style="text-align: center;">
+                    <div class="card-body">
+                        <div class="service-icon" aria-hidden="true" style="margin: 0 auto var(--spacing-16px) auto;">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                        </div>
+                        <h3 class="card-title">Création Web</h3>
+                        <p class="card-description">Bonnes pratiques et conseils pour créer un site performant.</p>
+                    </div>
+                </article>
+                <article class="card service-reason-card" style="text-align: center;">
+                    <div class="card-body">
+                        <div class="service-icon" aria-hidden="true" style="margin: 0 auto var(--spacing-16px) auto;">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                        </div>
+                        <h3 class="card-title">SEO</h3>
+                        <p class="card-description">Stratégies de référencement pour être visible sur Google.</p>
+                    </div>
+                </article>
+                <article class="card service-reason-card" style="text-align: center;">
+                    <div class="card-body">
+                        <div class="service-icon" aria-hidden="true" style="margin: 0 auto var(--spacing-16px) auto;">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+                        </div>
+                        <h3 class="card-title">WordPress</h3>
+                        <p class="card-description">Tutoriels et astuces pour maîtriser votre site WordPress.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. FAQ Premium (composant officiel réutilisé depuis wordpress.html) -->
+    <section class="section" id="faq-blog">
+        <div class="container">
+            <div class="section-header section-header-center">
+                <div class="faq-badge-wrapper">
+                    <span class="badge badge-primary">❓ Questions fréquentes</span>
+                </div>
+                <h2 class="section-title">Questions fréquentes sur le blog</h2>
+                <p class="section-subtitle">
+                    Tout ce que vous voulez savoir sur notre blog et notre approche éditoriale.
+                </p>
+            </div>
+
+            <div class="faq-accordion-wrapper">
+                <div class="faq-accordion">
+
+                    <!-- Q1 -->
+                    <details class="faq-item card" open>
+                        <summary class="faq-summary">
+                            <div class="faq-question">
+                                <div class="faq-icon-wrapper" aria-hidden="true">
+                                    <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                </div>
+                                <h3 class="faq-question-title">À quelle fréquence publiez-vous de nouveaux articles ?</h3>
+                            </div>
+                            <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p class="faq-answer-text">
+                                Nous publions de nouveaux articles régulièrement, en nous concentrant toujours sur la qualité et la pertinence pour les entreprises congolaises plutôt que sur la quantité.
+                            </p>
+                        </div>
+                    </details>
+
+                    <!-- Q2 -->
+                    <details class="faq-item card">
+                        <summary class="faq-summary">
+                            <div class="faq-question">
+                                <div class="faq-icon-wrapper" aria-hidden="true">
+                                    <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                                </div>
+                                <h3 class="faq-question-title">Les conseils SEO donnés sont-ils applicables au Congo ?</h3>
+                            </div>
+                            <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p class="faq-answer-text">
+                                Absolument. Nos articles sont spécialement rédigés avec une connaissance du marché local à Brazzaville et Pointe-Noire, en adaptant les bonnes pratiques globales à notre contexte numérique.
+                            </p>
+                        </div>
+                    </details>
+
+                    <!-- Q3 -->
+                    <details class="faq-item card">
+                        <summary class="faq-summary">
+                            <div class="faq-question">
+                                <div class="faq-icon-wrapper" aria-hidden="true">
+                                    <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                </div>
+                                <h3 class="faq-question-title">Proposez-vous un accompagnement personnalisé en plus des articles ?</h3>
+                            </div>
+                            <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p class="faq-answer-text">
+                                Oui ! Le blog sert de guide gratuit, mais nous proposons un accompagnement complet via nos services d'audit, de création de site et de stratégie digitale pour appliquer ces conseils à votre entreprise.
+                            </p>
+                        </div>
+                    </details>
+
+                    <!-- Q4 -->
+                    <details class="faq-item card">
+                        <summary class="faq-summary">
+                            <div class="faq-question">
+                                <div class="faq-icon-wrapper" aria-hidden="true">
+                                    <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                                </div>
+                                <h3 class="faq-question-title">Qui rédige les articles du blog ?</h3>
+                            </div>
+                            <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p class="faq-answer-text">
+                                L'ensemble des articles est rédigé par Aziz, fondateur d'Aziz Studio Digital, garantissant une véritable expertise terrain et aucun contenu généré de façon générique.
+                            </p>
+                        </div>
+                    </details>
+
+                    <!-- Q5 -->
+                    <details class="faq-item card">
+                        <summary class="faq-summary">
+                            <div class="faq-question">
+                                <div class="faq-icon-wrapper" aria-hidden="true">
+                                    <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg>
+                                </div>
+                                <h3 class="faq-question-title">Comment être informé des nouveaux articles ?</h3>
+                            </div>
+                            <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p class="faq-answer-text">
+                                Nous vous invitons à consulter régulièrement cette page ou à nous suivre sur nos réseaux sociaux où nous annonçons chaque nouvelle publication.
+                            </p>
+                        </div>
+                    </details>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. CTA Final (composant officiel service-cta-final-card) -->
+    <section class="section service-final-cta-section" id="cta-final-blog">
+        <div class="container">
+            <div class="card service-cta-final-card">
+                <div class="card-body service-cta-final-body">
+                    <div class="service-cta-final-content">
+                        <span class="badge badge-primary">⚡ Passez à l'action</span>
+                        <h2 class="service-cta-final-title">Vous avez un projet web ?</h2>
+                        <p class="service-cta-final-text">
+                            Concrétisons ensemble vos idées avec une approche professionnelle, transparente et axée sur vos résultats.
+                        </p>
+                    </div>
+                    <div class="service-cta-final-actions">
+                        <a href="contact.html" class="btn btn-primary">Parler de votre projet</a>
+                        <a href="tarifs.html" class="btn btn-outline">Voir les tarifs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+
+<footer class="site-footer" id="site-footer" role="contentinfo">
+    <div class="container footer-container">
+        <!-- Top Section: Logo & Newsletter -->
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="index.html" class="logo" aria-label="Aziz Studio Digital - Retour à l'accueil">
+                    <span class="logo-text">Aziz <span class="text-accent">Studio</span> Digital</span>
+                </a>
+                <p class="brand-description">
+                    Aziz Studio Digital accompagne les entreprises, hôtels, restaurants, agences immobilières, cabinets médicaux et autres professionnels dans leur transformation digitale grâce à la création de sites web modernes, au référencement SEO et aux solutions numériques.
+                </p>
+                <div class="social-links">
+                    <a href="https://facebook.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <svg class="social-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                    </a>
+                    <a href="https://linkedin.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg class="social-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                    <a href="https://github.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <svg class="social-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Newsletter Section -->
+            <div class="footer-newsletter">
+                <h2 class="footer-title">Newsletter</h2>
+                <p class="newsletter-text">Abonnez-vous à notre newsletter pour recevoir nos dernières actualités et conseils du digital.</p>
+                <form class="newsletter-form" id="newsletter-form" onsubmit="event.preventDefault();">
+                    <div class="form-group">
+                        <label for="newsletter-email" class="sr-only">Adresse e-mail</label>
+                        <input type="email" id="newsletter-email" name="email" class="newsletter-input" placeholder="Votre adresse e-mail" required aria-required="true">
+                        <button type="submit" class="newsletter-submit" aria-label="S'abonner">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="submit-icon" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Middle Section: Navigation Links & Columns -->
+        <div class="footer-middle">
+            <!-- Col 1: Navigation Rapide -->
+            <div class="footer-col">
+                <h2 class="footer-title">Navigation</h2>
+                <ul class="footer-links">
+                    <li><a href="index.html" class="footer-link">Accueil</a></li>
+                    <li><a href="services.html" class="footer-link">Services</a></li>
+                    <li><a href="solutions.html" class="footer-link">Solutions</a></li>
+                    <li><a href="portfolio.html" class="footer-link">Portfolio</a></li>
+                    <li><a href="blog.html" class="footer-link">Blog</a></li>
+                    <li><a href="tarifs.html" class="footer-link">Tarifs</a></li>
+                    <li><a href="a-propos.html" class="footer-link">À propos</a></li>
+                    <li><a href="contact.html" class="footer-link">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 2: Services -->
+            <div class="footer-col footer-col-double">
+                <h2 class="footer-title">Nos Services</h2>
+                <ul class="footer-links services-grid">
+                    <li><a href="services.html#vitrine" class="footer-link">Site vitrine</a></li>
+                    <li><a href="services.html#ecommerce" class="footer-link">Site e-commerce</a></li>
+                    <li><a href="hotel.html" class="footer-link">Site hôtel</a></li>
+                    <li><a href="restaurant.html" class="footer-link">Site restaurant</a></li>
+                    <li><a href="immobilier.html" class="footer-link">Site agence immobilière</a></li>
+                    <li><a href="clinique.html" class="footer-link">Site clinique</a></li>
+                    <li><a href="cabinet-medical.html" class="footer-link">Site cabinet médical</a></li>
+                    <li><a href="cabinet-dentaire.html" class="footer-link">Site cabinet dentaire</a></li>
+                    <li><a href="pharmacie.html" class="footer-link">Site pharmacie</a></li>
+                    <li><a href="salon-beaute.html" class="footer-link">Site salon de beauté</a></li>
+                    <li><a href="voyage.html" class="footer-link">Site agence de voyage</a></li>
+                    <li><a href="services.html#seo" class="footer-link">Référencement SEO</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Coordonnées -->
+            <div class="footer-col">
+                <h2 class="footer-title">Coordonnées</h2>
+                <ul class="footer-contact-info">
+                    <li class="contact-item">
+                        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                        <span>République du Congo (Brazzaville / Pointe-Noire)</span>
+                    </li>
+                    <li class="contact-item">
+                        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                        <a href="tel:+242060000000" class="contact-link">+242 06 000 00 00</a>
+                    </li>
+                    <li class="contact-item">
+                        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12a4 4 0 118 0 4 4 0 01-8 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" /><path stroke-linecap="round" stroke-linejoin="round" d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" /></svg>
+                        <a href="https://wa.me/242060000000" class="contact-link" target="_blank" rel="noopener noreferrer">WhatsApp Chat</a>
+                    </li>
+                    <li class="contact-item">
+                        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                        <a href="mailto:azizstudio.dev@gmail.com" class="contact-link">azizstudio.dev@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom Section: Copyright & Legal links -->
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                <p>&copy; <span id="footer-year">2026</span> Aziz Studio Digital. Tous droits réservés.</p>
+            </div>
+            <div class="footer-legal-links">
+                <a href="politique-confidentialite.html" class="legal-link">Politique de confidentialité</a>
+                <a href="mentions-legales.html" class="legal-link">Mentions légales</a>
+                <a href="conditions-utilisation.html" class="legal-link">Conditions d'utilisation</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

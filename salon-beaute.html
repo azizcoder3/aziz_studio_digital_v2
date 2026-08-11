@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site web salon de beauté au Congo | Aziz Studio Digital</title>
+    <meta name="description" content="Création de site web pour salons de beauté et spas au Congo : carte des soins, réservation en ligne et contact WhatsApp. Devis gratuit en 72h.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://azizstudiodigital.netlify.app/salon-beaute.html">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Site web salon de beauté au Congo | Aziz Studio Digital">
+    <meta property="og:description" content="Création de site web pour salons de beauté et spas au Congo : carte des soins, réservation en ligne et contact WhatsApp. Devis gratuit en 72h.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://azizstudiodigital.netlify.app/salon-beaute.html">
+    <meta property="og:image" content="https://azizstudiodigital.netlify.app/assets/images/home/hero-illustration.webp">
+    <meta property="og:locale" content="fr_FR">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Site web salon de beauté au Congo | Aziz Studio Digital">
+    <meta name="twitter:description" content="Création de site web pour salons de beauté et spas au Congo : carte des soins, réservation en ligne et contact WhatsApp. Devis gratuit en 72h.">
+    <meta name="twitter:image" content="https://azizstudiodigital.netlify.app/assets/images/home/hero-illustration.webp">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS Base -->
+    <link rel="stylesheet" href="assets/css/base/variables.css">
+    <link rel="stylesheet" href="assets/css/base/reset.css">
+    <link rel="stylesheet" href="assets/css/base/typography.css">
+    <link rel="stylesheet" href="assets/css/base/base.css">
+
+    <!-- CSS Composants -->
+    <link rel="stylesheet" href="assets/css/components/container.css">
+    <link rel="stylesheet" href="assets/css/components/grid.css">
+    <link rel="stylesheet" href="assets/css/components/section.css">
+    <link rel="stylesheet" href="assets/css/components/card.css">
+    <link rel="stylesheet" href="assets/css/components/badge.css">
+    <link rel="stylesheet" href="assets/css/components/button.css">
+    <link rel="stylesheet" href="assets/css/components/header.css">
+    <link rel="stylesheet" href="assets/css/components/footer.css">
+
+    <link rel="stylesheet" href="assets/css/components/hero.css">
+    <link rel="stylesheet" href="assets/css/components/pricing.css">
+    <link rel="stylesheet" href="assets/css/components/faq.css">
+    <link rel="stylesheet" href="assets/css/pages/secteurs.css">
+
+    <style>
+        body {
+            padding-top: 73px;
+        }
+        @media (min-width: 1024px) {
+            body {
+                padding-top: 90px;
+            }
+        }
+
+        .nav-list,
+        .nav-list li {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links,
+        .footer-contact-info,
+        .hero-arguments,
+        .cta-benefits-list,
+        .cta-outcomes-list {
+            list-style: none;
+            padding-left: 0;
+        }
+    </style>
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Aller au contenu principal</a>
+<header class="site-header" id="site-header" role="banner">
+    <div class="container header-container">
+        <!-- Logo -->
+        <a href="index.html" class="logo" aria-label="Aziz Studio Digital - Retour à l'accueil">
+            <span class="logo-text">Aziz <span class="text-accent">Studio</span> Digital</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button type="button" class="mobile-nav-toggle" id="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Menu principal">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+
+        <!-- Navigation System -->
+        <nav class="primary-navigation" id="primary-navigation" aria-label="Navigation principale">
+            <ul class="nav-list" role="list">
+                <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page" id="nav-home">Accueil</a></li>
+                <li class="nav-item"><a href="services.html" class="nav-link" id="nav-services">Services</a></li>
+                <li class="nav-item"><a href="solutions.html" class="nav-link" id="nav-solutions">Solutions</a></li>
+                <li class="nav-item"><a href="portfolio.html" class="nav-link" id="nav-portfolio">Portfolio</a></li>
+                <li class="nav-item"><a href="blog.html" class="nav-link" id="nav-blog">Blog</a></li>
+                <li class="nav-item"><a href="tarifs.html" class="nav-link" id="nav-tarifs">Tarifs</a></li>
+                <li class="nav-item"><a href="a-propos.html" class="nav-link" id="nav-about">À propos</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link" id="nav-contact">Contact</a></li>
+            </ul>
+            
+            <!-- Mobile CTA (shows only in mobile panel) -->
+            <div class="mobile-cta-wrapper">
+                <a href="contact.html?type=devis" class="btn btn-primary cta-button">Demander un devis</a>
+            </div>
+        </nav>
+
+        <!-- Desktop CTA -->
+        <div class="desktop-cta-wrapper">
+            <a href="contact.html?type=devis" class="btn btn-primary cta-button">Demander un devis</a>
+        </div>
+    </div>
+</header>
+
+
+<!-- ==========================================================================
+   OFFRE SALON DE BEAUTE - FRAGMENT SOURCE (SPRINT 40)
+   Aziz Studio Digital V2
+   ========================================================================== -->
+
+<main class="main-content" id="main-content" role="main">
+
+    <!-- 1. Breadcrumb -->
+    <div class="services-breadcrumb-wrapper">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Fil d'Ariane">
+                <ol class="breadcrumb-list" role="list">
+                    <li class="breadcrumb-item"><a href="index.html" class="breadcrumb-link">Accueil</a></li>
+                    <li class="breadcrumb-separator" aria-hidden="true">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </li>
+                    <li class="breadcrumb-item"><a href="index.html#secteurs" class="breadcrumb-link">Secteurs</a></li>
+                    <li class="breadcrumb-separator" aria-hidden="true">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </li>
+                    <li class="breadcrumb-item breadcrumb-item-active" aria-current="page"><span>Salons de beauté</span></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- 2. Hero Sectoriel -->
+    <section class="section sector-hero" id="hero-sectoriel">
+        <div class="container">
+            <div class="sector-hero-grid">
+                <div class="sector-hero-content">
+                    <div class="sector-hero-badge-wrapper">
+                        <span class="badge badge-primary">✨ Offre Salons de Beauté</span>
+                    </div>
+                    <h1 class="sector-hero-title">Site web pour salons de beauté</h1>
+                    <p class="sector-hero-subtitle">
+                        Présentez vos prestations et facilitez les réservations en ligne pour développer la clientèle de votre site salon de beauté.
+                    </p>
+                    <p class="sector-hero-description">
+                        Sublimez l'image de votre institut de beauté, spa ou salon de coiffure au Congo. Mettez en avant vos soins du visage, vos rituels bien-être et permettez à vos clients de réserver leurs créneaux en toute simplicité.
+                    </p>
+                    <div class="sector-hero-actions">
+                        <a href="commande.html?secteur=salon-beaute&amp;offre=Site%20web%20pour%20salons%20de%20beaut%C3%A9&amp;prix=250k%20FCFA" class="btn btn-primary">Continuer avec cette offre</a>
+                        <a href="contact.html?type=conseil" class="btn btn-outline">Demander conseil</a>
+                    </div>
+                </div>
+                <div class="sector-hero-visual">
+                    <div class="sector-hero-image-frame">
+                        <img src="assets/images/secteurs/salon-beaute.webp" alt="Aperçu du site web salon de beauté" class="sector-hero-img" loading="eager" width="1200" height="675">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Layout principal : Détails + Bloc Résumé Sticky -->
+    <section class="section section-surface" id="details-offre">
+        <div class="container">
+            <div class="sector-content-layout">
+                
+                <div class="sector-main-body">
+                    
+                    <!-- Ce que vous obtenez -->
+                    <div class="deliverables-block">
+                        <div class="section-header">
+                            <span class="badge badge-secondary">📦 Inclus dans l'offre</span>
+                            <h2 class="section-title">Ce que vous obtenez</h2>
+                            <p class="section-subtitle">Une expérience visuelle raffinée pour attirer et fidéliser votre clientèle bien-être.</p>
+                        </div>
+                        <div class="deliverables-grid">
+                            <div class="deliverable-card">
+                                <div class="deliverable-icon-wrapper" aria-hidden="true">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                </div>
+                                <div class="deliverable-info">
+                                    <h3 class="deliverable-title">Carte des soins &amp; Tarifs détaillés</h3>
+                                    <p class="deliverable-text">Présentation élégante de vos prestations (massages, esthétique, manucure, coiffure) avec durées et tarifs.</p>
+                                </div>
+                            </div>
+
+                            <div class="deliverable-card">
+                                <div class="deliverable-icon-wrapper" aria-hidden="true">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                </div>
+                                <div class="deliverable-info">
+                                    <h3 class="deliverable-title">Module de prise de RDV en ligne</h3>
+                                    <p class="deliverable-text">Formulaire intuitif permettant à vos clientes de sélectionner leurs soins et leur date préférée.</p>
+                                </div>
+                            </div>
+
+                            <div class="deliverable-card">
+                                <div class="deliverable-icon-wrapper" aria-hidden="true">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                </div>
+                                <div class="deliverable-info">
+                                    <h3 class="deliverable-title">Galerie photos Avant / Après &amp; Cadre</h3>
+                                    <p class="deliverable-text">Mise en valeur de vos créations, de votre équipe esthétique et du confort de votre espace.</p>
+                                </div>
+                            </div>
+
+                            <div class="deliverable-card">
+                                <div class="deliverable-icon-wrapper" aria-hidden="true">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                </div>
+                                <div class="deliverable-info">
+                                    <h3 class="deliverable-title">Lien rapide WhatsApp &amp; Réseaux</h3>
+                                    <p class="deliverable-text">Intégration d'un bouton de chat direct pour répondre instantanément aux demandes de créneaux.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Comment ça marche -->
+                    <div class="process-section">
+                        <div class="section-header">
+                            <span class="badge badge-secondary">⚡ Méthode de travail</span>
+                            <h2 class="section-title">Comment ça marche</h2>
+                            <p class="section-subtitle">Du devis à la première cliente réservée en ligne.</p>
+                        </div>
+                        <div class="process-steps-list">
+                            <div class="process-step-item">
+                                <div class="process-step-number">01</div>
+                                <div class="process-step-content">
+                                    <h3 class="process-step-title">Prise de contact &amp; Devis sous 72h</h3>
+                                    <p class="process-step-desc">Récupération de la liste de vos prestations, de votre grille tarifaire et de vos plus beaux visuels.</p>
+                                </div>
+                            </div>
+
+                            <div class="process-step-item">
+                                <div class="process-step-number">02</div>
+                                <div class="process-step-content">
+                                    <h3 class="process-step-title">Design élégant &amp; Thématique beauté</h3>
+                                    <p class="process-step-desc">Création d'une identité visuelle douce et raffinée mettant en avant vos soins phares.</p>
+                                </div>
+                            </div>
+
+                            <div class="process-step-item">
+                                <div class="process-step-number">03</div>
+                                <div class="process-step-content">
+                                    <h3 class="process-step-title">Tests des demandes de réservations</h3>
+                                    <p class="process-step-desc">Vérification de la réception immédiate des demandes de RDV sur votre téléphone.</p>
+                                </div>
+                            </div>
+
+                            <div class="process-step-item">
+                                <div class="process-step-number">04</div>
+                                <div class="process-step-content">
+                                    <h3 class="process-step-title">Lancement &amp; Visibilité réseaux</h3>
+                                    <p class="process-step-desc">Mise en ligne et lien direct à insérer sur vos profils Instagram, Facebook et Google.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ -->
+                    <div class="faq-section">
+                        <div class="section-header">
+                            <span class="badge badge-secondary">❓ Questions fréquentes</span>
+                            <h2 class="section-title">Foire aux questions — Offre Salon de Beauté</h2>
+                        </div>
+                        <div class="faq-accordion-wrapper">
+                            <div class="faq-accordion">
+                                <details class="faq-item card" open>
+                                    <summary class="faq-summary">
+                                        <div class="faq-question">
+                                            <h3 class="faq-question-title">Puis-je lier le formulaire à mon numéro WhatsApp pro ?</h3>
+                                        </div>
+                                        <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                                    </summary>
+                                    <div class="faq-answer">
+                                        <p class="faq-answer-text">Oui, les demandes de réservation peuvent être directement dirigées vers le WhatsApp de votre salon pour une confirmation ultra rapide.</p>
+                                    </div>
+                                </details>
+
+                                <details class="faq-item card">
+                                    <summary class="faq-summary">
+                                        <div class="faq-question">
+                                            <h3 class="faq-question-title">Est-il facile d'ajouter de nouvelles prestations ou promos ?</h3>
+                                        </div>
+                                        <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                                    </summary>
+                                    <div class="faq-answer">
+                                        <p class="faq-answer-text">Absolument, la carte des soins est modulable pour vous permettre d'annoncer de nouveaux forfaits ou offres saisonnières.</p>
+                                    </div>
+                                </details>
+
+                                <details class="faq-item card">
+                                    <summary class="faq-summary">
+                                        <div class="faq-question">
+                                            <h3 class="faq-question-title">Le site s'affiche-t-il bien sur Instagram et Facebook ?</h3>
+                                        </div>
+                                        <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                                    </summary>
+                                    <div class="faq-answer">
+                                        <p class="faq-answer-text">Oui, le site est optimisé pour ouvrir de manière instantanée lorsque vos clientes cliquent sur le lien dans votre bio Instagram.</p>
+                                    </div>
+                                </details>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Colonne latérale sticky : Bloc Résumé -->
+                <aside class="sector-sidebar">
+                    <div class="sector-pricing-card sector-pricing-sticky">
+                        <div class="sector-pricing-header">
+                            <div class="sector-pricing-badge">
+                                <span class="badge badge-primary">Formule Sectorielle</span>
+                            </div>
+                            <h3 class="sector-pricing-title">Site salon de beauté</h3>
+                            <div class="sector-pricing-amount-block">
+                                <span class="sector-pricing-label">Tarif de départ</span>
+                                <div class="sector-pricing-amount">250k FCFA</div>
+                            </div>
+                        </div>
+                        <ul class="sector-pricing-features" role="list">
+                            <li class="sector-pricing-feature-item">
+                                <svg class="sector-pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span>Présentation 1 à 5 pages</span>
+                            </li>
+                            <li class="sector-pricing-feature-item">
+                                <svg class="sector-pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span>Carte des soins &amp; tarifs</span>
+                            </li>
+                            <li class="sector-pricing-feature-item">
+                                <svg class="sector-pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span>Formulaire de réservation de rituels</span>
+                            </li>
+                            <li class="sector-pricing-feature-item">
+                                <svg class="sector-pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span>Bouton d'échange direct WhatsApp</span>
+                            </li>
+                            <li class="sector-pricing-feature-item">
+                                <svg class="sector-pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span>Design chic &amp; mobile-first</span>
+                            </li>
+                        </ul>
+                        <div>
+                            <a href="commande.html?secteur=salon-beaute&amp;offre=Site%20web%20pour%20salons%20de%20beaut%C3%A9&amp;prix=250k%20FCFA" class="btn btn-primary sector-pricing-cta">Continuer avec cette offre</a>
+                        </div>
+                        <p class="sector-pricing-note">Devis final détaillé transmis sous 72h sans engagement.</p>
+                    </div>
+                </aside>
+
+            </div>
+
+            <!-- Navigation inter-secteurs -->
+            <nav class="sector-navigation" aria-label="Navigation entre offres sectorielles">
+                <a href="pharmacie.html" class="sector-nav-link" aria-label="Secteur précédent : Pharmacies">
+                    <span aria-hidden="true">←</span>
+                    <div>
+                        <div class="sector-nav-label">Secteur précédent</div>
+                        <div class="sector-nav-title">Pharmacies</div>
+                    </div>
+                </a>
+                <a href="voyage.html" class="sector-nav-link" aria-label="Secteur suivant : Agences de voyage">
+                    <div>
+                        <div class="sector-nav-label">Secteur suivant</div>
+                        <div class="sector-nav-title">Agences de voyage</div>
+                    </div>
+                    <span aria-hidden="true">→</span>
+                </a>
+            </nav>
+
+        </div>
+    </section>
+
+</main>
+
+
+<footer class="site-footer" id="site-footer" role="contentinfo">
+    <div class="container footer-container">
+        <!-- Top Section: Logo & Newsletter -->
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="index.html" class="logo" aria-label="Aziz Studio Digital - Retour à l'accueil">
+                    <span class="logo-text">Aziz <span class="text-accent">Studio</span> Digital</span>
+                </a>
+                <p class="brand-description">
+                    Aziz Studio Digital accompagne les entreprises, hôtels, restaurants, agences immobilières, cabinets médicaux et autres professionnels dans leur transformation digitale grâce à la création de sites web modernes, au référencement SEO et aux solutions numériques.
+                </p>
+                <div class="social-links">
+                    <a href="https://facebook.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <svg class="social-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                    </a>
+                    <a href="https://linkedin.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg class="social-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                    <a href="https://github.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <svg class="social-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Newsletter Section -->
+            <div class="footer-newsletter">
+                <h2 class="footer-title">Newsletter</h2>
+                <p class="newsletter-text">Abonnez-vous à notre newsletter pour recevoir nos dernières actualités et conseils du digital.</p>
+                <form class="newsletter-form" id="newsletter-form" onsubmit="event.preventDefault();">
+                    <div class="form-group">
+                        <label for="newsletter-email" class="sr-only">Adresse e-mail</label>
+                        <input type="email" id="newsletter-email" name="email" class="newsletter-input" placeholder="Votre adresse e-mail" required aria-required="true">
+                        <button type="submit" class="newsletter-submit" aria-label="S'abonner">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="submit-icon" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Middle Section: Navigation Links & Columns -->
+        <div class="footer-middle">
+            <!-- Col 1: Navigation Rapide -->
+            <div class="footer-col">
+                <h2 class="footer-title">Navigation</h2>
+                <ul class="footer-links">
+                    <li><a href="index.html" class="footer-link">Accueil</a></li>
+                    <li><a href="services.html" class="footer-link">Services</a></li>
+                    <li><a href="solutions.html" class="footer-link">Solutions</a></li>
+                    <li><a href="portfolio.html" class="footer-link">Portfolio</a></li>
+                    <li><a href="blog.html" class="footer-link">Blog</a></li>
+                    <li><a href="tarifs.html" class="footer-link">Tarifs</a></li>
+                    <li><a href="a-propos.html" class="footer-link">À propos</a></li>
+                    <li><a href="contact.html" class="footer-link">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 2: Services -->
+            <div class="footer-col footer-col-double">
+                <h2 class="footer-title">Nos Services</h2>
+                <ul class="footer-links services-grid">
+                    <li><a href="services.html#vitrine" class="footer-link">Site vitrine</a></li>
+                    <li><a href="services.html#ecommerce" class="footer-link">Site e-commerce</a></li>
+                    <li><a href="hotel.html" class="footer-link">Site hôtel</a></li>
+                    <li><a href="restaurant.html" class="footer-link">Site restaurant</a></li>
+                    <li><a href="immobilier.html" class="footer-link">Site agence immobilière</a></li>
+                    <li><a href="clinique.html" class="footer-link">Site clinique</a></li>
+                    <li><a href="cabinet-medical.html" class="footer-link">Site cabinet médical</a></li>
+                    <li><a href="cabinet-dentaire.html" class="footer-link">Site cabinet dentaire</a></li>
+                    <li><a href="pharmacie.html" class="footer-link">Site pharmacie</a></li>
+                    <li><a href="salon-beaute.html" class="footer-link">Site salon de beauté</a></li>
+                    <li><a href="voyage.html" class="footer-link">Site agence de voyage</a></li>
+                    <li><a href="services.html#seo" class="footer-link">Référencement SEO</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Coordonnées -->
+            <div class="footer-col">
+                <h2 class="footer-title">Coordonnées</h2>
+                <ul class="footer-contact-info">
+                    <li class="contact-item">
+                        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                        <span>République du Congo (Brazzaville / Pointe-Noire)</span>
+                    </li>
+                    <li class="contact-item">
+                        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                        <a href="tel:+242060000000" class="contact-link">+242 06 000 00 00</a>
+                    </li>
+                    <li class="contact-item">
+                        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12a4 4 0 118 0 4 4 0 01-8 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" /><path stroke-linecap="round" stroke-linejoin="round" d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" /></svg>
+                        <a href="https://wa.me/242060000000" class="contact-link" target="_blank" rel="noopener noreferrer">WhatsApp Chat</a>
+                    </li>
+                    <li class="contact-item">
+                        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                        <a href="mailto:azizstudio.dev@gmail.com" class="contact-link">azizstudio.dev@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom Section: Copyright & Legal links -->
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                <p>&copy; <span id="footer-year">2026</span> Aziz Studio Digital. Tous droits réservés.</p>
+            </div>
+            <div class="footer-legal-links">
+                <a href="politique-confidentialite.html" class="legal-link">Politique de confidentialité</a>
+                <a href="mentions-legales.html" class="legal-link">Mentions légales</a>
+                <a href="conditions-utilisation.html" class="legal-link">Conditions d'utilisation</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

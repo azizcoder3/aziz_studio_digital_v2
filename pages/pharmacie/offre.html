@@ -1,0 +1,269 @@
+<!-- ==========================================================================
+   OFFRE PHARMACIE - FRAGMENT SOURCE (SPRINT 40)
+   Aziz Studio Digital V2
+   ========================================================================== -->
+
+<main class="main-content" id="main-content" role="main">
+
+    <!-- 1. Breadcrumb -->
+    <div class="services-breadcrumb-wrapper">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Fil d'Ariane">
+                <ol class="breadcrumb-list" role="list">
+                    <li class="breadcrumb-item"><a href="index.html" class="breadcrumb-link">Accueil</a></li>
+                    <li class="breadcrumb-separator" aria-hidden="true">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </li>
+                    <li class="breadcrumb-item"><a href="index.html#secteurs" class="breadcrumb-link">Secteurs</a></li>
+                    <li class="breadcrumb-separator" aria-hidden="true">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </li>
+                    <li class="breadcrumb-item breadcrumb-item-active" aria-current="page"><span>Pharmacies</span></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- 2. Hero Sectoriel -->
+    <section class="section sector-hero" id="hero-sectoriel">
+        <div class="container">
+            <div class="sector-hero-grid">
+                <div class="sector-hero-content">
+                    <div class="sector-hero-badge-wrapper">
+                        <span class="badge badge-primary">💊 Offre Pharmacies</span>
+                    </div>
+                    <h1 class="sector-hero-title">Site web pour pharmacies</h1>
+                    <p class="sector-hero-subtitle">
+                        Informations pratiques, horaires et conseils santé facilement accessibles pour les usagers sur votre site pharmacie.
+                    </p>
+                    <p class="sector-hero-description">
+                        Facilitez la vie de vos usagers au Congo en publiant vos plannings de garde, votre catalogue de parapharmacie, vos produits de santé et vos conseils d'utilisation en ligne.
+                    </p>
+                    <div class="sector-hero-actions">
+                        <a href="commande.html?secteur=pharmacie&amp;offre=Site%20web%20pour%20pharmacies&amp;prix=500k%20FCFA" class="btn btn-primary">Continuer avec cette offre</a>
+                        <a href="contact.html?type=conseil" class="btn btn-outline">Demander conseil</a>
+                    </div>
+                </div>
+                <div class="sector-hero-visual">
+                    <div class="sector-hero-image-frame">
+                        <img src="assets/images/secteurs/pharmacie.webp" alt="Aperçu du site web pharmacie" class="sector-hero-img" loading="eager" width="1200" height="675">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Layout principal : Détails + Bloc Résumé Sticky -->
+    <section class="section section-surface" id="details-offre">
+        <div class="container">
+            <div class="sector-content-layout">
+                
+                <div class="sector-main-body">
+                    
+                    <!-- Ce que vous obtenez -->
+                    <div class="deliverables-block">
+                        <div class="section-header">
+                            <span class="badge badge-secondary">📦 Inclus dans l'offre</span>
+                            <h2 class="section-title">Ce que vous obtenez</h2>
+                            <p class="section-subtitle">Une plateforme de santé de proximité complète. Le tarif indicatif démarre à 500k FCFA pour une architecture multi-pages et varie selon les fonctionnalités (catalogue parapharmacie, envoi d'ordonnance).</p>
+                        </div>
+                        <div class="deliverables-grid">
+                            <div class="deliverable-card">
+                                <div class="deliverable-icon-wrapper" aria-hidden="true">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                </div>
+                                <div class="deliverable-info">
+                                    <h3 class="deliverable-title">Affichage des pharmacies de garde</h3>
+                                    <p class="deliverable-text">Rubrique d'information mise à jour régulièrement indiquant les dates et horaires de garde de votre officine.</p>
+                                </div>
+                            </div>
+
+                            <div class="deliverable-card">
+                                <div class="deliverable-icon-wrapper" aria-hidden="true">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                </div>
+                                <div class="deliverable-info">
+                                    <h3 class="deliverable-title">Vitrine Parapharmacie &amp; Matériel</h3>
+                                    <p class="deliverable-text">Présentation des gammes cosmétiques, compléments alimentaires, puériculture et matériel médical disponible.</p>
+                                </div>
+                            </div>
+
+                            <div class="deliverable-card">
+                                <div class="deliverable-icon-wrapper" aria-hidden="true">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                </div>
+                                <div class="deliverable-info">
+                                    <h3 class="deliverable-title">Envoi d'ordonnance / Contact direct</h3>
+                                    <p class="deliverable-text">Module sécurisé permettant aux usagers de transmettre une photo d'ordonnance pour préparation préalable.</p>
+                                </div>
+                            </div>
+
+                            <div class="deliverable-card">
+                                <div class="deliverable-icon-wrapper" aria-hidden="true">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                </div>
+                                <div class="deliverable-info">
+                                    <h3 class="deliverable-title">Espace conseils de santé &amp; Prévention</h3>
+                                    <p class="deliverable-text">Articles et fiches réflexes rédigées par vos pharmaciens pour accompagner vos patients au quotidien.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Comment ça marche -->
+                    <div class="process-section">
+                        <div class="section-header">
+                            <span class="badge badge-secondary">⚡ Méthode de travail</span>
+                            <h2 class="section-title">Comment ça marche</h2>
+                            <p class="section-subtitle">Accompagnement réactif pour l'officine.</p>
+                        </div>
+                        <div class="process-steps-list">
+                            <div class="process-step-item">
+                                <div class="process-step-number">01</div>
+                                <div class="process-step-content">
+                                    <h3 class="process-step-title">Prise de contact &amp; Devis sous 72h</h3>
+                                    <p class="process-step-desc">Définition du périmètre de l'officine (catalogue parapharmacie, gardes et pré-commande).</p>
+                                </div>
+                            </div>
+
+                            <div class="process-step-item">
+                                <div class="process-step-number">02</div>
+                                <div class="process-step-content">
+                                    <h3 class="process-step-title">Structure &amp; Charte officinale</h3>
+                                    <p class="process-step-desc">Design vert santé moderne et mise en place de la hiérarchie des catégories de produits.</p>
+                                </div>
+                            </div>
+
+                            <div class="process-step-item">
+                                <div class="process-step-number">03</div>
+                                <div class="process-step-content">
+                                    <h3 class="process-step-title">Tests des canaux de messagerie</h3>
+                                    <p class="process-step-desc">Vérification de la réception rapide des demandes de conseils et ordonnances préparées.</p>
+                                </div>
+                            </div>
+
+                            <div class="process-step-item">
+                                <div class="process-step-number">04</div>
+                                <div class="process-step-content">
+                                    <h3 class="process-step-title">Publication &amp; Référencement de proximité</h3>
+                                    <p class="process-step-desc">Mise en ligne et positionnement sur les termes de santé et pharmacies dans votre quartier.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ -->
+                    <div class="faq-section">
+                        <div class="section-header">
+                            <span class="badge badge-secondary">❓ Questions fréquentes</span>
+                            <h2 class="section-title">Foire aux questions — Offre Pharmacie</h2>
+                        </div>
+                        <div class="faq-accordion-wrapper">
+                            <div class="faq-accordion">
+                                <details class="faq-item card" open>
+                                    <summary class="faq-summary">
+                                        <div class="faq-question">
+                                            <h3 class="faq-question-title">Le site permet-il la réservation de produits de parapharmacie ?</h3>
+                                        </div>
+                                        <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                                    </summary>
+                                    <div class="faq-answer">
+                                        <p class="faq-answer-text">Oui, vos clients peuvent réserver leurs produits en ligne et venir les retirer directement au comptoir de la pharmacie (click &amp; collect).</p>
+                                    </div>
+                                </details>
+
+                                <details class="faq-item card">
+                                    <summary class="faq-summary">
+                                        <div class="faq-question">
+                                            <h3 class="faq-question-title">Comment mettre à jour les dates de garde ?</h3>
+                                        </div>
+                                        <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                                    </summary>
+                                    <div class="faq-answer">
+                                        <p class="faq-answer-text">Une interface d'administration simplifiée permet à votre équipe de mettre à jour le calendrier de garde en quelques secondes.</p>
+                                    </div>
+                                </details>
+
+                                <details class="faq-item card">
+                                    <summary class="faq-summary">
+                                        <div class="faq-question">
+                                            <h3 class="faq-question-title">Les ordonnances transmises sont-elles sécurisées ?</h3>
+                                        </div>
+                                        <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                                    </summary>
+                                    <div class="faq-answer">
+                                        <p class="faq-answer-text">Oui, l'envoi est intégralement chiffré SSL vers la messagerie interne sécurisée du pharmacien titulaire.</p>
+                                    </div>
+                                </details>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Colonne latérale sticky : Bloc Résumé -->
+                <aside class="sector-sidebar">
+                    <div class="sector-pricing-card sector-pricing-sticky">
+                        <div class="sector-pricing-header">
+                            <div class="sector-pricing-badge">
+                                <span class="badge badge-primary">Formule Sectorielle</span>
+                            </div>
+                            <h3 class="sector-pricing-title">Site web pour pharmacies</h3>
+                            <div class="sector-pricing-amount-block">
+                                <span class="sector-pricing-label">Tarif de départ</span>
+                                <div class="sector-pricing-amount">500k FCFA</div>
+                            </div>
+                        </div>
+                        <ul class="sector-pricing-features" role="list">
+                            <li class="sector-pricing-feature-item">
+                                <svg class="sector-pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span>Multi-pages à sur-mesure</span>
+                            </li>
+                            <li class="sector-pricing-feature-item">
+                                <svg class="sector-pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span>Gestion des plannings de garde</span>
+                            </li>
+                            <li class="sector-pricing-feature-item">
+                                <svg class="sector-pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span>Catalogue parapharmacie</span>
+                            </li>
+                            <li class="sector-pricing-feature-item">
+                                <svg class="sector-pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span>Envoi d'ordonnance sécurisé</span>
+                            </li>
+                            <li class="sector-pricing-feature-item">
+                                <svg class="sector-pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span>SEO santé &amp; géolocalisation</span>
+                            </li>
+                        </ul>
+                        <div>
+                            <a href="commande.html?secteur=pharmacie&amp;offre=Site%20web%20pour%20pharmacies&amp;prix=500k%20FCFA" class="btn btn-primary sector-pricing-cta">Continuer avec cette offre</a>
+                        </div>
+                        <p class="sector-pricing-note">Devis sur mesure selon le catalogue et les fonctionnalités choisies.</p>
+                    </div>
+                </aside>
+
+            </div>
+
+            <!-- Navigation inter-secteurs -->
+            <nav class="sector-navigation" aria-label="Navigation entre offres sectorielles">
+                <a href="cabinet-dentaire.html" class="sector-nav-link" aria-label="Secteur précédent : Cabinets dentaires">
+                    <span aria-hidden="true">←</span>
+                    <div>
+                        <div class="sector-nav-label">Secteur précédent</div>
+                        <div class="sector-nav-title">Cabinets dentaires</div>
+                    </div>
+                </a>
+                <a href="salon-beaute.html" class="sector-nav-link" aria-label="Secteur suivant : Salons de beauté">
+                    <div>
+                        <div class="sector-nav-label">Secteur suivant</div>
+                        <div class="sector-nav-title">Salons de beauté</div>
+                    </div>
+                    <span aria-hidden="true">→</span>
+                </a>
+            </nav>
+
+        </div>
+    </section>
+
+</main>

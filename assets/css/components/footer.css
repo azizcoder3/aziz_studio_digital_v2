@@ -1,0 +1,332 @@
+/* ==========================================================================
+   FOOTER COMPONENT
+   ========================================================================== */
+
+.site-footer {
+    background-color: var(--color-surface);
+    color: var(--color-text-secondary);
+    border-top: 1px solid var(--color-border);
+    padding: var(--spacing-64px) 0 var(--spacing-32px) 0;
+    font-family: var(--font-primary);
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-48px);
+}
+
+/* ==========================================================================
+   TOP SECTION: BRAND & NEWSLETTER
+   ========================================================================== */
+
+.footer-top {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-32px);
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: var(--spacing-32px);
+}
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-16px);
+}
+
+.footer-brand .logo {
+    display: inline-block;
+}
+
+.brand-description {
+    font-size: var(--font-size-sm);
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+    max-width: 480px;
+}
+
+/* Social links */
+.social-links {
+    display: flex;
+    gap: var(--spacing-12px);
+    margin-top: var(--spacing-8px);
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: var(--radius-circle);
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+    transition: background-color var(--transition-fast), color var(--transition-fast), transform var(--transition-fast);
+}
+
+.social-link:hover {
+    background-color: var(--color-accent);
+    color: hsl(var(--color-surface-h), var(--color-surface-s), var(--color-surface-l));
+    transform: translateY(-2px);
+}
+
+.social-icon {
+    width: 18px;
+    height: 18px;
+}
+
+/* Newsletter styling */
+.footer-newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-16px);
+    max-width: 420px;
+}
+
+.footer-title {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-700);
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-8px);
+}
+
+.newsletter-text {
+    font-size: var(--font-size-sm);
+    line-height: 1.5;
+}
+
+.newsletter-form .form-group {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.newsletter-input {
+    width: 100%;
+    height: 48px;
+    padding: 0 52px 0 var(--spacing-20px);
+    background-color: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-pill);
+    color: var(--color-text-primary);
+    font-size: var(--font-size-sm);
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.newsletter-input:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px hsla(var(--color-accent-h), var(--color-accent-s), var(--color-accent-l), 0.15);
+}
+
+.newsletter-submit {
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: var(--radius-circle);
+    background-color: var(--color-accent);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: background-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.newsletter-submit:hover {
+    background-color: var(--color-primary);
+    transform: translateY(-50%) scale(1.06);
+}
+
+.newsletter-submit:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+}
+
+.submit-icon {
+    width: 18px;
+    height: 18px;
+    color: #ffffff;
+    stroke: #ffffff;
+    fill: none;
+    flex-shrink: 0;
+}
+
+/* Screen reader class for accessibility */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* ==========================================================================
+   MIDDLE SECTION: COLUMNS & GRIDS
+   ========================================================================== */
+
+.footer-middle {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-32px);
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: var(--spacing-48px);
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-16px);
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-8px);
+}
+
+.footer-link {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    transition: color var(--transition-fast), transform var(--transition-fast);
+    display: inline-block;
+}
+
+.footer-link:hover {
+    color: var(--color-accent);
+    transform: translateX(4px);
+}
+
+/* Double-width services column with sub-grid */
+.footer-col-double {
+    grid-column: span 1;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-8px);
+}
+
+/* Contact Info list */
+.footer-contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-12px);
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-12px);
+    font-size: var(--font-size-sm);
+    line-height: 1.4;
+}
+
+.contact-icon {
+    width: 18px;
+    height: 18px;
+    color: var(--color-accent);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.contact-link {
+    transition: color var(--transition-fast);
+}
+
+.contact-link:hover {
+    color: var(--color-accent);
+}
+
+/* ==========================================================================
+   BOTTOM SECTION: COPYRIGHT & LEGAL
+   ========================================================================== */
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-16px);
+    font-size: var(--font-size-xs);
+    align-items: center;
+    text-align: center;
+}
+
+.footer-legal-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-16px) var(--spacing-24px);
+}
+
+.legal-link {
+    color: var(--color-text-secondary);
+    transition: color var(--transition-fast);
+}
+
+.legal-link:hover {
+    color: var(--color-accent);
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN
+   ========================================================================== */
+
+/* Tablet Breakpoint */
+@media (min-width: 768px) {
+    .footer-top {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    .footer-brand {
+        flex: 1;
+    }
+    
+    .footer-newsletter {
+        flex: 1;
+        align-self: flex-start;
+    }
+    
+    .footer-middle {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer-col-double {
+        grid-column: span 2;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer-bottom {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+}
+
+/* Laptop Breakpoint */
+@media (min-width: 1024px) {
+    .footer-middle {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .footer-col-double {
+        grid-column: span 2;
+    }
+}

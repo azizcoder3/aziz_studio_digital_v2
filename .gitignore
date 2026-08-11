@@ -1,0 +1,45 @@
+# Fichiers d'environnement et secrets
+.env
+.env.*
+.env.local
+.env.development
+.env.production
+docs/Backup-codes-*.txt
+*.key
+*.pem
+
+# Dépendances Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Fichiers système d'exploitation
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Caches et builds temporaires
+.netlify/
+.cache/
+dist/
+build/
+__pycache__/
+*.pyc
+*.pyo
+
+# Fichiers d'Éditeur / IDE
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.swp
+*.swo
+*~

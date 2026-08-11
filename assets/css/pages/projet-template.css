@@ -1,0 +1,715 @@
+/* ==========================================================================
+   PROJET TEMPLATE CSS — Aziz Studio Digital V2
+   Pages projets individuelles du portfolio
+   Sprint 40 — CSS pur, aucune dépendance JavaScript
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Breadcrumb — réutilise les classes existantes de services.css
+      (copie locale, car breadcrumb n'est pas dans un composant partagé)
+   -------------------------------------------------------------------------- */
+.services-breadcrumb-wrapper {
+    background-color: var(--color-background);
+    padding-top: var(--spacing-32px);
+    padding-bottom: var(--spacing-16px);
+}
+
+.breadcrumb-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-4px);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.breadcrumb-item {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+}
+
+.breadcrumb-link {
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+.breadcrumb-link:hover {
+    color: var(--color-accent);
+}
+
+.breadcrumb-separator {
+    display: flex;
+    align-items: center;
+    color: var(--color-border);
+    font-size: var(--font-size-xs);
+    padding: 0 var(--spacing-4px);
+}
+
+.breadcrumb-item-active {
+    font-weight: var(--font-weight-600);
+    color: var(--color-text-primary);
+}
+
+/* --------------------------------------------------------------------------
+   2. Hero Split — texte gauche / image droite
+   -------------------------------------------------------------------------- */
+.projet-hero {
+    padding-top: var(--spacing-64px);
+    padding-bottom: var(--spacing-64px);
+    position: relative;
+    overflow: hidden;
+}
+
+.projet-hero::before {
+    content: '';
+    position: absolute;
+    top: -200px;
+    right: -200px;
+    width: 500px;
+    height: 500px;
+    border-radius: var(--radius-circle);
+    background: radial-gradient(
+        circle,
+        hsla(var(--color-accent-h), var(--color-accent-s), var(--color-accent-l), 0.06) 0%,
+        transparent 70%
+    );
+    pointer-events: none;
+}
+
+@media (min-width: 768px) {
+    .projet-hero {
+        padding-top: var(--spacing-96px);
+        padding-bottom: var(--spacing-96px);
+    }
+}
+
+.projet-hero-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-48px);
+    align-items: center;
+}
+
+@media (min-width: 1024px) {
+    .projet-hero-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--spacing-64px);
+    }
+}
+
+/* Contenu texte côté gauche */
+.projet-hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-20px);
+    border-left: none;
+    padding-left: 0;
+}
+
+.projet-hero-content::before,
+.projet-hero-content::after {
+    display: none;
+    content: none;
+}
+
+.projet-hero-badge {
+    width: fit-content;
+}
+
+.projet-hero-title {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-800);
+    color: var(--color-text-primary);
+    line-height: 1.15;
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .projet-hero-title {
+        font-size: var(--font-size-4xl);
+    }
+}
+
+.projet-hero-subtitle {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-500);
+    color: var(--color-accent);
+    margin: 0;
+}
+
+.projet-hero-description {
+    font-size: var(--font-size-base);
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Méta-données : année, durée, catégorie */
+.projet-hero-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-16px);
+    padding: var(--spacing-16px) 0;
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.projet-meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4px);
+}
+
+.projet-meta-label {
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-600);
+    color: var(--color-text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.projet-meta-value {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-600);
+    color: var(--color-text-primary);
+}
+
+/* Boutons CTA */
+.projet-hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-12px);
+}
+
+/* Image côté droit */
+.projet-hero-image-wrapper {
+    position: relative;
+}
+
+.projet-hero-img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: var(--radius-large);
+    box-shadow: var(--shadow-xl);
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .projet-hero-img {
+        height: 400px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .projet-hero-img {
+        height: 460px;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   3. Section Aperçu interactif — Mockup navigateur + défilement CSS pur
+   -------------------------------------------------------------------------- */
+.projet-apercu-section {
+    background-color: var(--color-surface);
+}
+
+.browser-mockup {
+    border-radius: var(--radius-large);
+    overflow: hidden;
+    box-shadow: var(--shadow-xl), 0 0 0 1px var(--color-border);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Barre du navigateur simulée */
+.browser-bar {
+    background-color: hsl(220, 14%, 12%);
+    padding: var(--spacing-10px) var(--spacing-16px);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-12px);
+    flex-shrink: 0;
+}
+
+.browser-dots {
+    display: flex;
+    gap: var(--spacing-6px);
+    flex-shrink: 0;
+}
+
+.browser-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: var(--radius-circle);
+    display: block;
+}
+
+.browser-dot-red   { background-color: #ff5f57; }
+.browser-dot-yellow { background-color: #febc2e; }
+.browser-dot-green  { background-color: #28c840; }
+
+.browser-address-bar {
+    flex: 1;
+    background-color: hsl(220, 14%, 18%);
+    border-radius: var(--radius-small);
+    padding: var(--spacing-4px) var(--spacing-12px);
+    font-size: var(--font-size-sm);
+    color: hsl(220, 14%, 60%);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Fenêtre de démo — l'image défile vers le bas au survol */
+.browser-viewport {
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    background-color: var(--color-background);
+}
+
+@media (min-width: 768px) {
+    .browser-viewport {
+        height: 540px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .browser-viewport {
+        height: 680px;
+    }
+}
+
+.browser-scroll-img {
+    width: 100%;
+    display: block;
+    /* Position de départ : affiche le haut de l'image */
+    transform: translateY(0);
+    /* Défilement lent et élégant (20s linear) */
+    transition: transform 20s linear;
+    will-change: transform;
+}
+
+.browser-mockup:hover .browser-scroll-img,
+.browser-mockup:focus-within .browser-scroll-img {
+    transform: translateY(calc(-100% + 400px));
+}
+
+@media (min-width: 768px) {
+    .browser-mockup:hover .browser-scroll-img,
+    .browser-mockup:focus-within .browser-scroll-img {
+        transform: translateY(calc(-100% + 540px));
+    }
+}
+
+@media (min-width: 1024px) {
+    .browser-mockup:hover .browser-scroll-img,
+    .browser-mockup:focus-within .browser-scroll-img {
+        transform: translateY(calc(-100% + 680px));
+    }
+}
+
+/* Label d'instruction */
+.browser-hint {
+    text-align: center;
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    margin-top: var(--spacing-16px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-8px);
+}
+
+.browser-hint-icon {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
+/* --------------------------------------------------------------------------
+   4. Onglets CSS pur (radio buttons cachés)
+   -------------------------------------------------------------------------- */
+.projet-infos-section {
+    background-color: var(--color-background);
+}
+
+.projet-infos-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-32px);
+    width: 100%;
+}
+
+@media (min-width: 1024px) {
+    .projet-infos-layout {
+        grid-template-columns: minmax(0, 1fr) 340px;
+        gap: var(--spacing-48px);
+        align-items: start;
+    }
+}
+
+/* Masquer les radio buttons */
+.tab-radio {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+}
+
+/* Liste des onglets horizontale */
+.tab-list {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: var(--spacing-8px);
+    border-bottom: 2px solid var(--color-border);
+    margin-bottom: var(--spacing-32px);
+    padding: 0 0 2px 0;
+    list-style: none;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+}
+
+.tab-list::-webkit-scrollbar {
+    display: none;
+}
+
+.tab-list li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-shrink: 0;
+}
+
+.tab-label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-12px) var(--spacing-20px);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-600);
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    white-space: nowrap;
+    transition: color var(--transition-fast), border-color var(--transition-fast), background-color var(--transition-fast);
+    border-radius: var(--radius-small) var(--radius-small) 0 0;
+}
+
+.tab-label:hover {
+    color: var(--color-text-primary);
+    background-color: var(--color-surface);
+}
+
+/* Onglet actif — quand le radio est coché */
+#tab-presentation:checked ~ .tabs-wrapper .tab-label[for="tab-presentation"],
+#tab-pages:checked       ~ .tabs-wrapper .tab-label[for="tab-pages"],
+#tab-systeme:checked     ~ .tabs-wrapper .tab-label[for="tab-systeme"],
+#tab-usage:checked       ~ .tabs-wrapper .tab-label[for="tab-usage"],
+#tab-presentation:checked ~ .projet-infos-layout .tab-label[for="tab-presentation"],
+#tab-pages:checked       ~ .projet-infos-layout .tab-label[for="tab-pages"],
+#tab-systeme:checked     ~ .projet-infos-layout .tab-label[for="tab-systeme"],
+#tab-usage:checked       ~ .projet-infos-layout .tab-label[for="tab-usage"],
+#tab-presentation:checked ~ .tab-list .tab-label[for="tab-presentation"],
+#tab-pages:checked       ~ .tab-list .tab-label[for="tab-pages"],
+#tab-systeme:checked     ~ .tab-list .tab-label[for="tab-systeme"],
+#tab-usage:checked       ~ .tab-list .tab-label[for="tab-usage"] {
+    color: var(--color-accent);
+    border-bottom-color: var(--color-accent);
+}
+
+/* Panneaux de contenu */
+.tab-panel {
+    display: none;
+}
+
+#tab-presentation:checked ~ .tabs-wrapper .tab-panel[data-tab="presentation"],
+#tab-pages:checked       ~ .tabs-wrapper .tab-panel[data-tab="pages"],
+#tab-systeme:checked     ~ .tabs-wrapper .tab-panel[data-tab="systeme"],
+#tab-usage:checked       ~ .tabs-wrapper .tab-panel[data-tab="usage"],
+#tab-presentation:checked ~ .projet-infos-layout .tab-panel[data-tab="presentation"],
+#tab-pages:checked       ~ .projet-infos-layout .tab-panel[data-tab="pages"],
+#tab-systeme:checked     ~ .projet-infos-layout .tab-panel[data-tab="systeme"],
+#tab-usage:checked       ~ .projet-infos-layout .tab-panel[data-tab="usage"],
+#tab-presentation:checked ~ .tab-panel[data-tab="presentation"],
+#tab-pages:checked       ~ .tab-panel[data-tab="pages"],
+#tab-systeme:checked     ~ .tab-panel[data-tab="systeme"],
+#tab-usage:checked       ~ .tab-panel[data-tab="usage"] {
+    display: block;
+}
+
+/* Contenu des panneaux */
+.tab-panel-title {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-700);
+    color: var(--color-text-primary);
+    margin: 0 0 var(--spacing-16px) 0;
+}
+
+.tab-panel-text {
+    font-size: var(--font-size-base);
+    color: var(--color-text-secondary);
+    line-height: 1.75;
+    margin: 0 0 var(--spacing-16px) 0;
+}
+
+.tab-panel-text:last-child {
+    margin-bottom: 0;
+}
+
+/* Liste des pages / fonctionnalités dans les onglets */
+.tab-feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-12px);
+}
+
+.tab-feature-item {
+    display: flex;
+    gap: var(--spacing-12px);
+    align-items: flex-start;
+    padding: var(--spacing-16px);
+    background-color: var(--color-surface);
+    border-radius: var(--radius-large);
+    border: 1px solid var(--color-border);
+}
+
+.tab-feature-icon {
+    font-size: var(--font-size-xl);
+    flex-shrink: 0;
+    line-height: 1;
+}
+
+.tab-feature-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4px);
+}
+
+.tab-feature-name {
+    font-weight: var(--font-weight-600);
+    color: var(--color-text-primary);
+    font-size: var(--font-size-sm);
+}
+
+.tab-feature-desc {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
+/* --------------------------------------------------------------------------
+   5. Sidebar — Palette de couleurs + stack technique
+   -------------------------------------------------------------------------- */
+.projet-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-24px);
+    position: sticky;
+    top: calc(90px + var(--spacing-24px));
+}
+
+.sidebar-card {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-large);
+    padding: var(--spacing-24px);
+}
+
+.sidebar-card-title {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-700);
+    color: var(--color-text-primary);
+    margin: 0 0 var(--spacing-16px) 0;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: var(--font-size-xs);
+}
+
+/* Palette de couleurs */
+.color-swatches {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-10px);
+}
+
+.color-swatch {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-12px);
+}
+
+.swatch-circle {
+    width: 36px;
+    height: 36px;
+    border-radius: var(--radius-circle);
+    border: 1px solid var(--color-border);
+    flex-shrink: 0;
+    box-shadow: var(--shadow-sm);
+}
+
+.swatch-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.swatch-name {
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-600);
+    color: var(--color-text-primary);
+}
+
+.swatch-hex {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-secondary);
+    font-family: monospace;
+}
+
+/* Détails du projet (sidebar) */
+.projet-details-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-12px);
+}
+
+.projet-detail-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--spacing-12px);
+    padding-bottom: var(--spacing-12px);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.projet-detail-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.projet-detail-label {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-secondary);
+    font-weight: var(--font-weight-500);
+    flex-shrink: 0;
+}
+
+.projet-detail-value {
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-600);
+    color: var(--color-text-primary);
+    text-align: right;
+}
+
+/* Stack technologique en badges */
+.stack-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-6px);
+}
+
+.stack-badge {
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-600);
+    color: var(--color-accent);
+    background-color: hsla(var(--color-accent-h), var(--color-accent-s), var(--color-accent-l), 0.08);
+    padding: var(--spacing-4px) var(--spacing-10px);
+    border-radius: var(--radius-small);
+    border: 1px solid hsla(var(--color-accent-h), var(--color-accent-s), var(--color-accent-l), 0.2);
+    white-space: nowrap;
+}
+
+/* --------------------------------------------------------------------------
+   6. Navigation précédent / suivant
+   -------------------------------------------------------------------------- */
+.projet-nav-section {
+    background-color: var(--color-surface);
+    border-top: 1px solid var(--color-border);
+    padding: var(--spacing-32px) 0;
+}
+
+.projet-nav-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-16px);
+}
+
+.projet-nav-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4px);
+    padding: var(--spacing-20px);
+    background-color: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-large);
+    text-decoration: none;
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast), transform var(--transition-fast);
+}
+
+.projet-nav-card:hover {
+    border-color: hsla(var(--color-accent-h), var(--color-accent-s), var(--color-accent-l), 0.4);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+}
+
+.projet-nav-card.nav-next {
+    text-align: right;
+}
+
+.projet-nav-direction {
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-600);
+    color: var(--color-text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.projet-nav-name {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-700);
+    color: var(--color-text-primary);
+}
+
+.projet-nav-category {
+    font-size: var(--font-size-xs);
+    color: var(--color-accent);
+}
+
+/* --------------------------------------------------------------------------
+   7. Section CTA Final (réutilise les classes service-final)
+   -------------------------------------------------------------------------- */
+.projet-cta-section {
+    background-color: var(--color-background);
+}
+
+/* --------------------------------------------------------------------------
+   8. Responsive utilitaires
+   -------------------------------------------------------------------------- */
+@media (max-width: 767px) {
+    .projet-nav-grid {
+        grid-template-columns: 1fr;
+    }
+    .projet-nav-card.nav-next {
+        text-align: left;
+    }
+    .browser-viewport {
+        height: 400px;
+    }
+    .browser-mockup:hover .browser-scroll-img,
+    .browser-mockup:focus-within .browser-scroll-img {
+        transform: translateY(calc(-100% + 400px));
+    }
+}

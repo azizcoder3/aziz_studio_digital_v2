@@ -1,0 +1,65 @@
+/* ==========================================================================
+   GRID SYSTEM
+   ========================================================================== */
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-24px);
+}
+
+/* Always 2-column grid (no breakpoint) */
+.grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Responsive Grid layouts (Mobile First) */
+
+/* Tablet Breakpoint and up */
+@media (min-width: 768px) {
+    .grid-md-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .grid-md-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .grid-md-4 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Laptop Breakpoint and up */
+@media (min-width: 1024px) {
+    .grid-lg-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .grid-lg-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .grid-lg-4 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Colspan utilities */
+@media (min-width: 768px) {
+    .col-span-md-2 {
+        grid-column: span 2;
+    }
+}
+
+@media (min-width: 1024px) {
+    .col-span-lg-2 {
+        grid-column: span 2;
+    }
+    .col-span-lg-3 {
+        grid-column: span 3;
+    }
+    .col-span-lg-4 {
+        grid-column: span 4;
+    }
+}

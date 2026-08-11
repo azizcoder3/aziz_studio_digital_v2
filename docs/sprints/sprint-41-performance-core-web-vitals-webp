@@ -1,0 +1,304 @@
+# Sprint 41 — Performance, Core Web Vitals & Conversion WebP globale
+
+**Projet :** Aziz Studio Digital V2  
+**Sprint :** 41  
+**Type :** Audit + Optimisation technique + Performance  
+**Statut :** À exécuter  
+**Dépendances :** Sprints 38, 39 et 40 validés  
+**Périmètre :** Ensemble du site statique compilé
+
+---
+
+## 1. Objectif du Sprint
+
+Le Sprint 41 a pour objectif d'améliorer les performances globales d'Aziz Studio Digital V2 en se concentrant sur :
+
+- les Core Web Vitals ;
+- le poids des pages ;
+- les images ;
+- le chargement des ressources ;
+- le rendu initial ;
+- les risques de Layout Shift ;
+- le chargement des images critiques ;
+- la conversion globale des images compatibles vers WebP ;
+- la réduction du poids transféré sans dégradation visuelle.
+
+Le Sprint doit être exécuté selon le principe :
+
+> **Mesurer → Diagnostiquer → Corriger → Recompiler → Mesurer à nouveau → Comparer → Valider visuellement.**
+
+Aucune optimisation ne doit être appliquée uniquement sur la base d'une supposition.
+
+---
+
+# 2. Règle fondamentale — Audit avant correction
+
+## Étape 0 — Audit complet de l'état actuel
+
+**Aucune modification du code, des images, du HTML, du CSS ou du build ne doit être effectuée avant la fin de l'audit initial.**
+
+L'agent doit commencer par établir un état des lieux complet.
+
+L'audit doit couvrir au minimum :
+
+- toutes les pages HTML compilées ;
+- les fichiers HTML sources pertinents ;
+- tous les fichiers CSS ;
+- les fichiers JavaScript ;
+- toutes les images ;
+- les références d'images dans HTML/CSS ;
+- le système de build ;
+- les ressources chargées dans le `<head>` ;
+- les ressources chargées dans le `<body>`.
+
+---
+
+## 2.1 Inventaire des pages
+
+Identifier précisément toutes les pages HTML compilées présentes dans le projet.
+
+L'agent doit produire une liste exacte du type :
+
+| Fichier                  | Type      | Taille | Images référencées | CSS | JS  |
+| ------------------------ | --------- | -----: | -----------------: | --- | --- |
+| `index.html`             | Home      | ... KB |                ... | ... | ... |
+| `services.html`          | Catalogue | ... KB |                ... | ... | ... |
+| `creation-site-web.html` | Service   | ... KB |                ... | ... | ... |
+| ...                      | ...       |    ... |                ... | ... | ... |
+
+Ne pas supposer qu'il existe exactement 17 pages.
+
+Le nombre réel doit être déterminé par scan du projet.
+
+---
+
+# 3. Audit des images
+
+Effectuer un inventaire complet de :
+
+- `.png`
+- `.jpg`
+- `.jpeg`
+- `.gif`
+- `.webp`
+- `.svg`
+- autres formats image éventuellement présents.
+
+Pour chaque image raster, relever :
+
+| Image | Format | Dimensions |  Poids | Références | Conversion WebP possible |
+| ----- | ------ | ---------: | -----: | ---------- | ------------------------ |
+| ...   | PNG    |        ... | ... KB | ...        | Oui/Non                  |
+
+L'agent doit également identifier :
+
+- images inutilisées ;
+- doublons éventuels ;
+- images très lourdes ;
+- images surdimensionnées ;
+- images utilisées dans le Hero ;
+- images susceptibles d'être LCP ;
+- images avec transparence ;
+- images décoratives ;
+- images nécessitant une qualité sans perte.
+
+---
+
+# 4. Audit Core Web Vitals
+
+Mesurer l'état initial des performances.
+
+Les métriques à surveiller sont :
+
+### LCP — Largest Contentful Paint
+
+Identifier l'élément LCP de chaque page représentative.
+
+Rechercher notamment :
+
+- image Hero ;
+- grand bloc texte ;
+- image de couverture ;
+- composant Dashboard ;
+- ressources CSS bloquantes ;
+- ressources nécessaires au rendu initial.
+
+### CLS — Cumulative Layout Shift
+
+Identifier les éléments susceptibles de provoquer des déplacements :
+
+- images sans dimensions ;
+- badges flottants ;
+- composants chargés tardivement ;
+- polices ;
+- éléments injectés dynamiquement ;
+- dimensions variables.
+
+### INP — Interaction to Next Paint
+
+Identifier les éventuels problèmes liés à :
+
+- JavaScript ;
+- événements lourds ;
+- scripts bloquants ;
+- interactions complexes ;
+- menus ;
+- FAQ ;
+- formulaires.
+
+---
+
+# 5. Audit des ressources
+
+Analyser :
+
+- CSS ;
+- JavaScript ;
+- polices ;
+- images ;
+- favicon ;
+- ressources externes ;
+- scripts ;
+- preload ;
+- preconnect ;
+- defer ;
+- async.
+
+Identifier :
+
+- ressources bloquantes ;
+- ressources inutiles ;
+- doublons ;
+- CSS chargés inutilement ;
+- JS chargé trop tôt ;
+- ressources externes coûteuses.
+
+---
+
+# 6. Audit des images critiques
+
+Une attention particulière doit être portée aux images du Hero.
+
+Pour chaque page :
+
+1. déterminer si une image participe au LCP ;
+2. déterminer si elle doit être chargée immédiatement ;
+3. éviter `loading="lazy"` sur une image critique ;
+4. conserver `loading="lazy"` pour les images réellement hors écran lorsque cela améliore le chargement ;
+5. ajouter/maintenir les dimensions intrinsèques appropriées ;
+6. éviter les changements de dimensions après chargement.
+
+---
+
+# 7. Conversion WebP globale
+
+## 7.1 Principe
+
+Toutes les images raster compatibles doivent être étudiées pour conversion vers WebP.
+
+Cependant :
+
+> **Conversion globale ne signifie pas conversion aveugle.**
+
+L'agent doit conserver :
+
+- SVG lorsqu'il est plus approprié ;
+- GIF animé si une conversion WebP n'est pas pertinente ;
+- PNG lorsque ses caractéristiques sont nécessaires et qu'une conversion dégrade le rendu ;
+- tout format dont la conversion ne produit aucun gain réel.
+
+WebP prend en charge la compression avec perte, sans perte et la transparence. :contentReference[oaicite:1]{index=1}
+
+---
+
+## 7.2 Méthode de conversion
+
+Pour chaque image convertible :
+
+1. conserver l'original pendant la phase de travail ;
+2. générer la version `.webp` ;
+3. comparer le poids ;
+4. vérifier les dimensions ;
+5. vérifier visuellement la qualité ;
+6. remplacer la référence uniquement si le résultat est pertinent ;
+7. vérifier qu'aucun lien d'image n'est cassé.
+
+L'agent doit utiliser un outil de conversion fiable disponible dans l'environnement.
+
+Si `cwebp` est disponible, il peut être utilisé.
+
+---
+
+## 7.3 Qualité
+
+Ne pas appliquer une qualité identique arbitrairement à toutes les images.
+
+La stratégie doit tenir compte du type d'image :
+
+- photographie ;
+- illustration ;
+- capture d'écran ;
+- image avec transparence ;
+- icône ;
+- visuel décoratif ;
+- image Hero.
+
+L'objectif est :
+
+> **réduction du poids + conservation d'une qualité visuelle professionnelle.**
+
+Une conversion WebP qui produit un fichier plus lourd que l'original ne doit pas être retenue automatiquement.
+
+La documentation Google souligne notamment que le choix de la compression et du niveau de qualité doit être adapté au type d'image. :contentReference[oaicite:2]{index=2}
+
+---
+
+# 8. Tableau obligatoire avant/après
+
+Le rapport final doit fournir des mesures réelles.
+
+Exemple :
+
+| Indicateur         |  Avant |  Après | Évolution |
+| ------------------ | -----: | -----: | --------: |
+| Images raster      |    ... |    ... |       ... |
+| Images WebP        |    ... |    ... |       ... |
+| Poids total images | ... MB | ... MB |     ... % |
+| Taille moyenne     | ... KB | ... KB |     ... % |
+| Pages concernées   |    ... |    ... |       ... |
+| LCP                |    ... |    ... |       ... |
+| CLS                |    ... |    ... |       ... |
+| INP                |    ... |    ... |       ... |
+
+**Interdiction d'inventer les chiffres.**
+
+Si une métrique n'a pas pu être mesurée correctement, le rapport doit le préciser.
+
+---
+
+# 9. Optimisation HTML
+
+Vérifier les balises `<img>`.
+
+Pour les images pertinentes :
+
+- `width`
+- `height`
+- `alt`
+- `loading`
+- `decoding`
+
+doivent être cohérents avec leur usage.
+
+Exemple conceptuel :
+
+```html
+<img
+  src="..."
+  width="..."
+  height="..."
+  alt="..."
+  loading="lazy"
+  decoding="async"
+/>
+```

@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Océan du Nord — Réservation bus en ligne Congo | Aziz Studio Digital</title>
+    <meta name="description" content="Plateforme de réservation de billets de bus au Congo. Next.js 16, MongoDB Atlas, Yabetoo, Google Gemini, QR Code, programme fidélité Club ONC.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://azizstudiodigital.netlify.app/projet-agence-voyage.html">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Océan du Nord — Réservation bus en ligne Congo | Aziz Studio Digital">
+    <meta property="og:description" content="Plateforme de réservation de billets de bus au Congo. Next.js 16, MongoDB Atlas, Yabetoo, Google Gemini, QR Code, programme fidélité Club ONC.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://azizstudiodigital.netlify.app/projet-agence-voyage.html">
+    <meta property="og:image" content="https://azizstudiodigital.netlify.app/assets/images/home/hero-illustration.webp">
+    <meta property="og:locale" content="fr_FR">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Océan du Nord — Réservation bus en ligne Congo | Aziz Studio Digital">
+    <meta name="twitter:description" content="Plateforme de réservation de billets de bus au Congo. Next.js 16, MongoDB Atlas, Yabetoo, Google Gemini, QR Code, programme fidélité Club ONC.">
+    <meta name="twitter:image" content="https://azizstudiodigital.netlify.app/assets/images/home/hero-illustration.webp">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS Base -->
+    <link rel="stylesheet" href="assets/css/base/variables.css">
+    <link rel="stylesheet" href="assets/css/base/reset.css">
+    <link rel="stylesheet" href="assets/css/base/typography.css">
+    <link rel="stylesheet" href="assets/css/base/base.css">
+
+    <!-- CSS Composants -->
+    <link rel="stylesheet" href="assets/css/components/container.css">
+    <link rel="stylesheet" href="assets/css/components/grid.css">
+    <link rel="stylesheet" href="assets/css/components/section.css">
+    <link rel="stylesheet" href="assets/css/components/card.css">
+    <link rel="stylesheet" href="assets/css/components/badge.css">
+    <link rel="stylesheet" href="assets/css/components/button.css">
+    <link rel="stylesheet" href="assets/css/components/header.css">
+    <link rel="stylesheet" href="assets/css/components/footer.css">
+
+    <link rel="stylesheet" href="assets/css/pages/services.css">
+    <link rel="stylesheet" href="assets/css/pages/creation-site-web.css">
+    <link rel="stylesheet" href="assets/css/pages/projet-template.css">
+
+    <style>
+        body {
+            padding-top: 73px;
+        }
+        @media (min-width: 1024px) {
+            body {
+                padding-top: 90px;
+            }
+        }
+
+        .nav-list,
+        .nav-list li {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links,
+        .footer-contact-info,
+        .hero-arguments,
+        .cta-benefits-list,
+        .cta-outcomes-list {
+            list-style: none;
+            padding-left: 0;
+        }
+    </style>
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Aller au contenu principal</a>
+<header class="site-header" id="site-header" role="banner">
+    <div class="container header-container">
+        <!-- Logo -->
+        <a href="index.html" class="logo" aria-label="Aziz Studio Digital - Retour à l'accueil">
+            <span class="logo-text">Aziz <span class="text-accent">Studio</span> Digital</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button type="button" class="mobile-nav-toggle" id="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Menu principal">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+
+        <!-- Navigation System -->
+        <nav class="primary-navigation" id="primary-navigation" aria-label="Navigation principale">
+            <ul class="nav-list" role="list">
+                <li class="nav-item"><a href="index.html" class="nav-link" id="nav-home">Accueil</a></li>
+                <li class="nav-item"><a href="services.html" class="nav-link" id="nav-services">Services</a></li>
+                <li class="nav-item"><a href="solutions.html" class="nav-link" id="nav-solutions">Solutions</a></li>
+                <li class="nav-item"><a href="portfolio.html" class="nav-link active" aria-current="page" id="nav-portfolio">Portfolio</a></li>
+                <li class="nav-item"><a href="blog.html" class="nav-link" id="nav-blog">Blog</a></li>
+                <li class="nav-item"><a href="tarifs.html" class="nav-link" id="nav-tarifs">Tarifs</a></li>
+                <li class="nav-item"><a href="a-propos.html" class="nav-link" id="nav-about">À propos</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link" id="nav-contact">Contact</a></li>
+            </ul>
+            
+            <!-- Mobile CTA (shows only in mobile panel) -->
+            <div class="mobile-cta-wrapper">
+                <a href="contact.html?type=devis" class="btn btn-primary cta-button">Demander un devis</a>
+            </div>
+        </nav>
+
+        <!-- Desktop CTA -->
+        <div class="desktop-cta-wrapper">
+            <a href="contact.html?type=devis" class="btn btn-primary cta-button">Demander un devis</a>
+        </div>
+    </div>
+</header>
+
+
+<main class="main-content" id="main-content" role="main">
+
+    <!-- 1. Breadcrumb -->
+    <div class="services-breadcrumb-wrapper">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Fil d'Ariane">
+                <ol class="breadcrumb-list" role="list">
+                    <li class="breadcrumb-item"><a href="index.html" class="breadcrumb-link">Accueil</a></li>
+                    <li class="breadcrumb-separator" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></li>
+                    <li class="breadcrumb-item"><a href="portfolio.html" class="breadcrumb-link">Réalisations</a></li>
+                    <li class="breadcrumb-separator" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></li>
+                    <li class="breadcrumb-item breadcrumb-item-active" aria-current="page"><span>Océan du Nord</span></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- 2. Hero split -->
+    <section class="section projet-hero" id="hero-projet">
+        <div class="container">
+            <div class="projet-hero-grid">
+                <div class="projet-hero-content">
+                    <div class="projet-hero-badge">
+                        <span class="badge badge-primary">🚌 Transport &amp; Voyage</span>
+                    </div>
+                    <h1 class="projet-hero-title">Océan du Nord</h1>
+                    <p class="projet-hero-subtitle">Plateforme de réservation de billets de bus — République du Congo</p>
+                    <p class="projet-hero-description">
+                        Application complète de réservation de billets de bus en ligne pour le marché congolais. Réservation en ligne, sélection de sièges, paiement Mobile Money via Yabetoo, billetterie QR Code, assistante IA "Océane" (Google Gemini), programme de fidélité "Club ONC", éditeur d'articles rich text, campagnes newsletter et dispositif anti-fraude à l'embarquement.
+                    </p>
+                    <div class="projet-hero-meta">
+                        <div class="projet-meta-item">
+                            <span class="projet-meta-label">Année</span>
+                            <span class="projet-meta-value">2026</span>
+                        </div>
+                        <div class="projet-meta-item">
+                            <span class="projet-meta-label">Catégorie</span>
+                            <span class="projet-meta-value">Application full-stack</span>
+                        </div>
+                        <div class="projet-meta-item">
+                            <span class="projet-meta-label">Marché</span>
+                            <span class="projet-meta-value">République du Congo</span>
+                        </div>
+                    </div>
+                    <div class="projet-hero-actions">
+                        <a href="contact.html?project=agence-voyage" class="btn btn-primary">Voir le projet en ligne</a>
+                        <a href="portfolio.html" class="btn btn-outline">Toutes les réalisations</a>
+                    </div>
+                </div>
+                <div class="projet-hero-image-wrapper">
+                    <img
+                        src="assets/images/portfolio/ODN.webp"
+                        alt="Capture d'écran du site Océan du Nord — plateforme de réservation de billets de bus au Congo"
+                        class="projet-hero-img"
+                        loading="eager"
+                        width="800"
+                        height="460"
+                    >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Aperçu interactif -->
+    <section class="section projet-apercu-section" id="apercu-demo">
+        <div class="container">
+            <div class="section-header section-header-center">
+                <span class="badge badge-secondary">👁️ Aperçu interactif</span>
+                <h2 class="section-title">Démo du site Océan du Nord</h2>
+                <p class="section-subtitle">Survolez la fenêtre pour faire défiler l'aperçu complet du site.</p>
+            </div>
+            <div class="browser-mockup" tabindex="0" aria-label="Aperçu interactif d'Océan du Nord — survolez pour faire défiler">
+                <div class="browser-bar" aria-hidden="true">
+                    <div class="browser-dots">
+                        <span class="browser-dot browser-dot-red"></span>
+                        <span class="browser-dot browser-dot-yellow"></span>
+                        <span class="browser-dot browser-dot-green"></span>
+                    </div>
+                    <span class="browser-address-bar">voyage-au-nord.vercel.app</span>
+                </div>
+                <div class="browser-viewport">
+                    <img
+                        src="assets/images/portfolio/ODN.webp"
+                        alt="Capture complète du site Océan du Nord"
+                        class="browser-scroll-img"
+                        loading="lazy"
+                        width="1200"
+                    >
+                </div>
+            </div>
+            <p class="browser-hint">
+                <svg class="browser-hint-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+                Survolez l'aperçu pour faire défiler le site
+            </p>
+        </div>
+    </section>
+
+    <!-- 4. Informations techniques en onglets -->
+    <section class="section projet-infos-section" id="infos-techniques">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge badge-secondary">📋 Informations</span>
+                <h2 class="section-title">Informations techniques</h2>
+            </div>
+            <div class="projet-infos-layout">
+                <div class="tabs-wrapper">
+                    <input type="radio" name="tabs-voyage" id="tab-presentation" class="tab-radio" checked>
+                    <input type="radio" name="tabs-voyage" id="tab-pages" class="tab-radio">
+                    <input type="radio" name="tabs-voyage" id="tab-systeme" class="tab-radio">
+                    <input type="radio" name="tabs-voyage" id="tab-usage" class="tab-radio">
+
+                    <ul class="tab-list" role="tablist">
+                        <li role="presentation"><label for="tab-presentation" class="tab-label" role="tab">Présentation</label></li>
+                        <li role="presentation"><label for="tab-pages" class="tab-label" role="tab">Pages &amp; Structure</label></li>
+                        <li role="presentation"><label for="tab-systeme" class="tab-label" role="tab">Système &amp; Logique</label></li>
+                        <li role="presentation"><label for="tab-usage" class="tab-label" role="tab">Usage &amp; Cible</label></li>
+                    </ul>
+
+                    <div class="tab-panel" data-tab="presentation" role="tabpanel">
+                        <h3 class="tab-panel-title">À propos du projet</h3>
+                        <p class="tab-panel-text">
+                            Voyage au Nord (Océan du Nord) est une application complète de réservation de billets de bus en ligne pour le marché congolais. La marque affichée est Océan du Nord, avec un positionnement clair : "Réservez vos billets de bus Océan du Nord en ligne. Voyagez en toute sécurité entre Brazzaville, Pointe-Noire, Ouesso et plus de 40 destinations au Congo."
+                        </p>
+                        <p class="tab-panel-text">
+                            Cette version apporte une couche de maturité technique significative : migration de la base de données vers MongoDB Atlas, stockage d'images via Cloudinary, éditeur de texte riche (Tiptap) pour les actualités, campagnes newsletter, middleware de sécurité RBAC pour la protection des routes admin, et dispositif anti-fraude renforcé à l'embarquement.
+                        </p>
+                        <p class="tab-panel-text">
+                            L'identité visuelle repose sur le vert foncé (#064e3b) comme socle de confiance institutionnelle, le jaune or (#f59e0b) pour les CTA, et une typographie Poppins pour sa lisibilité mobile. L'assistante IA incarnée "Océane" (propulsée par Google Gemini) apporte une proximité culturelle unique.
+                        </p>
+                    </div>
+
+                    <div class="tab-panel" data-tab="pages" role="tabpanel">
+                        <h3 class="tab-panel-title">Pages &amp; Structure</h3>
+                        <ul class="tab-feature-list">
+                            <li class="tab-feature-item">
+                                <span class="tab-feature-icon" aria-hidden="true">🏠</span>
+                                <div class="tab-feature-content">
+                                    <span class="tab-feature-name">Accueil &amp; Réservation</span>
+                                    <span class="tab-feature-desc">Hero avec recherche de trajet (origine, destination, date, aller-retour). Tunnel de réservation : résultats de trajets, sélection interactive des sièges, paiement Mobile Money (MTN MoMo, Airtel Money via Yabetoo), confirmation avec billet QR Code.</span>
+                                </div>
+                            </li>
+                            <li class="tab-feature-item">
+                                <span class="tab-feature-icon" aria-hidden="true">📍</span>
+                                <div class="tab-feature-content">
+                                    <span class="tab-feature-name">Destinations &amp; Institutionnel</span>
+                                    <span class="tab-feature-desc">Catalogue des 40+ destinations desservies. Pages institutionnelles : agences, tarifs, multimédia. Services annexes : Courrier, Fret, Location de véhicule avec chauffeur.</span>
+                                </div>
+                            </li>
+                            <li class="tab-feature-item">
+                                <span class="tab-feature-icon" aria-hidden="true">🤖</span>
+                                <div class="tab-feature-content">
+                                    <span class="tab-feature-name">Assistante IA "Océane"</span>
+                                    <span class="tab-feature-desc">Assistante conversationnelle propulsée par Google Gemini avec grille tarifaire intégrée au prompt système. Permet de renseigner les voyageurs sur les trajets, horaires et tarifs 24h/24.</span>
+                                </div>
+                            </li>
+                            <li class="tab-feature-item">
+                                <span class="tab-feature-icon" aria-hidden="true">🏆</span>
+                                <div class="tab-feature-content">
+                                    <span class="tab-feature-name">Programme de fidélité "Club ONC"</span>
+                                    <span class="tab-feature-desc">Espace client avec historique des réservations, points fidélité et annulation de réservation. Programme Club ONC pour les voyageurs fréquents.</span>
+                                </div>
+                            </li>
+                            <li class="tab-feature-item">
+                                <span class="tab-feature-icon" aria-hidden="true">🛠️</span>
+                                <div class="tab-feature-content">
+                                    <span class="tab-feature-name">Dashboard Admin</span>
+                                    <span class="tab-feature-desc">Gestion de la flotte (bus), des itinéraires (routes nationales N1, N2, N3), des trajets programmés, des réservations et des utilisateurs. Éditeur d'articles Tiptap, outil de campagnes newsletter, scanner QR Code anti-fraude.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-panel" data-tab="systeme" role="tabpanel">
+                        <h3 class="tab-panel-title">Système &amp; Logique métier</h3>
+                        <ul class="tab-feature-list">
+                            <li class="tab-feature-item">
+                                <span class="tab-feature-icon" aria-hidden="true">🎫</span>
+                                <div class="tab-feature-content">
+                                    <span class="tab-feature-name">Billetterie QR Code &amp; anti-fraude</span>
+                                    <span class="tab-feature-desc">Génération de billets PDF avec QR Code. Dispositif anti-fraude à l'embarquement : vérification serveur-à-serveur directe auprès de Yabetoo, anti-replay (billet PAID → USED dès le 1er scan), contrôle de rôle (ADMIN / AGENT).</span>
+                                </div>
+                            </li>
+                            <li class="tab-feature-item">
+                                <span class="tab-feature-icon" aria-hidden="true">🔐</span>
+                                <div class="tab-feature-content">
+                                    <span class="tab-feature-name">Sécurité RBAC &amp; middleware Edge</span>
+                                    <span class="tab-feature-desc">middleware.ts intercepte toute requête vers /admin/* au niveau Edge. Configuration NextAuth scindée (auth.ts / auth.config.ts) compatible Edge Runtime. Défense en profondeur : chaque route API sensible re-vérifie le rôle côté serveur.</span>
+                                </div>
+                            </li>
+                            <li class="tab-feature-item">
+                                <span class="tab-feature-icon" aria-hidden="true">📧</span>
+                                <div class="tab-feature-content">
+                                    <span class="tab-feature-name">Campagnes newsletter &amp; communications</span>
+                                    <span class="tab-feature-desc">Outil de campagnes d'emailing complet (rédaction Tiptap, envoi de masse, historique). SMS transactionnels via Twilio. Emails via Nodemailer + Resend. Génération de manifestes de bord PDF par trajet.</span>
+                                </div>
+                            </li>
+                            <li class="tab-feature-item">
+                                <span class="tab-feature-icon" aria-hidden="true">📱</span>
+                                <div class="tab-feature-content">
+                                    <span class="tab-feature-name">PWA &amp; cartographie</span>
+                                    <span class="tab-feature-desc">Application installable (PWA) avec service worker et manifest. Intégration Google Maps et Leaflet pour la visualisation des itinéraires. Slider Swiper pour les carrousels.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-panel" data-tab="usage" role="tabpanel">
+                        <h3 class="tab-panel-title">Usage &amp; Cible</h3>
+                        <p class="tab-panel-text">
+                            Océan du Nord est une plateforme prête à accompagner la croissance d'une compagnie de transport congolaise à l'échelle nationale, avec les garanties de sécurité et de fiabilité attendues par un exploitant ou un investisseur sérieux.
+                        </p>
+                        <ul class="tab-feature-list">
+                            <li class="tab-feature-item">
+                                <span class="tab-feature-icon" aria-hidden="true">🚌</span>
+                                <div class="tab-feature-content">
+                                    <span class="tab-feature-name">Compagnies de transport interurbain</span>
+                                    <span class="tab-feature-desc">Gestion de la flotte, des itinéraires (jours de circulation, routes nationales), des trajets programmés et des réservations en temps réel.</span>
+                                </div>
+                            </li>
+                            <li class="tab-feature-item">
+                                <span class="tab-feature-icon" aria-hidden="true">🏢</span>
+                                <div class="tab-feature-content">
+                                    <span class="tab-feature-name">Réseaux d'agences physiques</span>
+                                    <span class="tab-feature-desc">Accès agents avec rôle dédié pour le scan des billets à l'embarquement. Manifeste de bord PDF par trajet pour chaque agent. Services complémentaires : courrier, fret, location.</span>
+                                </div>
+                            </li>
+                            <li class="tab-feature-item">
+                                <span class="tab-feature-icon" aria-hidden="true">🌱</span>
+                                <div class="tab-feature-content">
+                                    <span class="tab-feature-name">Plateformes souhaitant être auditées ou cédées</span>
+                                    <span class="tab-feature-desc">Documentation interne fournie : guide de sécurité, guide développeur paiement, guide d'utilisation, rapport de migration. Architecture pensée pour être comprise, auditée et transmise.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <aside class="projet-sidebar">
+                    <div class="sidebar-card">
+                        <h3 class="sidebar-card-title">Palette de couleurs</h3>
+                        <div class="color-swatches">
+                            <div class="color-swatch">
+                                <span class="swatch-circle" style="background-color: #064e3b;" aria-hidden="true"></span>
+                                <div class="swatch-info"><span class="swatch-name">Vert foncé — marque</span><span class="swatch-hex">#064e3b</span></div>
+                            </div>
+                            <div class="color-swatch">
+                                <span class="swatch-circle" style="background-color: #10b981;" aria-hidden="true"></span>
+                                <div class="swatch-info"><span class="swatch-name">Vert émeraude — accent</span><span class="swatch-hex">#10b981</span></div>
+                            </div>
+                            <div class="color-swatch">
+                                <span class="swatch-circle" style="background-color: #f59e0b;" aria-hidden="true"></span>
+                                <div class="swatch-info"><span class="swatch-name">Jaune Or — CTA</span><span class="swatch-hex">#f59e0b</span></div>
+                            </div>
+                            <div class="color-swatch">
+                                <span class="swatch-circle" style="background-color: #dc2626;" aria-hidden="true"></span>
+                                <div class="swatch-info"><span class="swatch-name">Rouge — alertes</span><span class="swatch-hex">#dc2626</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar-card">
+                        <h3 class="sidebar-card-title">Détails du projet</h3>
+                        <div class="projet-details-list">
+                            <div class="projet-detail-item">
+                                <span class="projet-detail-label">Secteur</span>
+                                <span class="projet-detail-value">Transport &amp; Voyage</span>
+                            </div>
+                            <div class="projet-detail-item">
+                                <span class="projet-detail-label">BDD</span>
+                                <span class="projet-detail-value">MongoDB Atlas</span>
+                            </div>
+                            <div class="projet-detail-item">
+                                <span class="projet-detail-label">Paiement</span>
+                                <span class="projet-detail-value">Yabetoo (MTN/Airtel)</span>
+                            </div>
+                            <div class="projet-detail-item">
+                                <span class="projet-detail-label">Déploiement</span>
+                                <span class="projet-detail-value">Vercel</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar-card">
+                        <h3 class="sidebar-card-title">Stack technologique</h3>
+                        <div class="stack-badges">
+                            <span class="stack-badge">Next.js 16</span>
+                            <span class="stack-badge">React 19</span>
+                            <span class="stack-badge">TypeScript</span>
+                            <span class="stack-badge">MongoDB Atlas</span>
+                            <span class="stack-badge">Prisma v6</span>
+                            <span class="stack-badge">NextAuth.js v5</span>
+                            <span class="stack-badge">Yabetoo SDK</span>
+                            <span class="stack-badge">Google Gemini</span>
+                            <span class="stack-badge">Cloudinary</span>
+                            <span class="stack-badge">Twilio</span>
+                            <span class="stack-badge">Resend</span>
+                            <span class="stack-badge">TailwindCSS v4</span>
+                            <span class="stack-badge">Framer Motion</span>
+                            <span class="stack-badge">PWA</span>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation -->
+    <nav class="projet-nav-section" aria-label="Navigation entre les projets">
+        <div class="container">
+            <div class="projet-nav-grid">
+                <a href="projet-molato-commerce.html" class="projet-nav-card nav-prev" aria-label="Projet précédent : Molato Commerce">
+                    <span class="projet-nav-direction">← Projet précédent</span>
+                    <span class="projet-nav-name">Molato Commerce</span>
+                    <span class="projet-nav-category">E-commerce &amp; Marketplace</span>
+                </a>
+                <a href="projet-boulevard-hotel.html" class="projet-nav-card nav-next" aria-label="Projet suivant : Boulevard Hôtel">
+                    <span class="projet-nav-direction">Projet suivant →</span>
+                    <span class="projet-nav-name">Boulevard Hôtel</span>
+                    <span class="projet-nav-category">Hôtellerie &amp; Tourisme</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CTA Final -->
+    <section class="section service-final-cta-section projet-cta-section" id="cta-final-projet">
+        <div class="container">
+            <div class="card service-cta-final-card">
+                <div class="service-cta-final-body">
+                    <div class="service-cta-final-content">
+                        <span class="badge badge-primary">🚀 Votre projet</span>
+                        <h2 class="service-cta-final-title">Vous avez un projet similaire ?</h2>
+                        <p class="service-cta-final-text">Discutons de votre projet — plateforme de transport, réservation en ligne ou application métier sur-mesure adaptée au marché africain.</p>
+                        <div class="service-cta-final-actions">
+                            <a href="contact.html" class="btn btn-primary btn-lg">Parler de votre projet</a>
+                            <a href="portfolio.html" class="btn btn-outline btn-lg">Voir nos réalisations</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+
+<footer class="site-footer" id="site-footer" role="contentinfo">
+    <div class="container footer-container">
+        <!-- Top Section: Logo & Newsletter -->
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="index.html" class="logo" aria-label="Aziz Studio Digital - Retour à l'accueil">
+                    <span class="logo-text">Aziz <span class="text-accent">Studio</span> Digital</span>
+                </a>
+                <p class="brand-description">
+                    Aziz Studio Digital accompagne les entreprises, hôtels, restaurants, agences immobilières, cabinets médicaux et autres professionnels dans leur transformation digitale grâce à la création de sites web modernes, au référencement SEO et aux solutions numériques.
+                </p>
+                <div class="social-links">
+                    <a href="https://facebook.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <svg class="social-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                    </a>
+                    <a href="https://linkedin.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg class="social-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                    <a href="https://github.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <svg class="social-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Newsletter Section -->
+            <div class="footer-newsletter">
+                <h2 class="footer-title">Newsletter</h2>
+                <p class="newsletter-text">Abonnez-vous à notre newsletter pour recevoir nos dernières actualités et conseils du digital.</p>
+                <form class="newsletter-form" id="newsletter-form" onsubmit="event.preventDefault();">
+                    <div class="form-group">
+                        <label for="newsletter-email" class="sr-only">Adresse e-mail</label>
+                        <input type="email" id="newsletter-email" name="email" class="newsletter-input" placeholder="Votre adresse e-mail" required aria-required="true">
+                        <button type="submit" class="newsletter-submit" aria-label="S'abonner">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="submit-icon" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Middle Section: Navigation Links & Columns -->
+        <div class="footer-middle">
+            <!-- Col 1: Navigation Rapide -->
+            <div class="footer-col">
+                <h2 class="footer-title">Navigation</h2>
+                <ul class="footer-links">
+                    <li><a href="index.html" class="footer-link">Accueil</a></li>
+                    <li><a href="services.html" class="footer-link">Services</a></li>
+                    <li><a href="solutions.html" class="footer-link">Solutions</a></li>
+                    <li><a href="portfolio.html" class="footer-link">Portfolio</a></li>
+                    <li><a href="blog.html" class="footer-link">Blog</a></li>
+                    <li><a href="tarifs.html" class="footer-link">Tarifs</a></li>
+                    <li><a href="a-propos.html" class="footer-link">À propos</a></li>
+                    <li><a href="contact.html" class="footer-link">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 2: Services -->
+            <div class="footer-col footer-col-double">
+                <h2 class="footer-title">Nos Services</h2>
+                <ul class="footer-links services-grid">
+                    <li><a href="services.html#vitrine" class="footer-link">Site vitrine</a></li>
+                    <li><a href="services.html#ecommerce" class="footer-link">Site e-commerce</a></li>
+                    <li><a href="hotel.html" class="footer-link">Site hôtel</a></li>
+                    <li><a href="restaurant.html" class="footer-link">Site restaurant</a></li>
+                    <li><a href="immobilier.html" class="footer-link">Site agence immobilière</a></li>
+                    <li><a href="clinique.html" class="footer-link">Site clinique</a></li>
+                    <li><a href="cabinet-medical.html" class="footer-link">Site cabinet médical</a></li>
+                    <li><a href="cabinet-dentaire.html" class="footer-link">Site cabinet dentaire</a></li>
+                    <li><a href="pharmacie.html" class="footer-link">Site pharmacie</a></li>
+                    <li><a href="salon-beaute.html" class="footer-link">Site salon de beauté</a></li>
+                    <li><a href="voyage.html" class="footer-link">Site agence de voyage</a></li>
+                    <li><a href="services.html#seo" class="footer-link">Référencement SEO</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Coordonnées -->
+            <div class="footer-col">
+                <h2 class="footer-title">Coordonnées</h2>
+                <ul class="footer-contact-info">
+                    <li class="contact-item">
+                        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                        <span>République du Congo (Brazzaville / Pointe-Noire)</span>
+                    </li>
+                    <li class="contact-item">
+                        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                        <a href="tel:+242060000000" class="contact-link">+242 06 000 00 00</a>
+                    </li>
+                    <li class="contact-item">
+                        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12a4 4 0 118 0 4 4 0 01-8 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" /><path stroke-linecap="round" stroke-linejoin="round" d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" /></svg>
+                        <a href="https://wa.me/242060000000" class="contact-link" target="_blank" rel="noopener noreferrer">WhatsApp Chat</a>
+                    </li>
+                    <li class="contact-item">
+                        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                        <a href="mailto:azizstudio.dev@gmail.com" class="contact-link">azizstudio.dev@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom Section: Copyright & Legal links -->
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                <p>&copy; <span id="footer-year">2026</span> Aziz Studio Digital. Tous droits réservés.</p>
+            </div>
+            <div class="footer-legal-links">
+                <a href="politique-confidentialite.html" class="legal-link">Politique de confidentialité</a>
+                <a href="mentions-legales.html" class="legal-link">Mentions légales</a>
+                <a href="conditions-utilisation.html" class="legal-link">Conditions d'utilisation</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
