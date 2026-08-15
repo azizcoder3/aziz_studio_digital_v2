@@ -44,6 +44,15 @@ def render_head(title, description, canonical_url, og_type="website", og_image="
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="{google_fonts}" rel="stylesheet">
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F0Q3GG2XE4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){{dataLayer.push(arguments);}}
+      gtag('js', new Date());
+      gtag('config', 'G-F0Q3GG2XE4');
+    </script>
+
     <!-- CSS Base -->
     <link rel="stylesheet" href="assets/css/base/variables.css">
     <link rel="stylesheet" href="assets/css/base/reset.css">
