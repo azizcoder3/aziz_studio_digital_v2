@@ -1,6 +1,6 @@
 import os
 
-ROOT = r'c:\Users\Aziz\Desktop\aziz_studio_digital_v2'
+ROOT = os.path.dirname(os.path.abspath(__file__))
 
 header = open(os.path.join(ROOT, 'components', 'header.html'), encoding='utf-8').read()
 footer = open(os.path.join(ROOT, 'components', 'footer.html'), encoding='utf-8').read()
@@ -73,11 +73,21 @@ def render_head(title, description, canonical_url, og_type="website", og_image="
       "address": {{
         "@type": "PostalAddress",
         "addressCountry": "CG",
-        "addressLocality": "Brazzaville / Pointe-Noire",
+        "addressLocality": "Brazzaville",
         "addressRegion": "République du Congo"
       }},
+      "telephone": "+242066257433",
       "email": "azizstudio.dev@gmail.com",
-      "areaServed": "République du Congo"
+      "areaServed": [
+        {{
+          "@type": "City",
+          "name": "Brazzaville"
+        }},
+        {{
+          "@type": "City",
+          "name": "Pointe-Noire"
+        }}
+      ]
     }}
     </script>
 
