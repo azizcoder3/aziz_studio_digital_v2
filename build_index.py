@@ -12,7 +12,8 @@ google_fonts = (
     '&display=swap'
 )
 
-def render_head(title, description, canonical_url, og_type="website", og_image="https://azizstudiodigital.netlify.app/assets/images/home/hero-illustration.webp", extra_css="", robots="index, follow"):
+def render_head(title, description, canonical_url, og_type="website", og_image="https://azizstudiodigital.netlify.app/assets/images/home/hero-illustration.webp", extra_css="", robots="index, follow", verification_tag=""):
+    verif_str = f"\n\n    {verification_tag}" if verification_tag else ""
     return f"""<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,7 +37,7 @@ def render_head(title, description, canonical_url, og_type="website", og_image="
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{title}">
     <meta name="twitter:description" content="{description}">
-    <meta name="twitter:image" content="{og_image}">
+    <meta name="twitter:image" content="{og_image}">{verif_str}
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -118,7 +119,8 @@ pages_config = [
         "description": "Aziz Studio Digital accompagne les entreprises au Congo avec des sites web rapides, modernes, optimisés pour Google et pensés pour générer des contacts.",
         "canonical": "https://azizstudiodigital.netlify.app/",
         "active_nav": "index.html",
-        "extra_css": '<link rel="stylesheet" href="assets/css/pages/home.css">'
+        "extra_css": '<link rel="stylesheet" href="assets/css/pages/home.css">',
+        "verification_tag": '<meta name="google-site-verification" content="zH8TtuFb_aDGFspBaykSrhITE8X0Qb011kxqHStp2E4" />'
     },
     {
         "filename": "services.html",
@@ -581,7 +583,8 @@ for pcfg in pages_config:
         og_type=pcfg.get("og_type", "website"),
         og_image=pcfg.get("og_image", "https://azizstudiodigital.netlify.app/assets/images/home/hero-illustration.webp"),
         extra_css=pcfg.get("extra_css", ""),
-        robots=pcfg.get("robots", "index, follow")
+        robots=pcfg.get("robots", "index, follow"),
+        verification_tag=pcfg.get("verification_tag", "")
     )
     
     full_html = f"""<!DOCTYPE html>
