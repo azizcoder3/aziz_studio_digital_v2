@@ -55,7 +55,7 @@ La page centrale du site. Elle charge dynamiquement, via JavaScript, l'ensemble 
 ### 🦷 `about.html` — Page À propos
 Page dédiée à la présentation approfondie du cabinet, de l'équipe et de la philosophie de soin. Chargée via le script `src/js/about.js`.
 
-### ⚕️ `service.html` — Page Services / Expertises
+### ⚕ `service.html` — Page Services / Expertises
 Page de détail des spécialités et traitements proposés par le cabinet. Chargée via `src/js/service.js`.
 
 ---
@@ -74,7 +74,7 @@ Un panneau latéral (drawer) coulissant depuis la droite de l'écran, déclench�
 
 Le panneau dispose d'un **backdrop flouté** (`backdrop-blur-sm`) et d'une animation de glissement (`translate-x-full → translate-x-0`). La fermeture se fait via le bouton ✕ ou en cliquant sur le fond.
 
-### 🗂️ Menu plein écran — `full-menu.html`
+### 🗂 Menu plein écran — `full-menu.html`
 Un overlay de navigation plein écran en fond blanc, déclenché par le bouton hamburger. Il affiche :
 - Les liens principaux du site en très grande typographie Playfair Display italique (*Accueil, L'Équipe, Expertises, Témoignages, Contact*)
 - Chaque lien s'anime au survol avec un glissement vers la droite (`translate-x-4`)
@@ -90,7 +90,7 @@ Fichier CSS complémentaire à TailwindCSS contenant :
 - Animations : `floatIn`, `floatBob` pour la carte produit flottante dans le hero
 - Illustration CSS de la brosse à dents dans la carte produit (`.brush-body`, `.brush-head`)
 
-### ⚙️ JavaScript principal — `src/js/main.js`
+### ⚙ JavaScript principal — `src/js/main.js`
 Fichier de 14 Ko orchestrant toute la logique interactive :
 - Chargement dynamique des sections HTML par injection dans `#app`
 - Initialisation des animations d'entrée (GSAP / Motion)
@@ -147,7 +147,7 @@ Techniquement, le projet est construit sur des fondations solides et évolutives
 
 ## 8. Remarque finale
 
-> **⚠️ À noter pour la mise en production :**
+> **⚠ À noter pour la mise en production :**
 >
 > Les formulaires de contact et de réservation intégrés fonctionnent actuellement en mode **simulation** (feedback visuel sans envoi réel d'e-mail). Pour activer l'envoi réel des messages, il est nécessaire d'intégrer un service tiers comme **Web3Forms** ou **Formspree** dans le fichier `src/js/main.js` (fonctions `initBookingSidebar` et `initContactForm`). Cette intégration est documentée dans le `README.md` et ne nécessite pas de compétences en développement back-end.
 >

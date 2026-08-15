@@ -32,7 +32,7 @@ Le système repose sur la fonctionnalité serverless de Netlify :
 
 ---
 
-## 3. ⚙️ Procédure de configuration Netlify (À réaliser par vous)
+## 3. ⚙ Procédure de configuration Netlify (À réaliser par vous)
 
 Puisque je n'ai pas accès à votre compte Netlify ni au mot de passe d'application, **vous devez configurer le serveur vous-même** une fois ce code poussé (Git push) :
 
@@ -82,7 +82,7 @@ BILAN : SPRINT 43 OK (100% SECURISE - PAS DE SECRET EXPOSE)
 
 ---
 
-## 5. ⚠️ Le test réel reste à faire (Action Requise)
+## 5. ⚠ Le test réel reste à faire (Action Requise)
 
 > [!WARNING]
 > Étant soumis à la règle de sécurité, je n'ai testé que la structure et la logique du code statique. **Je n'ai effectué aucun test réel d'envoi d'email.**

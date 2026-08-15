@@ -201,7 +201,7 @@ creation-site-web.html   ← assemblée par build_index.py depuis :
                             - components/footer.html
 ```
 
-> ⚠️ **Ne jamais modifier les pages racine directement.** Toute modification de contenu doit être faite dans `pages/[page].html` puis recompilée via `python build_index.py`.
+> ⚠ **Ne jamais modifier les pages racine directement.** Toute modification de contenu doit être faite dans `pages/[page].html` puis recompilée via `python build_index.py`.
 
 ### 3.3 Pages légales
 
@@ -313,7 +313,7 @@ Layer 3 — PAGES       → [page].css (styles spécifiques à la page)
 Layer 4 — INLINE      → <style> dans le <head> (overrides body padding uniquement)
 ```
 
-> ⚠️ **Règle absolue :** Ne jamais coder de valeur en dur dans le CSS. Toujours utiliser les variables CSS définies dans `variables.css`.
+> ⚠ **Règle absolue :** Ne jamais coder de valeur en dur dans le CSS. Toujours utiliser les variables CSS définies dans `variables.css`.
 
 ### 5.2 Ordre de chargement obligatoire pour toutes les pages
 
@@ -728,7 +728,7 @@ Lorsqu'un formulaire est soumis, Netlify Forms déclenche un **Outgoing Webhook*
 6. La fonction sélectionne le template HTML correspondant.
 7. La fonction utilise Nodemailer pour envoyer l'email de confirmation via SMTP (Gmail).
 
-> ⚠️ **Sécurité absolue :** Aucun identifiant SMTP (email expéditeur, mot de passe d'application) ni secret webhook ne doit jamais être codé en dur dans les fichiers du projet. La fonction lit exclusivement les variables d'environnement `process.env.GMAIL_USER`, `process.env.GMAIL_APP_PASSWORD` et `process.env.WEBHOOK_SECRET`. Ces secrets doivent être configurés manuellement dans l'interface de Netlify (Site settings → Environment variables).
+> ⚠ **Sécurité absolue :** Aucun identifiant SMTP (email expéditeur, mot de passe d'application) ni secret webhook ne doit jamais être codé en dur dans les fichiers du projet. La fonction lit exclusivement les variables d'environnement `process.env.GMAIL_USER`, `process.env.GMAIL_APP_PASSWORD` et `process.env.WEBHOOK_SECRET`. Ces secrets doivent être configurés manuellement dans l'interface de Netlify (Site settings → Environment variables).
 
 
 ---

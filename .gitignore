@@ -32,6 +32,8 @@ build/
 __pycache__/
 *.pyc
 *.pyo
+*.bak
+scratch/
 
 # Fichiers d'Éditeur / IDE
 .idea/

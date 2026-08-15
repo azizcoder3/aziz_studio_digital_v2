@@ -1,4 +1,4 @@
-# 🏛️ MAX WELL — Présentation Complète du Projet
+# 🏛 MAX WELL — Présentation Complète du Projet
 
 > **Template** : Landing Page Premium pour Cabinet d'Avocats  
 > **Version** : 1.0 — Mai 2026  
@@ -72,7 +72,7 @@ Le template est une **SPA mono-page** dont toutes les sections s'affichent séqu
 
 - 🏢 **Droit des Affaires & Entreprises** — accompagnement stratégique pour fondateurs et professionnels
 - 💔 **Droit de la Famille & Divorce** — conseil attentionné pour les affaires familiales délicates
-- 🛡️ **Défense Pénale** — représentation rigoureuse en procédures pénales
+- 🛡 **Défense Pénale** — représentation rigoureuse en procédures pénales
 - 🏠 **Droit Immobilier** — supervision des transactions et litiges de propriété
 
 **Chronologie du parcours intégrée (`Parcours.jsx`) :**
@@ -105,9 +105,9 @@ Ces modals sont des **overlays plein écran animés** avec AnimatePresence (Fram
 
 | Page légale              | Ancre cible        | Statut              |
 |--------------------------|--------------------|---------------------|
-| Politique de Confidentialité | `#privacy`    | ⚠️ À créer          |
-| Conditions Générales     | `#terms`           | ⚠️ À créer          |
-| Mentions Légales         | `#disclaimer`      | ⚠️ À créer          |
+| Politique de Confidentialité | `#privacy`    | ⚠ À créer          |
+| Conditions Générales     | `#terms`           | ⚠ À créer          |
+| Mentions Légales         | `#disclaimer`      | ⚠ À créer          |
 
 ### 📞 Actions directes intégrées
 
@@ -164,8 +164,8 @@ Chaque section dispose de ses propres **variants d'animation dédiés** (fichier
 
 MAX WELL est conçu sur mesure pour **tout professionnel du droit ou des services à forte valeur ajoutée** qui cherche à :
 
-- 🏛️ **Cabinets d'avocats** — généralistes ou spécialisés (affaires, famille, pénal, immobilier)
-- ⚖️ **Avocats indépendants** — qui veulent une présence premium sans équipe marketing
+- 🏛 **Cabinets d'avocats** — généralistes ou spécialisés (affaires, famille, pénal, immobilier)
+- ⚖ **Avocats indépendants** — qui veulent une présence premium sans équipe marketing
 - 🧾 **Notaires & Huissiers** — nécessitant un site sobre, institutionnel et rassurant
 - 💼 **Conseillers juridiques d'entreprise** — B2B, restructuration, M&A
 - 🌍 **Cabinets bi-nationaux** — opérant sur plusieurs territoires (ex : France–Algérie)

@@ -36,7 +36,7 @@ L'audit initial a été réalisé sur les 38 pages HTML du projet avant toute mo
 | Métrique | Valeur | Statut WCAG |
 |---|---:|---|
 | **Pages HTML scannées** | 38 | 100% du site |
-| **Pages sans skip-link (WCAG 2.4.1)** | 35 | ⚠️ Non conforme (corrigé) |
+| **Pages sans skip-link (WCAG 2.4.1)** | 35 | ⚠ Non conforme (corrigé) |
 | **Combinaisons de contraste analysées (WCAG 1.4.3)** | 16 | ✅ 100% PASS AA / AAA |
 | **Erreurs d'attribut lang (WCAG 3.1.1)** | 0 | ✅ Conforme |
 | **Erreurs de balise H1 (WCAG 2.4.6)** | 0 | ✅ Conforme |
@@ -81,7 +81,7 @@ L'audit de contraste a été effectué sur les tokens visuels du Design System e
 
 ---
 
-## ⚙️ 5. Résultat de `verify_sprint42.py`
+## ⚙ 5. Résultat de `verify_sprint42.py`
 
 ```text
 =================================================================

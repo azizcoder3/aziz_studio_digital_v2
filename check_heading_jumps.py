@@ -28,7 +28,7 @@ for p in pages:
             
     print(f"[{p}] Headings sequence: {levels[:15]}...")
     if jumps:
-        print(f"  ⚠️ Heading jumps found: {jumps}")
+        print(f"  ⚠ Heading jumps found: {jumps}")
     else:
         print("  ✅ Perfect heading hierarchy (no skipped levels).")
     print()

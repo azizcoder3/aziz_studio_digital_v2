@@ -120,7 +120,7 @@ Adapter uniquement le contenu.
 Badge :
 
 ```
-🛠️ Maintenance & Support
+🛠 Maintenance & Support
 ```
 
 H1 :

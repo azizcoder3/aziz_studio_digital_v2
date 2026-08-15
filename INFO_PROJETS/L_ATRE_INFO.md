@@ -154,7 +154,7 @@ Deux adresses présentées en cartes asymétriques (Paris en avant, Monaco en co
 | **Téléphone** | +33 1 42 68 15 30 | +377 97 70 30 30 |
 | **Horaires** | Lun–Sam 19h–22h30, Dim 12h–14h30 | Mar–Sam 19h30–22h30 |
 
-### 🖼️ Galerie — `#galerie`
+### 🖼 Galerie — `#galerie`
 
 Mosaïque de **9 photographies** (grille sur desktop, défilement horizontal tactile sur mobile) avec légendes au survol : le grill au bois de chêne, plats signature, ambiance de salle, cave à vin, gros plan Wagyu, etc.
 
@@ -174,11 +174,11 @@ Identité de marque, liens sociaux (Instagram, Facebook, TripAdvisor), coordonn�
 
 ## 4. Fonctionnement technique et système
 
-### 🍽️ Système de menu dynamique (Alpine.js)
+### 🍽 Système de menu dynamique (Alpine.js)
 
 Le menu n'est pas codé en dur dans le HTML : il repose sur un objet de données JavaScript (`window.carteData()`), qui centralise les 5 catégories et les 23 plats (nom, description, origine, prix, accord vin). Cette architecture permet de faire évoluer la carte facilement sans toucher au HTML — un choix pragmatique malgré l'absence de backend.
 
-### 🎞️ Animations et micro-interactions
+### 🎞 Animations et micro-interactions
 
 Le fichier `assets/js/app.js` orchestre une interactivité front-end riche, entièrement en JavaScript natif (sans librairie d'animation tierce) :
 
@@ -234,7 +234,7 @@ Plutôt qu'un noir pur ou froid, L'ÂTRE choisit un noir "chaud" (warm deep blac
 
 Contrairement à des palettes multicolores, L'ÂTRE limite volontairement sa signature à une seule couleur d'accent — l'or (#D4AF37) — complétée par la braise (#B45309) en second plan. Cette discipline chromatique, associée à la règle stricte "jamais plus de deux familles de police", produit une identité visuelle immédiatement reconnaissable et évite toute dilution du message de luxe.
 
-### ✍️ Playfair Display + Cormorant Garamond : l'élégance de l'imprimé
+### ✍ Playfair Display + Cormorant Garamond : l'élégance de l'imprimé
 
 Le choix de deux polices serif distinctes — Playfair Display pour les titres structurants, Cormorant Garamond en italique pour les citations et accents — évoque directement les cartes de restaurants gastronomiques imprimées, ancrant le site dans les codes visuels de la haute gastronomie plutôt que dans ceux du web générique.
 
@@ -263,8 +263,8 @@ L'ÂTRE est la base idéale pour tout restaurant gastronomique ou établissement
 ### Secteurs concernés
 
 - 🥩 **Steakhouses et restaurants de viande gastronomiques**
-- 🍽️ **Restaurants étoilés ou aspirant à l'être**
-- 🏛️ **Maisons multi-sites** (plusieurs adresses, identité de marque unifiée)
+- 🍽 **Restaurants étoilés ou aspirant à l'être**
+- 🏛 **Maisons multi-sites** (plusieurs adresses, identité de marque unifiée)
 - 🍷 **Établissements avec une forte identité autour du vin et des accords mets-vins**
 - 🎉 **Lieux proposant privatisations et événements exclusifs**
 - 🎨 **Marques de restauration cherchant une direction artistique sur-mesure plutôt qu'un template générique**

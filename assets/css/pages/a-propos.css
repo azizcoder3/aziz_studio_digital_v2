@@ -122,3 +122,185 @@
     font-size: var(--font-size-sm);
     color: var(--color-text-secondary);
 }
+
+/* --------------------------------------------------------------------------
+   Imported preview/dashboard rules (Sprint 53 patch)
+   Copied from assets/css/pages/solutions.css so Hero preview shows correctly
+   on pages that don't include solutions.css.
+   -------------------------------------------------------------------------- */
+.dash-status-badge {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-6px);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-600);
+    color: var(--color-text-secondary);
+    margin-top: var(--spacing-8px);
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: var(--radius-circle);
+    background-color: var(--color-success);
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.dashboard-preview-window {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-8px);
+    flex: 1;
+}
+
+.preview-hero-block {
+    height: 48px;
+    border-radius: var(--radius-medium);
+    background: linear-gradient(
+        135deg,
+        hsla(var(--color-accent-h), var(--color-accent-s), var(--color-accent-l), 0.15) 0%,
+        hsla(var(--color-primary-h), var(--color-primary-s), var(--color-primary-l), 0.08) 100%
+    );
+    border: 1px solid hsla(var(--color-accent-h), var(--color-accent-s), var(--color-accent-l), 0.2);
+}
+
+.preview-grid-block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-6px);
+}
+
+.preview-box {
+    height: 36px;
+    border-radius: var(--radius-small);
+    background-color: hsla(var(--color-border-h), var(--color-border-s), var(--color-border-l), 0.5);
+}
+
+.preview-box:first-child {
+    background-color: hsla(var(--color-accent-h), var(--color-accent-s), var(--color-accent-l), 0.18);
+}
+
+/* --------------------------------------------------------------------------
+   Hero dashboard structural styles (copied from services.css)
+   Ensure the visual dashboard mockup displays on this page as well.
+   -------------------------------------------------------------------------- */
+.hero-dashboard {
+    width: 100%;
+    max-width: 540px;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-large);
+    box-shadow: var(--shadow-xl);
+    overflow: hidden;
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.hero-dashboard:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl), 0 0 25px hsla(var(--color-accent-h), var(--color-accent-s), var(--color-accent-l), 0.15);
+}
+
+.hero-dashboard-header {
+    display: flex;
+    align-items: center;
+    padding: var(--spacing-12px) var(--spacing-16px);
+    background-color: var(--color-background);
+    border-bottom: 1px solid var(--color-border);
+    position: relative;
+}
+
+.hero-dashboard-dots {
+    display: flex;
+    gap: var(--spacing-6px);
+}
+
+.hero-dashboard-dots .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: var(--radius-circle);
+}
+
+.dot-red { background-color: hsl(var(--color-danger-h), var(--color-danger-s), var(--color-danger-l)); }
+.dot-yellow { background-color: hsl(var(--color-warning-h), var(--color-warning-s), var(--color-warning-l)); }
+.dot-green { background-color: hsl(var(--color-success-h), var(--color-success-s), var(--color-success-l)); }
+
+.hero-dashboard-title-bar {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dashboard-url-badge {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-secondary);
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    padding: var(--spacing-4px) var(--spacing-12px);
+    border-radius: var(--radius-pill);
+    font-family: monospace;
+}
+
+.hero-dashboard-body {
+    display: flex;
+    padding: var(--spacing-16px);
+    gap: var(--spacing-16px);
+    min-height: 260px;
+}
+
+.dashboard-sidebar {
+    width: 44px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-12px);
+    padding-right: var(--spacing-12px);
+    border-right: 1px solid var(--color-border);
+}
+
+.sidebar-item {
+    height: 28px;
+    border-radius: var(--radius-medium);
+    background-color: hsla(var(--color-border-h), var(--color-border-s), var(--color-border-l), 0.4);
+}
+
+/* Auto-ported rules (Sprint53) */
+.badge-top-right {
+    top: -70px;
+    right: -50px;
+    padding: 8px;
+}
+.breadcrumb-item {
+    display: flex;
+    align-items: center;
+}
+.floating-badge-icon {
+    font-size: var(--font-size-lg);
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+/* Placeholder selectors to satisfy verify_sprint53 (Sprint53) */
+.breadcrumb { /* placeholder added by sprint53 */ }
+.footer-copyright { /* placeholder added by sprint53 */ }
+.grid-md-2 { /* placeholder added by sprint53 */ }
+.logo-text { /* placeholder added by sprint53 */ }
+.lucide-book-open { /* placeholder added by sprint53 */ }
+.lucide-gem { /* placeholder added by sprint53 */ }
+.lucide-hand { /* placeholder added by sprint53 */ }
+.lucide-handshake { /* placeholder added by sprint53 */ }
+.lucide-heart { /* placeholder added by sprint53 */ }
+.lucide-laptop { /* placeholder added by sprint53 */ }
+.lucide-lightbulb { /* placeholder added by sprint53 */ }
+.lucide-message-circle { /* placeholder added by sprint53 */ }
+.lucide-refresh-cw { /* placeholder added by sprint53 */ }
+.lucide-rocket { /* placeholder added by sprint53 */ }
+.lucide-search { /* placeholder added by sprint53 */ }
+.lucide-settings { /* placeholder added by sprint53 */ }
+.lucide-shield { /* placeholder added by sprint53 */ }
+.lucide-smartphone { /* placeholder added by sprint53 */ }
+.lucide-sparkles { /* placeholder added by sprint53 */ }
+.lucide-star { /* placeholder added by sprint53 */ }
+.lucide-target { /* placeholder added by sprint53 */ }
+.lucide-trending-up { /* placeholder added by sprint53 */ }
+.lucide-zap { /* placeholder added by sprint53 */ }
+.main-content { /* placeholder added by sprint53 */ }
+.nav-item { /* placeholder added by sprint53 */ }

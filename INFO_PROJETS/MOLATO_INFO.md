@@ -168,7 +168,7 @@ La page d'accueil est composée de **6 sections** construites en Server Componen
 | 5 | **Boutiques** | `BoutiquesSection` | Mise en avant des boutiques partenaires |
 | 6 | **Slogan Banner** | `SloganBanner` | Section plein écran avec image de fond, overlay sombre et citation "Faites vos achats sans frontières" |
 
-### 🗂️ Page Catalogue & Produits
+### 🗂 Page Catalogue & Produits
 
 - **`/categories`** — Grille toutes les catégories
 - **`/categorie/[slug]`** — Produits d'une catégorie avec filtres sidebar (prix, couleurs, tailles)
@@ -210,7 +210,7 @@ Groupe de routes dédié à l'authentification, sans le layout site (pas de head
 | Mot de passe oublié | `/mot-de-passe-oublie` | Envoi email de réinitialisation (Resend) |
 | Réinitialisation | `/reinitialiser-mot-de-passe` | Token + nouveau mot de passe |
 
-### 🛠️ Dashboard Admin — `/admin`
+### 🛠 Dashboard Admin — `/admin`
 
 Interface d'administration complète, accessible uniquement aux utilisateurs avec `role: ADMIN` :
 
@@ -296,11 +296,11 @@ Le bleu marine est la couleur de la confiance, de l'institution, du haut de gamm
 
 La décision de définir `--color-mtn: #FFCC00` et `--color-airtel: #E40521` dans les tokens CSS de marque est une décision profondément locale et stratégique. En affichant les couleurs officielles des opérateurs sur les boutons de paiement, MOLATO crée une **reconnaissance immédiate** chez ses utilisateurs congolais. Ils voient le jaune MTN et le rouge Airtel, et ils savent immédiatement qu'ils peuvent payer avec ce qu'ils utilisent déjà au quotidien.
 
-### ✍️ La typographie Plus Jakarta Sans : moderne et africaine
+### ✍ La typographie Plus Jakarta Sans : moderne et africaine
 
 Plus Jakarta Sans est une police moderne, géométrique, extrêmement lisible en gros titres comme en petits corps. Elle est `extrabold` pour les titres (impact maximal) et régulière pour les corps. Elle transmet modernité et accessibilité — exactement les deux valeurs que MOLATO doit incarner pour son marché.
 
-### 🎞️ Framer Motion comme gage de qualité native
+### 🎞 Framer Motion comme gage de qualité native
 
 Dans un marché où beaucoup de sites e-commerces locaux sont statiques ou peu soignés, les animations Framer Motion de MOLATO (hero en slide-in depuis la gauche, cards en stagger au scroll, menus en scale/opacity) positionnent instantanément la plateforme dans la catégorie des produits premium. L'utilisateur ressent une fluidité d'application native, et cette fluidité crée confiance et engagement.
 
@@ -308,7 +308,7 @@ Dans un marché où beaucoup de sites e-commerces locaux sont statiques ou peu s
 
 La navigation mobile fixée en bas (`MobileNav`), les cartes produits compactes, la barre de recherche adaptative, le scroll horizontal sur les Flash Sales — tout est pensé pour le **smartphone**, qui est le premier (et souvent seul) outil de navigation et d'achat de la majorité des clients africains.
 
-### 🏗️ Architecture multi-layout (groupe de routes)
+### 🏗 Architecture multi-layout (groupe de routes)
 
 Le choix d'organiser les routes en groupes `(site)`, `(auth)`, `admin`, `vendeur` avec des layouts indépendants est une décision architecturale forte. L'admin n'a pas le header client, l'auth n'a ni header ni footer, le vendeur a son propre menu. Cette séparation nette des contextes améliore la performance, la sécurité et l'expérience de chaque type d'utilisateur.
 

@@ -4,7 +4,7 @@
 
 Valider l'architecture technique des futures pages Services, créer le template commun réutilisable et produire une première page modèle qui servira de référence pour tous les Sprints 23 à 28.
 
-> ⚠️ Ce sprint **ne développe pas les six services**. Il prépare l'architecture et le template qui seront réutilisés ensuite.
+> ⚠ Ce sprint **ne développe pas les six services**. Il prépare l'architecture et le template qui seront réutilisés ensuite.
 
 ---
 
@@ -132,7 +132,7 @@ FAQ
 CTA Final
 ```
 
-⚠️ Cette structure ne devra plus être modifiée dans les prochains sprints.
+⚠ Cette structure ne devra plus être modifiée dans les prochains sprints.
 
 Seul le contenu changera.
 

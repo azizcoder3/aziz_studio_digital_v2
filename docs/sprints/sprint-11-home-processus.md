@@ -78,7 +78,7 @@ Technologies
 
 Badge
 
-⚙️ Notre méthode
+⚙ Notre méthode
 
 ---
 

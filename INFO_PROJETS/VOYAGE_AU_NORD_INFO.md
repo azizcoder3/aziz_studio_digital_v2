@@ -159,7 +159,7 @@ Toutes ces sections sont **reprises à l'identique** de la version 1 (Hero avec 
 
 La rédaction des articles dans l'administration s'appuie désormais sur un **éditeur de texte riche (Tiptap)** avec barre d'outils (gras, italique, souligné, titres H2/H3, listes à puces/numérotées, citations, bloc de code) et un mode "source" pour éditer le HTML brut directement — une nette évolution par rapport à un simple champ texte.
 
-### 🗺️ Itinéraires enrichis
+### 🗺 Itinéraires enrichis
 
 Les itinéraires (`Route`) intègrent désormais deux nouvelles informations exploitables côté admin et potentiellement côté public : la **route nationale empruntée** (`via` — ex. "N1", "RN1") et les **jours de circulation** (`days`), permettant de préciser qu'un trajet ne circule pas tous les jours de la semaine.
 
@@ -173,7 +173,7 @@ Les itinéraires (`Route`) intègrent désormais deux nouvelles informations exp
 - **`auth.config.ts`** sépare la configuration NextAuth compatible Edge (callbacks JWT/session, page de connexion) de `auth.ts` qui contient les providers dépendants de Prisma — une bonne pratique qui évite d'exposer le client Prisma (non compatible Edge Runtime) au middleware.
 - Chaque route API sensible (ex. `/api/admin/verify-ticket`) revérifie indépendamment le rôle de session (`ADMIN` ou `AGENT`) côté serveur, en plus du filtrage du middleware — défense en profondeur.
 
-### 🛠️ Dashboard Admin — `/admin`
+### 🛠 Dashboard Admin — `/admin`
 
 Conserve l'ensemble des sections de la v1 (Tableau de bord, Bus, Itinéraires, Trajets, Réservations, Utilisateurs, Scan) avec deux évolutions notables :
 
@@ -194,14 +194,14 @@ Le système de contrôle d'embarquement a été durci avec une logique de vérif
 
 Nouvelle route dédiée `/api/admin/manifest/[tripId]` pour générer le manifeste PDF des passagers **directement associé à un trajet précis**, en complément du composant `ManifestPDF` existant.
 
-### 🖼️ Gestion des images — migration vers Cloudinary
+### 🖼 Gestion des images — migration vers Cloudinary
 
 `lib/cloudinary.ts` remplace l'intégration Supabase Storage de la v1 :
 - Upload *unsigned* côté client vers un dossier structuré `odn-media/{folder}` (ex. `odn-media/actualites`, `odn-media/routes`)
 - Génération d'URLs optimisées à la volée (redimensionnement, qualité et format automatiques `w_{width},q_{quality},f_{format}`)
 - Fonction `getResponsiveUrls()` fournissant des variantes mobile/tablette/desktop pour l'affichage responsive
 
-### 🗄️ Migration de base de données PostgreSQL → MongoDB Atlas
+### 🗄 Migration de base de données PostgreSQL → MongoDB Atlas
 
 Documentée dans `MIGRATION_MONGODB.md` et le rapport de walkthrough associé, cette migration a nécessité :
 - Le passage du provider Prisma de `postgresql` à `mongodb`, avec identifiants `@id @default(auto()) @map("_id") @db.ObjectId`

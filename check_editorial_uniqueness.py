@@ -38,7 +38,7 @@ for i in range(len(pages)):
         common = set1.intersection(set2)
         if common:
             duplicates_found = True
-            print(f"⚠️ Duplicate paragraphs between {p1} and {p2} ({len(common)} matches):")
+            print(f"⚠ Duplicate paragraphs between {p1} and {p2} ({len(common)} matches):")
             for dup in common:
                 print(f"   - \"{dup[:100]}...\"")
 

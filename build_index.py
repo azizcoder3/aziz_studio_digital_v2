@@ -59,6 +59,27 @@ def render_head(title, description, canonical_url, og_type="website", og_image="
     <link rel="stylesheet" href="assets/css/components/header.css">
     <link rel="stylesheet" href="assets/css/components/footer.css">
 
+    <!-- Schema.org JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {{
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Aziz Studio Digital",
+      "url": "https://azizstudiodigital.netlify.app/",
+      "logo": "https://azizstudiodigital.netlify.app/assets/images/favicon.svg",
+      "image": "https://azizstudiodigital.netlify.app/assets/images/home/hero-illustration.webp",
+      "description": "Aziz Studio Digital accompagne les entreprises au Congo avec des sites web rapides, modernes, optimisés pour Google et pensés pour générer des contacts.",
+      "address": {{
+        "@type": "PostalAddress",
+        "addressCountry": "CG",
+        "addressLocality": "Brazzaville / Pointe-Noire",
+        "addressRegion": "République du Congo"
+      }},
+      "email": "azizstudio.dev@gmail.com",
+      "areaServed": "République du Congo"
+    }}
+    </script>
+
     {extra_css}
 
     <style>
@@ -93,7 +114,7 @@ pages_config = [
     {
         "filename": "index.html",
         "source": os.path.join(ROOT, "pages", "home.html"),
-        "title": "Agence web &amp; Création de site au Congo | Aziz Studio Digital",
+        "title": "Agence web &amp; Création site au Congo | Aziz Studio Digital",
         "description": "Aziz Studio Digital accompagne les entreprises au Congo avec des sites web rapides, modernes, optimisés pour Google et pensés pour générer des contacts.",
         "canonical": "https://azizstudiodigital.netlify.app/",
         "active_nav": "index.html",
@@ -174,7 +195,7 @@ pages_config = [
     {
         "filename": "portfolio.html",
         "source": os.path.join(ROOT, "pages", "portfolio.html"),
-        "title": "Portfolio &amp; Réalisations web au Congo | Aziz Studio Digital",
+        "title": "Portfolio &amp; Réalisations web Congo | Aziz Studio Digital",
         "description": "Découvrez le portfolio des réalisations web d'Aziz Studio Digital au Congo : sites vitrines, WordPress, refontes et optimisations SEO.",
         "canonical": "https://azizstudiodigital.netlify.app/portfolio.html",
         "active_nav": "portfolio.html",
@@ -202,10 +223,10 @@ pages_config = [
         "filename": "contact.html",
         "source": os.path.join(ROOT, "pages", "contact.html"),
         "title": "Contact &amp; Devis gratuit au Congo | Aziz Studio Digital",
-        "description": "Contactez Aziz Studio Digital au Congo. Devis gratuit, accompagnement personnalisé et étude de votre projet web avec réponse sous 48 heures.",
+        "description": "Contactez Aziz Studio Digital au Congo. Devis gratuit, accompagnement personnalisé et étude de votre projet web avec réponse sous 72 heures.",
         "canonical": "https://azizstudiodigital.netlify.app/contact.html",
         "active_nav": "contact.html",
-        "extra_css": '<link rel="stylesheet" href="assets/css/pages/services.css">\n    <link rel="stylesheet" href="assets/css/pages/creation-site-web.css">\n    <link rel="stylesheet" href="assets/css/components/form.css">\n    <link rel="stylesheet" href="assets/css/pages/contact.css">'
+        "extra_css": '<link rel="stylesheet" href="assets/css/components/form.css">\n    <link rel="stylesheet" href="assets/css/pages/contact.css">'
     },
     {
         "filename": "blog.html",
@@ -254,7 +275,7 @@ pages_config = [
         "source_content": """<main class="main-content" id="main-content" role="main">
     <section class="section service-single-hero" id="hero-404">
         <div class="container" style="text-align: center; padding: var(--spacing-64px) var(--spacing-16px);">
-            <span class="badge badge-secondary" style="margin-bottom: var(--spacing-16px);">⚠️ Erreur 404</span>
+            <span class="badge badge-secondary" style="margin-bottom: var(--spacing-16px);"><svg class="lucide-icon lucide-alert-triangle" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg> Erreur 404</span>
             <h1 class="service-hero-title" style="font-size: var(--font-size-4xl); margin-bottom: var(--spacing-16px);">Page non trouvée</h1>
             <h2 class="service-hero-description" style="font-size: var(--font-size-lg); font-weight: var(--font-weight-400); max-width: 600px; margin: 0 auto var(--spacing-32px) auto;">
                 La page que vous recherchez n'existe pas ou a été déplacée. Nous vous invitons à retourner sur la page d'accueil ou à consulter nos services.
@@ -395,7 +416,7 @@ pages_config = [
     {
         "filename": "projet-atre-steakhouse.html",
         "source": os.path.join(ROOT, "pages", "projet-atre-steakhouse.html"),
-        "title": "L'Âtre Steakhouse — Projet site vitrine premium | Aziz Studio Digital",
+        "title": "L'Âtre Steakhouse — Site Vitrine | Aziz Studio Digital",
         "description": "Site vitrine one-page Dark & Moody pour steakhouse gastronomique à Paris et Monaco. HTML5, TailwindCSS, Alpine.js, animations JavaScript natif.",
         "canonical": "https://azizstudiodigital.netlify.app/projet-atre-steakhouse.html",
         "active_nav": "portfolio.html",
@@ -404,7 +425,7 @@ pages_config = [
     {
         "filename": "projet-cabinet-maxwell.html",
         "source": os.path.join(ROOT, "pages", "projet-cabinet-maxwell.html"),
-        "title": "Cabinet Maxwell — Landing page cabinet d'avocats | Aziz Studio Digital",
+        "title": "Cabinet Maxwell — Site Avocat Congo | Aziz Studio Digital",
         "description": "Landing page SPA premium pour cabinet d'avocats. React 19, Vite 8, TailwindCSS v4, Framer Motion. Design Gold × Dark, 12 sections animées, 2 modals plein écran.",
         "canonical": "https://azizstudiodigital.netlify.app/projet-cabinet-maxwell.html",
         "active_nav": "portfolio.html",
@@ -413,7 +434,7 @@ pages_config = [
     {
         "filename": "projet-dental-glow.html",
         "source": os.path.join(ROOT, "pages", "projet-dental-glow.html"),
-        "title": "Dental Glow — Site cabinet dentaire premium | Aziz Studio Digital",
+        "title": "Dental Glow — Site Cabinet Dentaire | Aziz Studio Digital",
         "description": "Template professionnel pour cabinet dentaire moderne. Vite 6, TailwindCSS 3, GSAP 3, Motion 12. Architecture modulaire en sections HTML indépendantes.",
         "canonical": "https://azizstudiodigital.netlify.app/projet-dental-glow.html",
         "active_nav": "portfolio.html",
@@ -422,7 +443,7 @@ pages_config = [
     {
         "filename": "projet-molato-commerce.html",
         "source": os.path.join(ROOT, "pages", "projet-molato-commerce.html"),
-        "title": "Molato Commerce — Marketplace e-commerce africain | Aziz Studio Digital",
+        "title": "Molato Commerce — Marketplace Congo | Aziz Studio Digital",
         "description": "Plateforme marketplace multi-vendeurs pour le marché congolais. Next.js 16, TypeScript, PostgreSQL, Prisma, paiement Mobile Money MTN MoMo et Airtel Money.",
         "canonical": "https://azizstudiodigital.netlify.app/projet-molato-commerce.html",
         "active_nav": "portfolio.html",
@@ -431,7 +452,7 @@ pages_config = [
     {
         "filename": "projet-agence-voyage.html",
         "source": os.path.join(ROOT, "pages", "projet-agence-voyage.html"),
-        "title": "Océan du Nord — Réservation bus en ligne Congo | Aziz Studio Digital",
+        "title": "Réservation Bus Océan du Nord Congo | Aziz Studio Digital",
         "description": "Plateforme de réservation de billets de bus au Congo. Next.js 16, MongoDB Atlas, Yabetoo, Google Gemini, QR Code, programme fidélité Club ONC.",
         "canonical": "https://azizstudiodigital.netlify.app/projet-agence-voyage.html",
         "active_nav": "portfolio.html",

@@ -4,7 +4,7 @@
 
 Créer la page **SEO & Référencement Naturel** en réutilisant intégralement le template officiel validé au Sprint 22 (`creation-site-web.html`).
 
-⚠️ Ce sprint est un sprint de **contenu**, pas de conception.
+⚠ Ce sprint est un sprint de **contenu**, pas de conception.
 
 Aucun nouveau composant, aucune nouvelle structure HTML et aucun nouveau Design System ne doivent être créés.
 

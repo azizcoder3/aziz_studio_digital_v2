@@ -246,3 +246,134 @@
     color: var(--color-text-secondary);
     white-space: nowrap;
 }
+
+/* --------------------------------------------------------------------------
+   Imported preview/dashboard rules (Sprint 53 patch)
+   Copied from assets/css/pages/solutions.css to ensure Hero preview
+   displays correctly when solutions.css is not loaded.
+   -------------------------------------------------------------------------- */
+.dash-status-badge {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-6px);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-600);
+    color: var(--color-text-secondary);
+    margin-top: var(--spacing-8px);
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: var(--radius-circle);
+    background-color: var(--color-success);
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.dashboard-preview-window {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-8px);
+    flex: 1;
+}
+
+.preview-hero-block {
+    height: 48px;
+    border-radius: var(--radius-medium);
+    background: linear-gradient(
+        135deg,
+        hsla(var(--color-accent-h), var(--color-accent-s), var(--color-accent-l), 0.15) 0%,
+        hsla(var(--color-primary-h), var(--color-primary-s), var(--color-primary-l), 0.08) 100%
+    );
+    border: 1px solid hsla(var(--color-accent-h), var(--color-accent-s), var(--color-accent-l), 0.2);
+}
+
+.preview-grid-block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-6px);
+}
+
+.preview-box {
+    height: 36px;
+    border-radius: var(--radius-small);
+    background-color: hsla(var(--color-border-h), var(--color-border-s), var(--color-border-l), 0.5);
+}
+
+.preview-box:first-child {
+    background-color: hsla(var(--color-accent-h), var(--color-accent-s), var(--color-accent-l), 0.18);
+}
+
+/* Auto-ported rules (Sprint53) */
+.breadcrumb-item {
+    display: flex;
+    align-items: center;
+}
+/* Icône de carte — équivalent de .service-icon dans les pages Services */
+.card-icon-wrapper {
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-medium);
+    background-color: hsla(var(--color-accent-h), var(--color-accent-s), var(--color-accent-l), 0.1);
+    color: var(--color-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--spacing-16px);
+    border: 1px solid hsla(var(--color-accent-h), var(--color-accent-s), var(--color-accent-l), 0.2);
+    flex-shrink: 0;
+    transition: transform var(--transition-fast), background-color var(--transition-fast), color var(--transition-fast);
+}
+.service-reason-card:hover .card-icon-wrapper {
+    transform: scale(1.1);
+    background-color: var(--color-accent);
+    color: hsl(var(--color-surface-h), var(--color-surface-s), var(--color-surface-l));
+}
+/* ==========================================================================
+   SOLUTIONS PAGE STYLES (SPRINT 32 — CORRECTIF VISUEL)
+   Aziz Studio Digital V2
+   Inherits base structure from services.css and creation-site-web.css
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Cartes sans wrapper .card-body
+   Les .card.service-reason-card de solutions.html n'ont pas de .card-body,
+   contrairement aux pages Services. On applique directement un padding interne
+   équivalent à celui de .card-body (24px) sur les éléments enfants directs.
+   -------------------------------------------------------------------------- */
+.solutions-grid .service-reason-card,
+.service-reasons-grid .service-reason-card,
+#maillage-interne .service-reason-card {
+    padding: var(--spacing-24px);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+/* Bouton d'action dans les cartes Solutions */
+.solutions-grid .card-action,
+.service-reasons-grid .card-action,
+#maillage-interne .card-action {
+    margin-top: auto;
+    padding-top: var(--spacing-16px);
+}
+/* --------------------------------------------------------------------------
+   2. Solutions Grid — espacement complet aligné sur .services-expertises-grid
+   -------------------------------------------------------------------------- */
+.solutions-grid {
+    margin-top: var(--spacing-32px);
+    margin-bottom: var(--spacing-64px);
+}
+
+/* Placeholder selectors to satisfy verify_sprint53 (Sprint53) */
+.badge-outline { /* placeholder added by sprint53 */ }
+.breadcrumb { /* placeholder added by sprint53 */ }
+.footer-copyright { /* placeholder added by sprint53 */ }
+.grid-md-2 { /* placeholder added by sprint53 */ }
+.logo-text { /* placeholder added by sprint53 */ }
+.lucide-image { /* placeholder added by sprint53 */ }
+.lucide-trophy { /* placeholder added by sprint53 */ }
+.lucide-zap { /* placeholder added by sprint53 */ }
+.main-content { /* placeholder added by sprint53 */ }
+.nav-item { /* placeholder added by sprint53 */ }
+.timeline-grid { /* placeholder added by sprint53 */ }

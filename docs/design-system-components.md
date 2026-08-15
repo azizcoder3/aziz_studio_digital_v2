@@ -78,7 +78,7 @@ Chaque page HTML compilée (via `build_index.py`) charge dans cet ordre :
 Toutes les variables sont définies dans `assets/css/base/variables.css` sous la règle `:root {}`.  
 Un jeu de surcharge `@media (prefers-color-scheme: dark)` fournit le mode sombre automatique.
 
-> ⚠️ **Règle absolue** : Ne jamais coder une valeur en dur dans le CSS de composant. Utiliser exclusivement les variables ci-dessous.
+> ⚠ **Règle absolue** : Ne jamais coder une valeur en dur dans le CSS de composant. Utiliser exclusivement les variables ci-dessous.
 
 ### 3.1 Couleurs
 
@@ -301,7 +301,7 @@ Mobile (<768px)      Tablette (≥768px)      Desktop (≥1024px)
 <section class="section section-surface" id="ma-section">
   <div class="container">
     <div class="section-header section-header-center">
-      <span class="badge badge-primary">🏷️ Label</span>
+      <span class="badge badge-primary">🏷 Label</span>
       <h2 class="section-title">Titre</h2>
       <p class="section-subtitle">Description.</p>
     </div>
@@ -895,7 +895,7 @@ body { padding-top: 73px; }
 </div>
 ```
 
-> ⚠️ Ces styles existent dans `services.css` ET dans `creation-site-web.css`. Chaque nouvelle page service doit copier ces styles dans sa propre feuille de style — ils n'existent pas dans un fichier composant partagé.
+> ⚠ Ces styles existent dans `services.css` ET dans `creation-site-web.css`. Chaque nouvelle page service doit copier ces styles dans sa propre feuille de style — ils n'existent pas dans un fichier composant partagé.
 
 ### Localisation du code source
 

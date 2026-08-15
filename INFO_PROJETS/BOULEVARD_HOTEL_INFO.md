@@ -29,14 +29,14 @@ Le projet est entièrement **bilingue (Français / Anglais)**, avec gestion des 
 
 ---
 
-## 2. 🖼️ Aperçu du projet
+## 2. 🖼 Aperçu du projet
 
 Boulevard-Hôtel est une plateforme web professionnelle pensée autour de trois axes :
 
-### 🛎️ Expérience client
+### 🛎 Expérience client
 Le visiteur arrive sur une **page d'accueil immersive** avec un hero cinématique (image plein écran arrondie), une barre de recherche intelligente permettant de filtrer les chambres par dates, type et nombre de voyageurs. Il navigue ensuite naturellement à travers les sections : présentation de l'hôtel, services exclusifs, catalogue de chambres, équipements, galerie photos et vidéo de présentation.
 
-### 🛏️ Catalogue de chambres intelligent
+### 🛏 Catalogue de chambres intelligent
 La page `/chambres` propose un système de **filtrage avancé et en temps réel** : par dates de disponibilité, type de chambre (Standard, Deluxe Royale, Suite Senior, Présidentielle), nombre de voyageurs et nombre de chambres. Chaque chambre dispose d'une page de détail dédiée avec galerie photo, description complète, équipements, et formulaire de réservation en ligne multi-étapes.
 
 ### 🔐 Espace administration sécurisé
@@ -75,16 +75,16 @@ La vitrine complète de l'hôtel, construite en sections successives :
 | **Galerie** | Grille photos avec modal d'ouverture en plein écran |
 | **Footer** | Liens rapides, coordonnées (Avenue de l'Indépendance, Loutété), réseaux sociaux, témoignage client |
 
-### 🛏️ Page Chambres — `/chambres`
+### 🛏 Page Chambres — `/chambres`
 Catalogue complet avec filtres avancés en temps réel : dates, type de chambre, capacité, nombre de chambres. Affichage dynamique des disponibilités. Résultats mis à jour instantanément.
 
 ### 🚪 Page Détail Chambre — `/chambres/[slug]`
 Page individuelle par chambre avec galerie photo, informations complètes (superficie, étage, vue, capacité, équipements inclus), services en supplément, avis clients, et widget de réservation latéral. Chambres similaires suggérées en bas de page.
 
-### ℹ️ Page À propos — `/a-propos`
+### ℹ Page À propos — `/a-propos`
 Histoire et philosophie de l'hôtel, statistiques (années d'expérience, clients heureux, chambres & suites), timeline du parcours, présentation du cadre naturel de Loutété, valeurs, équipe et distinctions.
 
-### 🍽️ Page Services — `/services`
+### 🍽 Page Services — `/services`
 Présentation détaillée des services premium : gastronomie congolaise & internationale, espace spa & bien-être, salles de conférence modulables, piscine & loisirs. Packages tout-inclus (Évasion Romantique, Détente Totale, Séminaire Pro) et FAQ.
 
 ### 📞 Page Contact — `/contact`
@@ -92,7 +92,7 @@ Formulaire de contact avec sélection de sujet (réservation, événement, spa, 
 
 ---
 
-## 4. ⚙️ Pages utilitaires et système
+## 4. ⚙ Pages utilitaires et système
 
 ### 🔐 Administration — `/admin`
 Espace protégé par authentification, accessible uniquement à l'équipe de l'hôtel.
@@ -119,7 +119,7 @@ Contexte global gérant le basculement FR ↔ EN sur l'ensemble du site, avec di
 ### 💱 Système de devises — `CurrencyContext`
 Contexte global permettant l'affichage des prix dans différentes devises.
 
-### 🗄️ Base de données — Prisma + MongoDB
+### 🗄 Base de données — Prisma + MongoDB
 Trois modèles principaux :
 - **`Room`** : slug, nom, type, prix, galerie, équipements, capacité, lits, superficie, vue, dates bloquées, stock, promotion (start/end/discount%)
 - **`User`** : nom, email (optionnel), téléphone, mot de passe hashé, statut membre
@@ -140,7 +140,7 @@ Les coins très arrondis (`rounded-[45px]`, `rounded-[40px]`, `rounded-full`) co
 ### 🔤 Typographie Geist : clarté et technologie
 L'utilisation des polices **Geist Sans** et **Geist Mono** (conçues par Vercel) garantit une lisibilité maximale sur tous les écrans, tout en apportant une touche contemporaine qui positionne l'hôtel comme un acteur moderne et tourné vers l'avenir.
 
-### 🎞️ Animations Framer Motion : le mouvement comme valeur
+### 🎞 Animations Framer Motion : le mouvement comme valeur
 Chaque section s'anime à l'entrée dans le viewport grâce au composant `MotionReveal`. Les transitions fluides (fade-in, slide-up/left/right) créent une expérience narrative : le site se raconte au rythme de la lecture. Le slider auto-animé des services, les hover effects sur les images, les rotations d'icônes — tout concourt à une interface vivante et premium.
 
 ### 🪟 Glassmorphism & profondeur

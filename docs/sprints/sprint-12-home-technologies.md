@@ -60,7 +60,7 @@ Témoignages (`#temoignages`)
 # Structure
 
 Badge :
-🛠️ Technologies & Expertise
+🛠 Technologies & Expertise
 
 Titre :
 Des technologies modernes, fiables et performantes

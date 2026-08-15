@@ -4,7 +4,7 @@
 
 Créer la page **Refonte de Site Web** en réutilisant intégralement le template officiel validé au Sprint 22 (`creation-site-web.html`).
 
-⚠️ Ce sprint est un sprint de contenu.
+⚠ Ce sprint est un sprint de contenu.
 
 Aucun nouveau composant ne doit être créé.
 

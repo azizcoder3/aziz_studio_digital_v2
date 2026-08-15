@@ -99,7 +99,7 @@ for p in pages_info:
     
     print(f"[{filename}] H1 count: {len(h1s)} | H2 count: {len(h2s)} | H3 count: {len(h3s)} | H4 count: {len(h4s)}")
     if len(h1s) != 1:
-        print(f"  ⚠️  WARNING: H1 count is {len(h1s)}")
+        print(f"  ⚠  WARNING: H1 count is {len(h1s)}")
 print()
 
 print("--- 3. CTA WORDING AUDIT ---")

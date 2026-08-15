@@ -77,7 +77,7 @@ Le Hero doit contenir :
 
 Badge
 
-🛠️ Nos Services
+🛠 Nos Services
 
 H1
 

@@ -9,7 +9,7 @@
 
 ## 0. Étape 0 — Audit complet de l'existant avant toute correction
 
-⚠️ **OBLIGATOIRE : aucune correction ne doit être appliquée avant la réalisation et la présentation de cet audit.**
+⚠ **OBLIGATOIRE : aucune correction ne doit être appliquée avant la réalisation et la présentation de cet audit.**
 
 Le site a été construit et modifié progressivement sur de nombreux sprints. L'accessibilité a été traitée page par page, ce qui peut avoir créé des divergences.
 

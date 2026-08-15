@@ -284,7 +284,7 @@ Chaque Sprint doit se conclure par un rapport structuré comme suit :
 ### ♿ Accessibilité (WCAG) & Responsive
 - Résultats des tests clavier, contrastes et breakpoints.
 
-### ⚙️ Build & Liens
+### ⚙ Build & Liens
 - Validation de l'exécution de build_index.py et résultat du contrôle des liens.
 
 ### ✅ Confirmations finales
