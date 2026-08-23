@@ -134,7 +134,7 @@ pages_config = [
     {
         "filename": "index.html",
         "source": os.path.join(ROOT, "pages", "home.html"),
-        "title": "Agence web &amp; Création site au Congo | Aziz Studio Digital",
+        "title": "Agence web &amp; Création site au Congo – Brazzaville &amp; Pointe-Noire | Aziz Studio Digital",
         "description": "Aziz Studio Digital accompagne les entreprises au Congo avec des sites web rapides, modernes, optimisés pour Google et pensés pour générer des contacts.",
         "canonical": "https://azizstudiodigital.netlify.app/",
         "active_nav": "index.html",
@@ -144,7 +144,7 @@ pages_config = [
     {
         "filename": "services.html",
         "source": os.path.join(ROOT, "pages", "services.html"),
-        "title": "Nos Services web &amp; SEO au Congo | Aziz Studio Digital",
+        "title": "Nos Services web &amp; SEO au Congo – Brazzaville &amp; Pointe-Noire | Aziz Studio Digital",
         "description": "Découvrez tous les services d'Aziz Studio Digital au Congo : création de site web, WordPress, SEO, refonte, maintenance et audit digital.",
         "canonical": "https://azizstudiodigital.netlify.app/services.html",
         "active_nav": "services.html",
@@ -225,7 +225,7 @@ pages_config = [
     {
         "filename": "tarifs.html",
         "source": os.path.join(ROOT, "pages", "tarifs.html"),
-        "title": "Tarifs création de site web au Congo | Aziz Studio Digital",
+        "title": "Tarifs création de site web au Congo – Brazzaville &amp; Pointe-Noire | Aziz Studio Digital",
         "description": "Découvrez les tarifs de création de site web, WordPress, référencement SEO, maintenance et audit proposés par Aziz Studio Digital au Congo.",
         "canonical": "https://azizstudiodigital.netlify.app/tarifs.html",
         "active_nav": "tarifs.html",
@@ -243,7 +243,7 @@ pages_config = [
     {
         "filename": "contact.html",
         "source": os.path.join(ROOT, "pages", "contact.html"),
-        "title": "Contact &amp; Devis gratuit au Congo | Aziz Studio Digital",
+        "title": "Contact &amp; Devis gratuit au Congo – Brazzaville &amp; Pointe-Noire | Aziz Studio Digital",
         "description": "Contactez Aziz Studio Digital au Congo. Devis gratuit, accompagnement personnalisé et étude de votre projet web avec réponse sous 72 heures.",
         "canonical": "https://azizstudiodigital.netlify.app/contact.html",
         "active_nav": "contact.html",
