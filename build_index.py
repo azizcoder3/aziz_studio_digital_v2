@@ -471,11 +471,11 @@ pages_config = [
         "extra_css": '<link rel="stylesheet" href="assets/css/pages/services.css">\n    <link rel="stylesheet" href="assets/css/pages/creation-site-web.css">\n    <link rel="stylesheet" href="assets/css/pages/projet-template.css">'
     },
     {
-        "filename": "projet-agence-voyage.html",
-        "source": os.path.join(ROOT, "pages", "projet-agence-voyage.html"),
-        "title": "Réservation Bus Océan du Nord Congo | Aziz Studio Digital",
-        "description": "Plateforme de réservation de billets de bus au Congo. Next.js 16, MongoDB Atlas, Yabetoo, Google Gemini, QR Code, programme fidélité Club ONC.",
-        "canonical": "https://azizstudiodigital.netlify.app/projet-agence-voyage.html",
+        "filename": "projet-sante-plus.html",
+        "source": os.path.join(ROOT, "pages", "projet-sante-plus.html"),
+        "title": "Santé Plus – Plateforme médicale en ligne | Aziz Studio Digital",
+        "description": "Plateforme médicale full-stack construite avec Next.js 15 pour la République du Congo : prise de RDV en ligne, espace patient/médecin/admin, notifications SMS et email, gestion des dossiers médicaux.",
+        "canonical": "https://azizstudiodigital.netlify.app/projet-sante-plus.html",
         "active_nav": "portfolio.html",
         "extra_css": '<link rel="stylesheet" href="assets/css/pages/services.css">\n    <link rel="stylesheet" href="assets/css/pages/creation-site-web.css">\n    <link rel="stylesheet" href="assets/css/pages/projet-template.css">'
     },
