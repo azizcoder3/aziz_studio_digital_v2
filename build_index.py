@@ -23,7 +23,7 @@ def render_head(title, description, canonical_url, og_type="website", og_image="
     <link rel="canonical" href="{canonical_url}">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
 
     <!-- Open Graph -->
     <meta property="og:title" content="{title}">
@@ -76,7 +76,7 @@ def render_head(title, description, canonical_url, og_type="website", og_image="
       "@type": "ProfessionalService",
       "name": "Aziz Studio Digital",
       "url": "https://azizstudiodigital.netlify.app/",
-      "logo": "https://azizstudiodigital.netlify.app/assets/images/favicon.svg",
+      "logo": "https://azizstudiodigital.netlify.app/assets/images/aziz_logo.png",
       "image": "https://azizstudiodigital.netlify.app/assets/images/home/hero-illustration.webp",
       "description": "Aziz Studio Digital accompagne les entreprises au Congo avec des sites web rapides, modernes, optimisés pour Google et pensés pour générer des contacts.",
       "address": {{
@@ -129,6 +129,35 @@ def render_head(title, description, canonical_url, og_type="website", og_image="
         }}
     </style>
 </head>"""
+
+def render_breadcrumb_schema(page_label, page_url):
+    return f"""
+    <script type="application/ld+json">
+    {{
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {{
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://azizstudiodigital.netlify.app/"
+        }},
+        {{
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Solutions",
+          "item": "https://azizstudiodigital.netlify.app/solutions.html"
+        }},
+        {{
+          "@type": "ListItem",
+          "position": 3,
+          "name": "{page_label}",
+          "item": "{page_url}"
+        }}
+      ]
+    }}
+    </script>"""
 
 pages_config = [
     {
@@ -485,6 +514,7 @@ pages_config = [
         "title": "Site web pour hôtel au Congo | Aziz Studio Digital",
         "description": "Création de site web pour hôtels au Congo : réservation en ligne, présentation des chambres et galeries photos. Devis gratuit en 72h.",
         "canonical": "https://azizstudiodigital.netlify.app/hotel.html",
+        "breadcrumb_label": "Site web pour hôtels",
         "active_nav": "index.html",
         "extra_css": '<link rel="stylesheet" href="assets/css/components/hero.css">\n    <link rel="stylesheet" href="assets/css/components/pricing.css">\n    <link rel="stylesheet" href="assets/css/components/faq.css">\n    <link rel="stylesheet" href="assets/css/pages/secteurs.css">'
     },
@@ -494,6 +524,7 @@ pages_config = [
         "title": "Site web pour restaurant au Congo | Aziz Studio Digital",
         "description": "Création de site web pour restaurants au Congo : menus interactifs, réservation de table et visibilité Google local. Devis gratuit en 72h.",
         "canonical": "https://azizstudiodigital.netlify.app/restaurant.html",
+        "breadcrumb_label": "Site web pour restaurants",
         "active_nav": "index.html",
         "extra_css": '<link rel="stylesheet" href="assets/css/components/hero.css">\n    <link rel="stylesheet" href="assets/css/components/pricing.css">\n    <link rel="stylesheet" href="assets/css/components/faq.css">\n    <link rel="stylesheet" href="assets/css/pages/secteurs.css">'
     },
@@ -503,6 +534,7 @@ pages_config = [
         "title": "Site web pour l'immobilier au Congo | Aziz Studio Digital",
         "description": "Création de site web pour agences immobilières au Congo : catalogue de biens, filtres de recherche et demandes de visite. Devis gratuit en 72h.",
         "canonical": "https://azizstudiodigital.netlify.app/immobilier.html",
+        "breadcrumb_label": "Site web pour l'immobilier",
         "active_nav": "index.html",
         "extra_css": '<link rel="stylesheet" href="assets/css/components/hero.css">\n    <link rel="stylesheet" href="assets/css/components/pricing.css">\n    <link rel="stylesheet" href="assets/css/components/faq.css">\n    <link rel="stylesheet" href="assets/css/pages/secteurs.css">'
     },
@@ -512,6 +544,7 @@ pages_config = [
         "title": "Site web pour clinique au Congo | Aziz Studio Digital",
         "description": "Création de site web pour cliniques au Congo : présentation des pôles médicaux, prise de RDV et informations d'urgence. Devis gratuit en 72h.",
         "canonical": "https://azizstudiodigital.netlify.app/clinique.html",
+        "breadcrumb_label": "Site web pour cliniques",
         "active_nav": "index.html",
         "extra_css": '<link rel="stylesheet" href="assets/css/components/hero.css">\n    <link rel="stylesheet" href="assets/css/components/pricing.css">\n    <link rel="stylesheet" href="assets/css/components/faq.css">\n    <link rel="stylesheet" href="assets/css/pages/secteurs.css">'
     },
@@ -521,6 +554,7 @@ pages_config = [
         "title": "Site web cabinet médical au Congo | Aziz Studio Digital",
         "description": "Création de site web pour cabinets médicaux au Congo : fiches praticiens, prise de rendez-vous et horaires d'ouverture. Devis gratuit en 72h.",
         "canonical": "https://azizstudiodigital.netlify.app/cabinet-medical.html",
+        "breadcrumb_label": "Site web pour cabinets médicaux",
         "active_nav": "index.html",
         "extra_css": '<link rel="stylesheet" href="assets/css/components/hero.css">\n    <link rel="stylesheet" href="assets/css/components/pricing.css">\n    <link rel="stylesheet" href="assets/css/components/faq.css">\n    <link rel="stylesheet" href="assets/css/pages/secteurs.css">'
     },
@@ -530,6 +564,7 @@ pages_config = [
         "title": "Site web cabinet dentaire au Congo | Aziz Studio Digital",
         "description": "Création de site web pour cabinets dentaires au Congo : fiches de soins, présentation de l'équipe et prise de rendez-vous. Devis gratuit en 72h.",
         "canonical": "https://azizstudiodigital.netlify.app/cabinet-dentaire.html",
+        "breadcrumb_label": "Site web pour cabinets dentaires",
         "active_nav": "index.html",
         "extra_css": '<link rel="stylesheet" href="assets/css/components/hero.css">\n    <link rel="stylesheet" href="assets/css/components/pricing.css">\n    <link rel="stylesheet" href="assets/css/components/faq.css">\n    <link rel="stylesheet" href="assets/css/pages/secteurs.css">'
     },
@@ -539,6 +574,7 @@ pages_config = [
         "title": "Site web pour pharmacie au Congo | Aziz Studio Digital",
         "description": "Création de site web pour pharmacies au Congo : plannings de garde, parapharmacie et envoi d'ordonnance sécurisé. Devis gratuit en 72h.",
         "canonical": "https://azizstudiodigital.netlify.app/pharmacie.html",
+        "breadcrumb_label": "Site web pour pharmacies",
         "active_nav": "index.html",
         "extra_css": '<link rel="stylesheet" href="assets/css/components/hero.css">\n    <link rel="stylesheet" href="assets/css/components/pricing.css">\n    <link rel="stylesheet" href="assets/css/components/faq.css">\n    <link rel="stylesheet" href="assets/css/pages/secteurs.css">'
     },
@@ -548,6 +584,7 @@ pages_config = [
         "title": "Site web salon de beauté au Congo | Aziz Studio Digital",
         "description": "Création de site web pour salons de beauté et spas au Congo : carte des soins, réservation en ligne et contact WhatsApp. Devis gratuit en 72h.",
         "canonical": "https://azizstudiodigital.netlify.app/salon-beaute.html",
+        "breadcrumb_label": "Site web pour salons de beauté",
         "active_nav": "index.html",
         "extra_css": '<link rel="stylesheet" href="assets/css/components/hero.css">\n    <link rel="stylesheet" href="assets/css/components/pricing.css">\n    <link rel="stylesheet" href="assets/css/components/faq.css">\n    <link rel="stylesheet" href="assets/css/pages/secteurs.css">'
     },
@@ -557,6 +594,7 @@ pages_config = [
         "title": "Site web agence de voyage au Congo | Aziz Studio Digital",
         "description": "Création de site web pour agences de voyage au Congo : catalogue de séjours, circuits et formulaires de devis sur mesure. Devis gratuit en 72h.",
         "canonical": "https://azizstudiodigital.netlify.app/voyage.html",
+        "breadcrumb_label": "Site web pour agences de voyage",
         "active_nav": "index.html",
         "extra_css": '<link rel="stylesheet" href="assets/css/components/hero.css">\n    <link rel="stylesheet" href="assets/css/components/pricing.css">\n    <link rel="stylesheet" href="assets/css/components/faq.css">\n    <link rel="stylesheet" href="assets/css/pages/secteurs.css">'
     },
@@ -606,9 +644,17 @@ for pcfg in pages_config:
         verification_tag=pcfg.get("verification_tag", "")
     )
     
+    breadcrumb_html = ""
+    if pcfg.get("breadcrumb_label"):
+        breadcrumb_html = render_breadcrumb_schema(
+            page_label=pcfg["breadcrumb_label"],
+            page_url=pcfg["canonical"]
+        )
+
     full_html = f"""<!DOCTYPE html>
 <html lang="fr">
 {head_html}
+{breadcrumb_html}
 <body>
 
 {page_header}
